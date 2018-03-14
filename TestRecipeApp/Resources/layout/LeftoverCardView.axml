@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        card_view:cardElevation="4dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="5dp">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="2dp">
+            <ImageView
+                android:id="@+id/photoImageView"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp" />
+            <TextView
+                android:id="@+id/recipeNameTextView"
+                android:layout_below="@id/photoImageView"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" 
+                android:layout_margin="2dp"/>
+            <TextView
+                android:id="@+id/recipeMissingIngredientsLabel"
+                android:layout_below="@id/recipeNameTextView"
+                android:text="Missing Ingredients: "
+                android:gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/recipeMissingIngredients"
+                android:layout_below="@id/recipeNameTextView"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</FrameLayout>
