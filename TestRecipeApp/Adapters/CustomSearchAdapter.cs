@@ -16,9 +16,9 @@ namespace TestRecipeApp.Adapters
     {
 
         private List<String> ingredients;
-        private IDataListener<string> listener;
+        private IDataListener listener;
 
-        public CustomSearchAdapter(IDataListener<string> listener)
+        public CustomSearchAdapter(IDataListener listener)
         {
             this.listener = listener;
             ingredients = new List<string>();

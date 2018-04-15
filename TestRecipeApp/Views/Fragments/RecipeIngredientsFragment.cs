@@ -41,7 +41,7 @@ namespace TestRecipeApp.Views.Fragments
             recipeId = bundle.GetString("Id");
             presenter = new ViewRecipePresenter(this);
             iAdapter = new IngredientsAdapter(this.Context);
-
+            ThreadPool.QueueUserWorkItem(o => presenter.getRecipeDetails(recipeId));
             // Create your fragment here
         }
 
@@ -49,14 +49,8 @@ namespace TestRecipeApp.Views.Fragments
         {
 
             View view = inflater.Inflate(Resource.Layout.RecipeIngredientsFragment, container, false);
-            ListView list = view.FindViewById<ListView>(Resource.Id.ingredientsListView);
-            
-            list.Adapter = iAdapter;
-           
-            ThreadPool.QueueUserWorkItem(o => presenter.getRecipeDetails(recipeId));
-            // Use this to return your custom view for this Fragment
-            // return inflater.Inflate(Resource.Layout.YourFragment, container, false);
-
+            ListView list = view.FindViewById<ListView>(Resource.Id.ingredientsListView);         
+            list.Adapter = iAdapter;                            
             return view;
         }
 
@@ -122,9 +116,6 @@ namespace TestRecipeApp.Views.Fragments
             this.NotifyDataSetChanged();
         }
 
-        public bool checkIfPopulated()
-        {
-            return ingredients.Count > 0;
-        }
+      
     }
 }

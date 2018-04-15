@@ -19,7 +19,7 @@ namespace TestRecipeApp.Views.Activities
 {
 
     
-    [Activity(Label = "Some ideas..")]
+    [Activity(ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
     public class LeftoverSearchResultsActivity : AppCompatActivity, ISearchResult
     {
         RecipeSearchPresenter presenter;
@@ -28,27 +28,34 @@ namespace TestRecipeApp.Views.Activities
         LeftoverResultsAdapter recyclerdAdapter;
         ProgressBar pb;
 
+        public void searchRecipeResults(List<KeywordSearchModel> m)
+        {
+            throw new NotImplementedException();
+        }
+
         public void searchResults(List<LeftoverSearchModel> m)
         {
             using (var handler = new Handler(Looper.MainLooper))
             {
                 handler.Post(() => {
                     
-                        recyclerdAdapter = new LeftoverResultsAdapter(m);
+                        recyclerdAdapter = new LeftoverResultsAdapter(m, this);
                         recyclerdAdapter.ItemClick += OnItemClick;
                         resultView.SetAdapter(recyclerdAdapter);
                         recyclerdAdapter.NotifyDataSetChanged();
-                        pb.Visibility = ViewStates.Gone;
-                    
-                   
+                        pb.Visibility = ViewStates.Gone;                                     
                 });
             }
                 
         }
+       
+
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+
+           
 
             SetContentView(Resource.Layout.ActivityLayoutLeftoverSearchResultsGrid);
             pb = FindViewById<ProgressBar>(Resource.Id.ProgressBar);
@@ -58,15 +65,15 @@ namespace TestRecipeApp.Views.Activities
             mLayoutManager = new GridLayoutManager(this, 2, GridLayoutManager.Vertical, false);
             resultView.SetLayoutManager(mLayoutManager);
 
-            IList<string> ing = Intent.GetStringArrayListExtra("Ingredients");
+            
             presenter = new RecipeSearchPresenter(this);
 
-            ThreadPool.QueueUserWorkItem(o => presenter.getLeftoverRecipes(ing));
-            
-            
-            
-            // Create your application here
-
+          
+                IList<string> ing = Intent.GetStringArrayListExtra("Ingredients");
+                ThreadPool.QueueUserWorkItem(o => presenter.getLeftoverRecipes(ing));
+           
+               
+ 
         }
 
         void OnItemClick(object sender, RecipeEventArgs args)

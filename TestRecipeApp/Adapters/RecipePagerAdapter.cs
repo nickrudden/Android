@@ -20,7 +20,7 @@ namespace TestRecipeApp.Adapters
     public class RecipePagerAdapter : FragmentPagerAdapter
     {
         private int tabbedItems = 3;
-        private string[] tabNames = { "Ingredients", "Steps", "Details" };
+        private string[] tabNames = { "Details", "Ingredients", "Steps" };
         
         Context theContext;
         string id;
@@ -39,13 +39,12 @@ namespace TestRecipeApp.Adapters
         {
             switch (position)
             {
-                case 0:
-                    Toast.MakeText(theContext, "IN  GetItem", ToastLength.Long).Show();
-                    return RecipeIngredientsFragment.newInstance(id);
+                case 0:              
+                    return RecipeDetailsFragment.newInstance(id);
                 case 1:
-                    return RecipeSearchFragment.newInstance();
-                case 2:
-                    return RecipeSearchFragment.newInstance();
+                    return RecipeIngredientsFragment.newInstance(id);
+                case 2:                   
+                    return RecipeStepsFragment.newInstance(id);
                 default:
                     return null;
             }

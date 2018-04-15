@@ -1,0 +1,1 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto"><!--    BUTTON PRESSED TRUE--><item android:state_pressed="true"><layer-list><item card_view:cardElevation="0dp" card_view:cardCornerRadius="8dp"></item></layer-list></item></selector>

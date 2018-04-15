@@ -37,7 +37,9 @@ namespace TestRecipeApp
 
             using (var wc = new WebClient())
             {
-                imageBytes = wc.DownloadData(url);
+
+
+                 imageBytes = wc.DownloadData(url);
             }
             return new MemoryStream(imageBytes);
         }

@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace TestRecipeApp.Utilites
 {
-    interface IDataListener<T>
+    interface IDataListener
     {
         void onSuccess(string position);
     }

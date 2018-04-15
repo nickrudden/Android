@@ -45,6 +45,19 @@ namespace TestRecipeApp.Presenter.RecipeSearchPresenter
             
         }
 
+        public void getRecipeResults(string text, string diet, string intolerances)
+        {
+            List<KeywordSearchModel> model = new List<KeywordSearchModel>();
+            try
+            {
+                context.searchRecipeResults(db.keywordSearch(text, 0, 100, diet, intolerances));
+            }
+            catch(Exception ex)
+            {
+
+            }
+        }
+
 
     }
 }

@@ -5,7 +5,5 @@
       android:width="@dimen/icon_size"
       android:height="@dimen/icon_size"
       >
-    
-  
   </item>
 </layer-list>

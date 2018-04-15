@@ -22,8 +22,8 @@ using TestRecipeApp.Utilites;
 
 namespace TestRecipeApp.Views.Activities
 {
-    [Activity(Label = "Leftover Ingredient Search")]
-    public class LeftoverSearchViewActivity : AppCompatActivity, ISearchView, IDataListener<string>
+    [Activity( ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
+    public class LeftoverSearchViewActivity : AppCompatActivity, ISearchView, IDataListener
     {
 
         
@@ -57,11 +57,14 @@ namespace TestRecipeApp.Views.Activities
             searchView.QueryTextSubmit += SearchView_QueryTextSubmit;
            
             searchView.SetIconifiedByDefault(false);
-            
+            makeInitialConnection();
          
         }
 
-        
+        private void makeInitialConnection()
+        {
+            ThreadPool.QueueUserWorkItem(o => presenter.connect());
+        }
 
         private void SearchView_QueryTextSubmit(object sender, SearchView.QueryTextSubmitEventArgs e)
         {
@@ -69,7 +72,6 @@ namespace TestRecipeApp.Views.Activities
             //Toast.MakeText(this, "helllooo", ToastLength.Long).Show();
             var intent = new Intent(this, typeof(LeftoverSearchResultsActivity));
             intent.PutStringArrayListExtra("Ingredients", selectedIngredients);
-            
             StartActivity(intent);
 
            

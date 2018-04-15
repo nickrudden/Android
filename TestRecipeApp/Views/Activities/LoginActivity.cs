@@ -5,19 +5,26 @@ using System.Text;
 using System.Threading;
 using Android.App;
 using Android.Content;
+using Android.Content.PM;
 using Android.OS;
 using Android.Preferences;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Java.Lang;
+using Java.Security;
 using TestRecipeApp.Presenter;
 using TestRecipeApp.Presenter.UserPresenter;
+using TestRecipeApp.Utilites;
 using TestRecipeApp.Views.Fragments;
+using Xamarin.Facebook;
+using Xamarin.Facebook.Login;
+using Xamarin.Facebook.Login.Widget;
 
 namespace TestRecipeApp.Views.Activities
 {
-    [Activity(Label = "ReciMe", MainLauncher =true)]
-    public class LoginActivity : Activity, ILoginView
+    [Activity(Label = "ReciMe", MainLauncher =true, ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
+    public class LoginActivity : Activity, ILoginView, IFacebookCallback
     {
 
         ISharedPreferences prefs; 
@@ -28,14 +35,23 @@ namespace TestRecipeApp.Views.Activities
         private UserPresenter presenter;
         private TextView textSuccess;
         private TextView textError;
+        private ICallbackManager callBackManager;
+        private MyProfileTracker mProfileTracker;
 
         //private UserPresenter presenter;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.ActivityLayoutLogin);
 
-                
+           
+          
+            SetContentView(Resource.Layout.ActivityLayoutLogin);
+            mProfileTracker = new MyProfileTracker();
+            LoginButton lb = FindViewById<LoginButton>(Resource.Id.login_button);
+            lb.SetReadPermissions("user_friends");
+            callBackManager = CallbackManagerFactory.Create();
+            lb.RegisterCallback(callBackManager, this);
+
             presenter = new UserPresenter(this);
             btnSignUp = FindViewById<Button>(Resource.Id.btnRegister);
             btnLoginIn = FindViewById<Button>(Resource.Id.btnSignIn);
@@ -132,6 +148,29 @@ namespace TestRecipeApp.Views.Activities
         public void signInError()
         {
             Toast.MakeText(this, "Error Logging in", ToastLength.Long).Show();
+        }
+
+        public void OnCancel()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void OnError(FacebookException error)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void OnSuccess(Java.Lang.Object result)
+        {
+            LoginResult loginResult = (LoginResult)result;
+            string userFacebookId = loginResult.AccessToken.UserId;
+            Toast.MakeText(this, userFacebookId, ToastLength.Long).Show();
+        }
+
+        protected override void OnActivityResult(int requestCode, [GeneratedEnum] Result resultCode, Intent data)
+        {
+            base.OnActivityResult(requestCode, resultCode, data);
+            callBackManager.OnActivityResult(requestCode, (int)resultCode, data);
         }
     }
 }

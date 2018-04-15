@@ -5,4 +5,18 @@
     <item name="android:windowEnterAnimation"> @anim/SlideUp </item>
     <item name="android:windowExitAnimation"> @anim/SlideRight </item>
   </style>
+  <style name="AppTheme" parent="Theme.AppCompat.Light">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/ForestGreen</item>
+    <item name="colorPrimaryDark">@color/DarkSlateGray</item>
+    <item name="colorAccent">@color/LightSeaGreen</item>
+    <item name="android:windowBackground">@color/PaleGreen</item>
+  </style>
+
+  <style name="PrimaryFlatButton" parent="Theme.AppCompat.Light">
+    <item name="android:gravity">center</item>
+    <item name="android:buttonStyle">@style/Widget.AppCompat.Button.Borderless.Colored</item>
+    <item name="colorControlHighlight">@color/LightSeaGreen</item>
+    <item name="colorAccent">@color/ForestGreen</item>
+  </style>
 </resources>

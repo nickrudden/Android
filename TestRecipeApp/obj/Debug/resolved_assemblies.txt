@@ -1,4 +1,7 @@
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\android\assets\TestRecipeApp.dll
+C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\android\assets\Bolts.AppLinks.dll
+C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\android\assets\Bolts.Tasks.dll
+C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\android\assets\Google.ZXing.Core.dll
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\android\assets\Java.Interop.dll
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\android\assets\Microsoft.CSharp.dll
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\android\assets\Microsoft.Threading.Tasks.dll
@@ -7,6 +10,9 @@ C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\android\assets
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\android\assets\mscorlib.dll
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\android\assets\Newtonsoft.Json.dll
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\android\assets\RecipeClassLibrary.dll
+C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\android\assets\Square.OkHttp.dll
+C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\android\assets\Square.OkIO.dll
+C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\android\assets\Square.Picasso.dll
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\android\assets\System.Core.dll
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\android\assets\System.dll
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\android\assets\System.IO.Compression.dll
@@ -23,6 +29,7 @@ C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\android\assets
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\android\assets\Xamarin.Android.Support.Compat.dll
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\android\assets\Xamarin.Android.Support.Core.UI.dll
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\android\assets\Xamarin.Android.Support.Core.Utils.dll
+C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\android\assets\Xamarin.Android.Support.CustomTabs.dll
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\android\assets\Xamarin.Android.Support.Design.dll
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\android\assets\Xamarin.Android.Support.Fragment.dll
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\android\assets\Xamarin.Android.Support.Media.Compat.dll
@@ -34,6 +41,7 @@ C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\android\assets
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\android\assets\Xamarin.Android.Support.v7.Palette.dll
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\android\assets\Xamarin.Android.Support.v7.RecyclerView.dll
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\android\assets\Xamarin.Android.Support.Vector.Drawable.dll
+C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\android\assets\Xamarin.Facebook.dll
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\android\assets\System.Threading.dll
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\android\assets\System.Collections.dll
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\android\assets\System.Collections.Concurrent.dll

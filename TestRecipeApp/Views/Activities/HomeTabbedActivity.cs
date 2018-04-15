@@ -18,15 +18,17 @@ using TestRecipeApp.Adapters;
 using TestRecipeApp.Views.Fragments;
 namespace TestRecipeApp.Views.Activities
 {
-    [Activity(Label = "ReciMe")]
+    [Activity(Label = "ReciMe", ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
     public class HomeTabbedActivity : AppCompatActivity
     {
         FragmentPagerAdapter adapterPager;
 
+
+        List<string> checkedIds;
         
         protected override void OnCreate(Bundle savedInstanceState)
         {
-            
+            checkedIds = new List<string>();
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.ActivityLayoutHomeTabbed);
             //Set view to layout containing a frame layout filling page.
@@ -40,8 +42,12 @@ namespace TestRecipeApp.Views.Activities
             // Create your application here
         }
 
+        public void checkboxClick(View view)
+        {
 
-        
+        }
+
+
 
     }
 }

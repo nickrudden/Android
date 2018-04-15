@@ -1,1 +1,1 @@
-<resources><dimen name="icon_size">46dp</dimen></resources>
+<resources><dimen name="icon_size">46dp</dimen><dimen name="small_icon"> 11dp</dimen><dimen name="large_icon"> 21dp</dimen></resources>

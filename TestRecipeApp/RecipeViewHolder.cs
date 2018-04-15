@@ -27,7 +27,7 @@ namespace TestRecipeApp
         {
             this.Photo = itemView.FindViewById<ImageView>(Resource.Id.photoImageView);
             this.Title = itemView.FindViewById<TextView>(Resource.Id.recipeNameTextView);
-            this.MissedIngredients = itemView.FindViewById<TextView>(Resource.Id.recipeMissingIngredients);
+            
             //Set item click on viewholder and called listerners click method
             itemView.Click += (sender, e) => listener.OnClick(base.LayoutPosition);
          

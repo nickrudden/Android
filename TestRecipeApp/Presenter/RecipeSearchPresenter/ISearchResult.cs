@@ -16,7 +16,9 @@ namespace TestRecipeApp.Presenter.RecipeSearchPresenter
     interface ISearchResult
     {
          void searchResults(List<LeftoverSearchModel> m);
-         
-            
+        void searchRecipeResults(List<KeywordSearchModel> m);
+
+
+
     }
 }

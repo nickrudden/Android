@@ -12,6 +12,7 @@ using Android.Views;
 using Android.Widget;
 using Java.Lang;
 using RecipeClassLibrary.Models;
+using Square.Picasso;
 using TestRecipeApp.Utilites;
 
 namespace TestRecipeApp.Adapters
@@ -31,22 +32,29 @@ namespace TestRecipeApp.Adapters
     public class LeftoverResultsAdapter : RecyclerView.Adapter, IClickListener
     {
         public List<LeftoverSearchModel> recipes;
+        
+        string type = "";
+
         public event EventHandler<RecipeEventArgs> ItemClick;
-      
-        public LeftoverResultsAdapter(List<LeftoverSearchModel> list)
+        Context context;
+        public LeftoverResultsAdapter(List<LeftoverSearchModel> list, Context con)
        {
            this.recipes = list;
+            context = con;
+           
        }
 
+        
         public override int ItemCount => recipes.Count;
 
 
         public override void OnBindViewHolder(RecyclerView.ViewHolder holder, int position)
         {
             RecipeViewHolder h = (RecipeViewHolder)holder;
-            h.Photo.SetImageDrawable(ImageManager.Get(recipes[position].Image));
+            Picasso.With(context).Load(recipes[position].Image).Into(h.Photo);
+            //h.Photo.SetImageDrawable(ImageManager.Get(recipes[position].Image));
             h.Title.Text = recipes[position].Title;
-            h.MissedIngredients.Text = recipes[position].UsedIngredientCount.ToString();
+           
         }
 
         public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)

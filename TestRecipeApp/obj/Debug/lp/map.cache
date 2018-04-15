@@ -1,7 +1,13 @@
+Bolts.AppLinks
+Bolts.Tasks
+Google.ZXing.Core
 Microsoft.Threading.Tasks
 Microsoft.Threading.Tasks.Extensions
 Newtonsoft.Json
 RecipeClassLibrary
+Square.OkHttp
+Square.OkIO
+Square.Picasso
 System.Net.Http.Extensions
 System.Net.Http.Primitives
 System.Runtime
@@ -14,6 +20,7 @@ Xamarin.Android.Support.Annotations
 Xamarin.Android.Support.Compat
 Xamarin.Android.Support.Core.UI
 Xamarin.Android.Support.Core.Utils
+Xamarin.Android.Support.CustomTabs
 Xamarin.Android.Support.Design
 Xamarin.Android.Support.Fragment
 Xamarin.Android.Support.Media.Compat
@@ -25,3 +32,4 @@ Xamarin.Android.Support.v7.MediaRouter
 Xamarin.Android.Support.v7.Palette
 Xamarin.Android.Support.v7.RecyclerView
 Xamarin.Android.Support.Vector.Drawable
+Xamarin.Facebook

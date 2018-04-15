@@ -36,6 +36,25 @@ namespace TestRecipeApp.Presenter.SearchPresenter
             }         
             view.updateSearchView(results);
         }
+
+        public void UpdateRecipeSearchItems(string keywords)
+        {
+            List<string> results = new List<string>();
+            List<DropdownRecipe> model = db.getDropdownRecipes(keywords);
+            foreach (var item in model)
+            {
+                results.Add(item.Title);
+            }
+
+            view.updateSearchView(results);
+        }
+
+        public void connect()
+        {
+            db.leftOverSearch("Hello");
+        }
+
+
         
     }
 }

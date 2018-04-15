@@ -107,10 +107,16 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "TestRecipeApp.dll" comes first in this list. */
 		"TestRecipeApp.dll",
+		"Bolts.AppLinks.dll",
+		"Bolts.Tasks.dll",
+		"Google.ZXing.Core.dll",
 		"Microsoft.Threading.Tasks.dll",
 		"Microsoft.Threading.Tasks.Extensions.dll",
 		"Newtonsoft.Json.dll",
 		"RecipeClassLibrary.dll",
+		"Square.OkHttp.dll",
+		"Square.OkIO.dll",
+		"Square.Picasso.dll",
 		"System.Net.Http.Extensions.dll",
 		"System.Net.Http.Primitives.dll",
 		"unirest-net.dll",
@@ -122,6 +128,7 @@ class MonoPackageManager_Resources {
 		"Xamarin.Android.Support.Compat.dll",
 		"Xamarin.Android.Support.Core.UI.dll",
 		"Xamarin.Android.Support.Core.Utils.dll",
+		"Xamarin.Android.Support.CustomTabs.dll",
 		"Xamarin.Android.Support.Design.dll",
 		"Xamarin.Android.Support.Fragment.dll",
 		"Xamarin.Android.Support.Media.Compat.dll",
@@ -133,6 +140,7 @@ class MonoPackageManager_Resources {
 		"Xamarin.Android.Support.v7.Palette.dll",
 		"Xamarin.Android.Support.v7.RecyclerView.dll",
 		"Xamarin.Android.Support.Vector.Drawable.dll",
+		"Xamarin.Facebook.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

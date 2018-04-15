@@ -16,23 +16,24 @@ using RecipeClassLibrary.Models;
 using TestRecipeApp.Adapters;
 using TestRecipeApp.Presenter.RecipeSearchPresenter;
 using TestRecipeApp.Presenter.ViewRecipePresenter;
+using static Android.Widget.ImageView;
 
 namespace TestRecipeApp.Views.Activities
 {
-    [Activity(Label = "ViewRecipeActivity")]
+    [Activity(ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
     public class ViewRecipeActivity : AppCompatActivity
     {
         ViewPager vp;
         TabLayout tabs;
         ImageView RecipeImageView;
-        Button FavouriteButton;
-        Button ReviewButton;
+        ImageView FavouriteButton;
+        ImageView ReviewButton;
         ProgressBar pb;
         string photoUrl;
         
         
         RecipePagerAdapter pagerAdapter;
-      
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             string recipeId = Intent.GetStringExtra("Recipe");
@@ -40,29 +41,32 @@ namespace TestRecipeApp.Views.Activities
             if (String.IsNullOrEmpty(recipeId))
                 Finish();
 
-          
+
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.ActivityLayoutViewRecipe);
 
             pb = FindViewById<ProgressBar>(Resource.Id.ProgressBar);
             RecipeImageView = FindViewById<ImageView>(Resource.Id.RecipeImage);
-
+            RecipeImageView.SetScaleType(ScaleType.FitXy);
             vp = FindViewById<ViewPager>(Resource.Id.vpPager);
-            pagerAdapter = new RecipePagerAdapter(this, SupportFragmentManager ,recipeId);
+            pagerAdapter = new RecipePagerAdapter(this, SupportFragmentManager, recipeId);
             Toast.MakeText(this, "ID is " + recipeId, ToastLength.Long).Show();
             vp.Adapter = pagerAdapter;
-            tabs =  (TabLayout)(FindViewById(Resource.Id.sliding_tabs));
+            tabs = (TabLayout)(FindViewById(Resource.Id.sliding_tabs));
             tabs.SetupWithViewPager(vp);
-            pb.Visibility = ViewStates.Gone;
+           
             RecipeImageView.SetImageDrawable(ImageManager.Get(photoUrl));
-            
+            pb.Visibility = ViewStates.Gone;
+
+            FavouriteButton = FindViewById<ImageView>(Resource.Id.Favourite);
+            FavouriteButton.Click += FavouriteButton_Click;
 
         }
 
-
-
-
-
-        
+        private void FavouriteButton_Click(object sender, EventArgs e)
+        {
+            Toast.MakeText(this, "Hello...", ToastLength.Short).Show();
+            FavouriteButton.SetImageResource(Resource.Drawable.GoldHeartIcon);
+        }
     }
 }
