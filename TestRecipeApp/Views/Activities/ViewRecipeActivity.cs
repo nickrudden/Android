@@ -6,6 +6,7 @@ using System.Threading;
 using Android.App;
 using Android.Content;
 using Android.OS;
+using Android.Preferences;
 using Android.Runtime;
 using Android.Support.Design.Widget;
 using Android.Support.V4.View;
@@ -14,6 +15,8 @@ using Android.Views;
 using Android.Widget;
 using RecipeClassLibrary.Models;
 using TestRecipeApp.Adapters;
+using TestRecipeApp.Presenter;
+using TestRecipeApp.Presenter.RecipeInteractionPresenter;
 using TestRecipeApp.Presenter.RecipeSearchPresenter;
 using TestRecipeApp.Presenter.ViewRecipePresenter;
 using static Android.Widget.ImageView;
@@ -21,7 +24,7 @@ using static Android.Widget.ImageView;
 namespace TestRecipeApp.Views.Activities
 {
     [Activity(ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
-    public class ViewRecipeActivity : AppCompatActivity
+    public class ViewRecipeActivity : AppCompatActivity , IViewRecipeEvents
     {
         ViewPager vp;
         TabLayout tabs;
@@ -29,10 +32,15 @@ namespace TestRecipeApp.Views.Activities
         ImageView FavouriteButton;
         ImageView ReviewButton;
         ProgressBar pb;
+
+        bool facebook;
         string photoUrl;
-        
-        
+        string currentRecipe;
+        bool loggedIn;
+        RecipeInteractionPresenter presenter;
         RecipePagerAdapter pagerAdapter;
+        ISharedPreferences prefs;
+
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -41,10 +49,13 @@ namespace TestRecipeApp.Views.Activities
             if (String.IsNullOrEmpty(recipeId))
                 Finish();
 
+             prefs  = PreferenceManager.GetDefaultSharedPreferences(this);
 
+            currentRecipe = recipeId;
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.ActivityLayoutViewRecipe);
 
+            presenter = new RecipeInteractionPresenter(this);
             pb = FindViewById<ProgressBar>(Resource.Id.ProgressBar);
             RecipeImageView = FindViewById<ImageView>(Resource.Id.RecipeImage);
             RecipeImageView.SetScaleType(ScaleType.FitXy);
@@ -58,6 +69,9 @@ namespace TestRecipeApp.Views.Activities
             RecipeImageView.SetImageDrawable(ImageManager.Get(photoUrl));
             pb.Visibility = ViewStates.Gone;
 
+        
+            loggedIn = prefs.GetBoolean("loggedIn", false);
+            
             FavouriteButton = FindViewById<ImageView>(Resource.Id.Favourite);
             FavouriteButton.Click += FavouriteButton_Click;
 
@@ -66,7 +80,33 @@ namespace TestRecipeApp.Views.Activities
         private void FavouriteButton_Click(object sender, EventArgs e)
         {
             Toast.MakeText(this, "Hello...", ToastLength.Short).Show();
-            FavouriteButton.SetImageResource(Resource.Drawable.GoldHeartIcon);
+            if (!loggedIn)
+            {
+                Toast.MakeText(this, "Not logged in...", ToastLength.Short).Show();
+                return;
+            }
+
+            facebook = prefs.GetBoolean("facebook", false);
+            if (facebook)
+            {
+                string fbId = prefs.GetString("fbId", "0");
+                ThreadPool.QueueUserWorkItem(o => presenter.saveRecipeClick(this, currentRecipe, fbId));
+            }
+            else
+            {
+                int uId = prefs.GetInt("uId", 0);
+                ThreadPool.QueueUserWorkItem(o => presenter.saveRecipeClick(this, currentRecipe, uId));
+            }
+        }
+
+        public void recipeSaveSuccess(bool success)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void confirmReview()
+        {
+            throw new NotImplementedException();
         }
     }
 }

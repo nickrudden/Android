@@ -2,7 +2,7 @@
 <xs:schema xmlns:app="http://schemas.android.com/apk/res-auto" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res-auto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v24</xs:documentation>
-    <xs:documentation>13/04/2018 17:16:18</xs:documentation>
+    <xs:documentation>09/05/2018 16:53:50</xs:documentation>
   </xs:annotation>
   <xs:attribute name="allowStacking">
     <xs:annotation>
@@ -1590,6 +1590,8 @@
             <xs:enumeration value="@drawable/goldheart" />
             <xs:enumeration value="@drawable/goldhearticon" />
             <xs:enumeration value="@drawable/gradientbackground" />
+            <xs:enumeration value="@drawable/guesticon" />
+            <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
             <xs:enumeration value="@drawable/homepagelogo" />
@@ -1771,7 +1773,6 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
-            <xs:enumeration value="@drawable/mail_icon" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
@@ -1822,6 +1823,8 @@
             <xs:enumeration value="@drawable/reviewicon" />
             <xs:enumeration value="@drawable/roundedcornertops" />
             <xs:enumeration value="@drawable/searchimager" />
+            <xs:enumeration value="@drawable/signin" />
+            <xs:enumeration value="@drawable/signinxml" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -2344,6 +2347,8 @@
             <xs:enumeration value="@drawable/goldheart" />
             <xs:enumeration value="@drawable/goldhearticon" />
             <xs:enumeration value="@drawable/gradientbackground" />
+            <xs:enumeration value="@drawable/guesticon" />
+            <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
             <xs:enumeration value="@drawable/homepagelogo" />
@@ -2525,7 +2530,6 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
-            <xs:enumeration value="@drawable/mail_icon" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
@@ -2576,6 +2580,8 @@
             <xs:enumeration value="@drawable/reviewicon" />
             <xs:enumeration value="@drawable/roundedcornertops" />
             <xs:enumeration value="@drawable/searchimager" />
+            <xs:enumeration value="@drawable/signin" />
+            <xs:enumeration value="@drawable/signinxml" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -2945,6 +2951,8 @@
             <xs:enumeration value="@drawable/goldheart" />
             <xs:enumeration value="@drawable/goldhearticon" />
             <xs:enumeration value="@drawable/gradientbackground" />
+            <xs:enumeration value="@drawable/guesticon" />
+            <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
             <xs:enumeration value="@drawable/homepagelogo" />
@@ -3126,7 +3134,6 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
-            <xs:enumeration value="@drawable/mail_icon" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
@@ -3177,6 +3184,8 @@
             <xs:enumeration value="@drawable/reviewicon" />
             <xs:enumeration value="@drawable/roundedcornertops" />
             <xs:enumeration value="@drawable/searchimager" />
+            <xs:enumeration value="@drawable/signin" />
+            <xs:enumeration value="@drawable/signinxml" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -3546,6 +3555,8 @@
             <xs:enumeration value="@drawable/goldheart" />
             <xs:enumeration value="@drawable/goldhearticon" />
             <xs:enumeration value="@drawable/gradientbackground" />
+            <xs:enumeration value="@drawable/guesticon" />
+            <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
             <xs:enumeration value="@drawable/homepagelogo" />
@@ -3727,7 +3738,6 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
-            <xs:enumeration value="@drawable/mail_icon" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
@@ -3778,6 +3788,8 @@
             <xs:enumeration value="@drawable/reviewicon" />
             <xs:enumeration value="@drawable/roundedcornertops" />
             <xs:enumeration value="@drawable/searchimager" />
+            <xs:enumeration value="@drawable/signin" />
+            <xs:enumeration value="@drawable/signinxml" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -7105,6 +7117,8 @@
             <xs:enumeration value="@drawable/goldheart" />
             <xs:enumeration value="@drawable/goldhearticon" />
             <xs:enumeration value="@drawable/gradientbackground" />
+            <xs:enumeration value="@drawable/guesticon" />
+            <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
             <xs:enumeration value="@drawable/homepagelogo" />
@@ -7286,7 +7300,6 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
-            <xs:enumeration value="@drawable/mail_icon" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
@@ -7337,6 +7350,8 @@
             <xs:enumeration value="@drawable/reviewicon" />
             <xs:enumeration value="@drawable/roundedcornertops" />
             <xs:enumeration value="@drawable/searchimager" />
+            <xs:enumeration value="@drawable/signin" />
+            <xs:enumeration value="@drawable/signinxml" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -7706,6 +7721,8 @@
             <xs:enumeration value="@drawable/goldheart" />
             <xs:enumeration value="@drawable/goldhearticon" />
             <xs:enumeration value="@drawable/gradientbackground" />
+            <xs:enumeration value="@drawable/guesticon" />
+            <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
             <xs:enumeration value="@drawable/homepagelogo" />
@@ -7887,7 +7904,6 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
-            <xs:enumeration value="@drawable/mail_icon" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
@@ -7938,6 +7954,8 @@
             <xs:enumeration value="@drawable/reviewicon" />
             <xs:enumeration value="@drawable/roundedcornertops" />
             <xs:enumeration value="@drawable/searchimager" />
+            <xs:enumeration value="@drawable/signin" />
+            <xs:enumeration value="@drawable/signinxml" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -8437,6 +8455,8 @@
             <xs:enumeration value="@drawable/goldheart" />
             <xs:enumeration value="@drawable/goldhearticon" />
             <xs:enumeration value="@drawable/gradientbackground" />
+            <xs:enumeration value="@drawable/guesticon" />
+            <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
             <xs:enumeration value="@drawable/homepagelogo" />
@@ -8618,7 +8638,6 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
-            <xs:enumeration value="@drawable/mail_icon" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
@@ -8669,6 +8688,8 @@
             <xs:enumeration value="@drawable/reviewicon" />
             <xs:enumeration value="@drawable/roundedcornertops" />
             <xs:enumeration value="@drawable/searchimager" />
+            <xs:enumeration value="@drawable/signin" />
+            <xs:enumeration value="@drawable/signinxml" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -9325,6 +9346,8 @@
             <xs:enumeration value="@drawable/goldheart" />
             <xs:enumeration value="@drawable/goldhearticon" />
             <xs:enumeration value="@drawable/gradientbackground" />
+            <xs:enumeration value="@drawable/guesticon" />
+            <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
             <xs:enumeration value="@drawable/homepagelogo" />
@@ -9506,7 +9529,6 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
-            <xs:enumeration value="@drawable/mail_icon" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
@@ -9557,6 +9579,8 @@
             <xs:enumeration value="@drawable/reviewicon" />
             <xs:enumeration value="@drawable/roundedcornertops" />
             <xs:enumeration value="@drawable/searchimager" />
+            <xs:enumeration value="@drawable/signin" />
+            <xs:enumeration value="@drawable/signinxml" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -9926,6 +9950,8 @@
             <xs:enumeration value="@drawable/goldheart" />
             <xs:enumeration value="@drawable/goldhearticon" />
             <xs:enumeration value="@drawable/gradientbackground" />
+            <xs:enumeration value="@drawable/guesticon" />
+            <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
             <xs:enumeration value="@drawable/homepagelogo" />
@@ -10107,7 +10133,6 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
-            <xs:enumeration value="@drawable/mail_icon" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
@@ -10158,6 +10183,8 @@
             <xs:enumeration value="@drawable/reviewicon" />
             <xs:enumeration value="@drawable/roundedcornertops" />
             <xs:enumeration value="@drawable/searchimager" />
+            <xs:enumeration value="@drawable/signin" />
+            <xs:enumeration value="@drawable/signinxml" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -11745,6 +11772,8 @@
             <xs:enumeration value="@drawable/goldheart" />
             <xs:enumeration value="@drawable/goldhearticon" />
             <xs:enumeration value="@drawable/gradientbackground" />
+            <xs:enumeration value="@drawable/guesticon" />
+            <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
             <xs:enumeration value="@drawable/homepagelogo" />
@@ -11926,7 +11955,6 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
-            <xs:enumeration value="@drawable/mail_icon" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
@@ -11977,6 +12005,8 @@
             <xs:enumeration value="@drawable/reviewicon" />
             <xs:enumeration value="@drawable/roundedcornertops" />
             <xs:enumeration value="@drawable/searchimager" />
+            <xs:enumeration value="@drawable/signin" />
+            <xs:enumeration value="@drawable/signinxml" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -12346,6 +12376,8 @@
             <xs:enumeration value="@drawable/goldheart" />
             <xs:enumeration value="@drawable/goldhearticon" />
             <xs:enumeration value="@drawable/gradientbackground" />
+            <xs:enumeration value="@drawable/guesticon" />
+            <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
             <xs:enumeration value="@drawable/homepagelogo" />
@@ -12527,7 +12559,6 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
-            <xs:enumeration value="@drawable/mail_icon" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
@@ -12578,6 +12609,8 @@
             <xs:enumeration value="@drawable/reviewicon" />
             <xs:enumeration value="@drawable/roundedcornertops" />
             <xs:enumeration value="@drawable/searchimager" />
+            <xs:enumeration value="@drawable/signin" />
+            <xs:enumeration value="@drawable/signinxml" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -13008,6 +13041,8 @@
             <xs:enumeration value="@drawable/goldheart" />
             <xs:enumeration value="@drawable/goldhearticon" />
             <xs:enumeration value="@drawable/gradientbackground" />
+            <xs:enumeration value="@drawable/guesticon" />
+            <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
             <xs:enumeration value="@drawable/homepagelogo" />
@@ -13189,7 +13224,6 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
-            <xs:enumeration value="@drawable/mail_icon" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
@@ -13240,6 +13274,8 @@
             <xs:enumeration value="@drawable/reviewicon" />
             <xs:enumeration value="@drawable/roundedcornertops" />
             <xs:enumeration value="@drawable/searchimager" />
+            <xs:enumeration value="@drawable/signin" />
+            <xs:enumeration value="@drawable/signinxml" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -13609,6 +13645,8 @@
             <xs:enumeration value="@drawable/goldheart" />
             <xs:enumeration value="@drawable/goldhearticon" />
             <xs:enumeration value="@drawable/gradientbackground" />
+            <xs:enumeration value="@drawable/guesticon" />
+            <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
             <xs:enumeration value="@drawable/homepagelogo" />
@@ -13790,7 +13828,6 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
-            <xs:enumeration value="@drawable/mail_icon" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
@@ -13841,6 +13878,8 @@
             <xs:enumeration value="@drawable/reviewicon" />
             <xs:enumeration value="@drawable/roundedcornertops" />
             <xs:enumeration value="@drawable/searchimager" />
+            <xs:enumeration value="@drawable/signin" />
+            <xs:enumeration value="@drawable/signinxml" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -14210,6 +14249,8 @@
             <xs:enumeration value="@drawable/goldheart" />
             <xs:enumeration value="@drawable/goldhearticon" />
             <xs:enumeration value="@drawable/gradientbackground" />
+            <xs:enumeration value="@drawable/guesticon" />
+            <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
             <xs:enumeration value="@drawable/homepagelogo" />
@@ -14391,7 +14432,6 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
-            <xs:enumeration value="@drawable/mail_icon" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
@@ -14442,6 +14482,8 @@
             <xs:enumeration value="@drawable/reviewicon" />
             <xs:enumeration value="@drawable/roundedcornertops" />
             <xs:enumeration value="@drawable/searchimager" />
+            <xs:enumeration value="@drawable/signin" />
+            <xs:enumeration value="@drawable/signinxml" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -14811,6 +14853,8 @@
             <xs:enumeration value="@drawable/goldheart" />
             <xs:enumeration value="@drawable/goldhearticon" />
             <xs:enumeration value="@drawable/gradientbackground" />
+            <xs:enumeration value="@drawable/guesticon" />
+            <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
             <xs:enumeration value="@drawable/homepagelogo" />
@@ -14992,7 +15036,6 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
-            <xs:enumeration value="@drawable/mail_icon" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
@@ -15043,6 +15086,8 @@
             <xs:enumeration value="@drawable/reviewicon" />
             <xs:enumeration value="@drawable/roundedcornertops" />
             <xs:enumeration value="@drawable/searchimager" />
+            <xs:enumeration value="@drawable/signin" />
+            <xs:enumeration value="@drawable/signinxml" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -15457,6 +15502,8 @@
             <xs:enumeration value="@drawable/goldheart" />
             <xs:enumeration value="@drawable/goldhearticon" />
             <xs:enumeration value="@drawable/gradientbackground" />
+            <xs:enumeration value="@drawable/guesticon" />
+            <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
             <xs:enumeration value="@drawable/homepagelogo" />
@@ -15638,7 +15685,6 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
-            <xs:enumeration value="@drawable/mail_icon" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
@@ -15689,6 +15735,8 @@
             <xs:enumeration value="@drawable/reviewicon" />
             <xs:enumeration value="@drawable/roundedcornertops" />
             <xs:enumeration value="@drawable/searchimager" />
+            <xs:enumeration value="@drawable/signin" />
+            <xs:enumeration value="@drawable/signinxml" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -16058,6 +16106,8 @@
             <xs:enumeration value="@drawable/goldheart" />
             <xs:enumeration value="@drawable/goldhearticon" />
             <xs:enumeration value="@drawable/gradientbackground" />
+            <xs:enumeration value="@drawable/guesticon" />
+            <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
             <xs:enumeration value="@drawable/homepagelogo" />
@@ -16239,7 +16289,6 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
-            <xs:enumeration value="@drawable/mail_icon" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
@@ -16290,6 +16339,8 @@
             <xs:enumeration value="@drawable/reviewicon" />
             <xs:enumeration value="@drawable/roundedcornertops" />
             <xs:enumeration value="@drawable/searchimager" />
+            <xs:enumeration value="@drawable/signin" />
+            <xs:enumeration value="@drawable/signinxml" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -16749,6 +16800,8 @@
             <xs:enumeration value="@drawable/goldheart" />
             <xs:enumeration value="@drawable/goldhearticon" />
             <xs:enumeration value="@drawable/gradientbackground" />
+            <xs:enumeration value="@drawable/guesticon" />
+            <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
             <xs:enumeration value="@drawable/homepagelogo" />
@@ -16930,7 +16983,6 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
-            <xs:enumeration value="@drawable/mail_icon" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
@@ -16981,6 +17033,8 @@
             <xs:enumeration value="@drawable/reviewicon" />
             <xs:enumeration value="@drawable/roundedcornertops" />
             <xs:enumeration value="@drawable/searchimager" />
+            <xs:enumeration value="@drawable/signin" />
+            <xs:enumeration value="@drawable/signinxml" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -17786,6 +17840,8 @@
             <xs:enumeration value="@drawable/goldheart" />
             <xs:enumeration value="@drawable/goldhearticon" />
             <xs:enumeration value="@drawable/gradientbackground" />
+            <xs:enumeration value="@drawable/guesticon" />
+            <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
             <xs:enumeration value="@drawable/homepagelogo" />
@@ -17967,7 +18023,6 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
-            <xs:enumeration value="@drawable/mail_icon" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
@@ -18018,6 +18073,8 @@
             <xs:enumeration value="@drawable/reviewicon" />
             <xs:enumeration value="@drawable/roundedcornertops" />
             <xs:enumeration value="@drawable/searchimager" />
+            <xs:enumeration value="@drawable/signin" />
+            <xs:enumeration value="@drawable/signinxml" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -18465,6 +18522,8 @@
             <xs:enumeration value="@drawable/goldheart" />
             <xs:enumeration value="@drawable/goldhearticon" />
             <xs:enumeration value="@drawable/gradientbackground" />
+            <xs:enumeration value="@drawable/guesticon" />
+            <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
             <xs:enumeration value="@drawable/homepagelogo" />
@@ -18646,7 +18705,6 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
-            <xs:enumeration value="@drawable/mail_icon" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
@@ -18697,6 +18755,8 @@
             <xs:enumeration value="@drawable/reviewicon" />
             <xs:enumeration value="@drawable/roundedcornertops" />
             <xs:enumeration value="@drawable/searchimager" />
+            <xs:enumeration value="@drawable/signin" />
+            <xs:enumeration value="@drawable/signinxml" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -19418,6 +19478,8 @@
             <xs:enumeration value="@drawable/goldheart" />
             <xs:enumeration value="@drawable/goldhearticon" />
             <xs:enumeration value="@drawable/gradientbackground" />
+            <xs:enumeration value="@drawable/guesticon" />
+            <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
             <xs:enumeration value="@drawable/homepagelogo" />
@@ -19599,7 +19661,6 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
-            <xs:enumeration value="@drawable/mail_icon" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
@@ -19650,6 +19711,8 @@
             <xs:enumeration value="@drawable/reviewicon" />
             <xs:enumeration value="@drawable/roundedcornertops" />
             <xs:enumeration value="@drawable/searchimager" />
+            <xs:enumeration value="@drawable/signin" />
+            <xs:enumeration value="@drawable/signinxml" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -20371,6 +20434,8 @@
             <xs:enumeration value="@drawable/goldheart" />
             <xs:enumeration value="@drawable/goldhearticon" />
             <xs:enumeration value="@drawable/gradientbackground" />
+            <xs:enumeration value="@drawable/guesticon" />
+            <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
             <xs:enumeration value="@drawable/homepagelogo" />
@@ -20552,7 +20617,6 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
-            <xs:enumeration value="@drawable/mail_icon" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
@@ -20603,6 +20667,8 @@
             <xs:enumeration value="@drawable/reviewicon" />
             <xs:enumeration value="@drawable/roundedcornertops" />
             <xs:enumeration value="@drawable/searchimager" />
+            <xs:enumeration value="@drawable/signin" />
+            <xs:enumeration value="@drawable/signinxml" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -20972,6 +21038,8 @@
             <xs:enumeration value="@drawable/goldheart" />
             <xs:enumeration value="@drawable/goldhearticon" />
             <xs:enumeration value="@drawable/gradientbackground" />
+            <xs:enumeration value="@drawable/guesticon" />
+            <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
             <xs:enumeration value="@drawable/homepagelogo" />
@@ -21153,7 +21221,6 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
-            <xs:enumeration value="@drawable/mail_icon" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
@@ -21204,6 +21271,8 @@
             <xs:enumeration value="@drawable/reviewicon" />
             <xs:enumeration value="@drawable/roundedcornertops" />
             <xs:enumeration value="@drawable/searchimager" />
+            <xs:enumeration value="@drawable/signin" />
+            <xs:enumeration value="@drawable/signinxml" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -21703,6 +21772,8 @@
             <xs:enumeration value="@drawable/goldheart" />
             <xs:enumeration value="@drawable/goldhearticon" />
             <xs:enumeration value="@drawable/gradientbackground" />
+            <xs:enumeration value="@drawable/guesticon" />
+            <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
             <xs:enumeration value="@drawable/homepagelogo" />
@@ -21884,7 +21955,6 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
-            <xs:enumeration value="@drawable/mail_icon" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
@@ -21935,6 +22005,8 @@
             <xs:enumeration value="@drawable/reviewicon" />
             <xs:enumeration value="@drawable/roundedcornertops" />
             <xs:enumeration value="@drawable/searchimager" />
+            <xs:enumeration value="@drawable/signin" />
+            <xs:enumeration value="@drawable/signinxml" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -23291,6 +23363,8 @@
             <xs:enumeration value="@drawable/goldheart" />
             <xs:enumeration value="@drawable/goldhearticon" />
             <xs:enumeration value="@drawable/gradientbackground" />
+            <xs:enumeration value="@drawable/guesticon" />
+            <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
             <xs:enumeration value="@drawable/homepagelogo" />
@@ -23472,7 +23546,6 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
-            <xs:enumeration value="@drawable/mail_icon" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
@@ -23523,6 +23596,8 @@
             <xs:enumeration value="@drawable/reviewicon" />
             <xs:enumeration value="@drawable/roundedcornertops" />
             <xs:enumeration value="@drawable/searchimager" />
+            <xs:enumeration value="@drawable/signin" />
+            <xs:enumeration value="@drawable/signinxml" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -24022,6 +24097,8 @@
             <xs:enumeration value="@drawable/goldheart" />
             <xs:enumeration value="@drawable/goldhearticon" />
             <xs:enumeration value="@drawable/gradientbackground" />
+            <xs:enumeration value="@drawable/guesticon" />
+            <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
             <xs:enumeration value="@drawable/homepagelogo" />
@@ -24203,7 +24280,6 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
-            <xs:enumeration value="@drawable/mail_icon" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
@@ -24254,6 +24330,8 @@
             <xs:enumeration value="@drawable/reviewicon" />
             <xs:enumeration value="@drawable/roundedcornertops" />
             <xs:enumeration value="@drawable/searchimager" />
+            <xs:enumeration value="@drawable/signin" />
+            <xs:enumeration value="@drawable/signinxml" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -24753,6 +24831,8 @@
             <xs:enumeration value="@drawable/goldheart" />
             <xs:enumeration value="@drawable/goldhearticon" />
             <xs:enumeration value="@drawable/gradientbackground" />
+            <xs:enumeration value="@drawable/guesticon" />
+            <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
             <xs:enumeration value="@drawable/homepagelogo" />
@@ -24934,7 +25014,6 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
-            <xs:enumeration value="@drawable/mail_icon" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
@@ -24985,6 +25064,8 @@
             <xs:enumeration value="@drawable/reviewicon" />
             <xs:enumeration value="@drawable/roundedcornertops" />
             <xs:enumeration value="@drawable/searchimager" />
+            <xs:enumeration value="@drawable/signin" />
+            <xs:enumeration value="@drawable/signinxml" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -25769,6 +25850,8 @@
             <xs:enumeration value="@drawable/goldheart" />
             <xs:enumeration value="@drawable/goldhearticon" />
             <xs:enumeration value="@drawable/gradientbackground" />
+            <xs:enumeration value="@drawable/guesticon" />
+            <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
             <xs:enumeration value="@drawable/homepagelogo" />
@@ -25950,7 +26033,6 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
-            <xs:enumeration value="@drawable/mail_icon" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
@@ -26001,6 +26083,8 @@
             <xs:enumeration value="@drawable/reviewicon" />
             <xs:enumeration value="@drawable/roundedcornertops" />
             <xs:enumeration value="@drawable/searchimager" />
+            <xs:enumeration value="@drawable/signin" />
+            <xs:enumeration value="@drawable/signinxml" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -26600,6 +26684,8 @@
             <xs:enumeration value="@drawable/goldheart" />
             <xs:enumeration value="@drawable/goldhearticon" />
             <xs:enumeration value="@drawable/gradientbackground" />
+            <xs:enumeration value="@drawable/guesticon" />
+            <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
             <xs:enumeration value="@drawable/homepagelogo" />
@@ -26781,7 +26867,6 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
-            <xs:enumeration value="@drawable/mail_icon" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
@@ -26832,6 +26917,8 @@
             <xs:enumeration value="@drawable/reviewicon" />
             <xs:enumeration value="@drawable/roundedcornertops" />
             <xs:enumeration value="@drawable/searchimager" />
+            <xs:enumeration value="@drawable/signin" />
+            <xs:enumeration value="@drawable/signinxml" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -27989,6 +28076,8 @@
             <xs:enumeration value="@drawable/goldheart" />
             <xs:enumeration value="@drawable/goldhearticon" />
             <xs:enumeration value="@drawable/gradientbackground" />
+            <xs:enumeration value="@drawable/guesticon" />
+            <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
             <xs:enumeration value="@drawable/homepagelogo" />
@@ -28170,7 +28259,6 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
-            <xs:enumeration value="@drawable/mail_icon" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
@@ -28221,6 +28309,8 @@
             <xs:enumeration value="@drawable/reviewicon" />
             <xs:enumeration value="@drawable/roundedcornertops" />
             <xs:enumeration value="@drawable/searchimager" />
+            <xs:enumeration value="@drawable/signin" />
+            <xs:enumeration value="@drawable/signinxml" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -28590,6 +28680,8 @@
             <xs:enumeration value="@drawable/goldheart" />
             <xs:enumeration value="@drawable/goldhearticon" />
             <xs:enumeration value="@drawable/gradientbackground" />
+            <xs:enumeration value="@drawable/guesticon" />
+            <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
             <xs:enumeration value="@drawable/homepagelogo" />
@@ -28771,7 +28863,6 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
-            <xs:enumeration value="@drawable/mail_icon" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
@@ -28822,6 +28913,8 @@
             <xs:enumeration value="@drawable/reviewicon" />
             <xs:enumeration value="@drawable/roundedcornertops" />
             <xs:enumeration value="@drawable/searchimager" />
+            <xs:enumeration value="@drawable/signin" />
+            <xs:enumeration value="@drawable/signinxml" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -29374,6 +29467,8 @@
             <xs:enumeration value="@drawable/goldheart" />
             <xs:enumeration value="@drawable/goldhearticon" />
             <xs:enumeration value="@drawable/gradientbackground" />
+            <xs:enumeration value="@drawable/guesticon" />
+            <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
             <xs:enumeration value="@drawable/homepagelogo" />
@@ -29555,7 +29650,6 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
-            <xs:enumeration value="@drawable/mail_icon" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
@@ -29606,6 +29700,8 @@
             <xs:enumeration value="@drawable/reviewicon" />
             <xs:enumeration value="@drawable/roundedcornertops" />
             <xs:enumeration value="@drawable/searchimager" />
+            <xs:enumeration value="@drawable/signin" />
+            <xs:enumeration value="@drawable/signinxml" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -30327,6 +30423,8 @@
             <xs:enumeration value="@drawable/goldheart" />
             <xs:enumeration value="@drawable/goldhearticon" />
             <xs:enumeration value="@drawable/gradientbackground" />
+            <xs:enumeration value="@drawable/guesticon" />
+            <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
             <xs:enumeration value="@drawable/homepagelogo" />
@@ -30508,7 +30606,6 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
-            <xs:enumeration value="@drawable/mail_icon" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
@@ -30559,6 +30656,8 @@
             <xs:enumeration value="@drawable/reviewicon" />
             <xs:enumeration value="@drawable/roundedcornertops" />
             <xs:enumeration value="@drawable/searchimager" />
+            <xs:enumeration value="@drawable/signin" />
+            <xs:enumeration value="@drawable/signinxml" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -31058,6 +31157,8 @@
             <xs:enumeration value="@drawable/goldheart" />
             <xs:enumeration value="@drawable/goldhearticon" />
             <xs:enumeration value="@drawable/gradientbackground" />
+            <xs:enumeration value="@drawable/guesticon" />
+            <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
             <xs:enumeration value="@drawable/homepagelogo" />
@@ -31239,7 +31340,6 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
-            <xs:enumeration value="@drawable/mail_icon" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
@@ -31290,6 +31390,8 @@
             <xs:enumeration value="@drawable/reviewicon" />
             <xs:enumeration value="@drawable/roundedcornertops" />
             <xs:enumeration value="@drawable/searchimager" />
+            <xs:enumeration value="@drawable/signin" />
+            <xs:enumeration value="@drawable/signinxml" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -32011,6 +32113,8 @@
             <xs:enumeration value="@drawable/goldheart" />
             <xs:enumeration value="@drawable/goldhearticon" />
             <xs:enumeration value="@drawable/gradientbackground" />
+            <xs:enumeration value="@drawable/guesticon" />
+            <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
             <xs:enumeration value="@drawable/homepagelogo" />
@@ -32192,7 +32296,6 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
-            <xs:enumeration value="@drawable/mail_icon" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
@@ -32243,6 +32346,8 @@
             <xs:enumeration value="@drawable/reviewicon" />
             <xs:enumeration value="@drawable/roundedcornertops" />
             <xs:enumeration value="@drawable/searchimager" />
+            <xs:enumeration value="@drawable/signin" />
+            <xs:enumeration value="@drawable/signinxml" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -33072,6 +33177,8 @@
             <xs:enumeration value="@drawable/goldheart" />
             <xs:enumeration value="@drawable/goldhearticon" />
             <xs:enumeration value="@drawable/gradientbackground" />
+            <xs:enumeration value="@drawable/guesticon" />
+            <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
             <xs:enumeration value="@drawable/homepagelogo" />
@@ -33253,7 +33360,6 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
-            <xs:enumeration value="@drawable/mail_icon" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
@@ -33304,6 +33410,8 @@
             <xs:enumeration value="@drawable/reviewicon" />
             <xs:enumeration value="@drawable/roundedcornertops" />
             <xs:enumeration value="@drawable/searchimager" />
+            <xs:enumeration value="@drawable/signin" />
+            <xs:enumeration value="@drawable/signinxml" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -33673,6 +33781,8 @@
             <xs:enumeration value="@drawable/goldheart" />
             <xs:enumeration value="@drawable/goldhearticon" />
             <xs:enumeration value="@drawable/gradientbackground" />
+            <xs:enumeration value="@drawable/guesticon" />
+            <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
             <xs:enumeration value="@drawable/homepagelogo" />
@@ -33854,7 +33964,6 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
-            <xs:enumeration value="@drawable/mail_icon" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
@@ -33905,6 +34014,8 @@
             <xs:enumeration value="@drawable/reviewicon" />
             <xs:enumeration value="@drawable/roundedcornertops" />
             <xs:enumeration value="@drawable/searchimager" />
+            <xs:enumeration value="@drawable/signin" />
+            <xs:enumeration value="@drawable/signinxml" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -37078,6 +37189,8 @@
             <xs:enumeration value="@drawable/goldheart" />
             <xs:enumeration value="@drawable/goldhearticon" />
             <xs:enumeration value="@drawable/gradientbackground" />
+            <xs:enumeration value="@drawable/guesticon" />
+            <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
             <xs:enumeration value="@drawable/homepagelogo" />
@@ -37259,7 +37372,6 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
-            <xs:enumeration value="@drawable/mail_icon" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
@@ -37310,6 +37422,8 @@
             <xs:enumeration value="@drawable/reviewicon" />
             <xs:enumeration value="@drawable/roundedcornertops" />
             <xs:enumeration value="@drawable/searchimager" />
+            <xs:enumeration value="@drawable/signin" />
+            <xs:enumeration value="@drawable/signinxml" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -40069,6 +40183,8 @@
             <xs:enumeration value="@drawable/goldheart" />
             <xs:enumeration value="@drawable/goldhearticon" />
             <xs:enumeration value="@drawable/gradientbackground" />
+            <xs:enumeration value="@drawable/guesticon" />
+            <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
             <xs:enumeration value="@drawable/homepagelogo" />
@@ -40250,7 +40366,6 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
-            <xs:enumeration value="@drawable/mail_icon" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
@@ -40301,6 +40416,8 @@
             <xs:enumeration value="@drawable/reviewicon" />
             <xs:enumeration value="@drawable/roundedcornertops" />
             <xs:enumeration value="@drawable/searchimager" />
+            <xs:enumeration value="@drawable/signin" />
+            <xs:enumeration value="@drawable/signinxml" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -41022,6 +41139,8 @@
             <xs:enumeration value="@drawable/goldheart" />
             <xs:enumeration value="@drawable/goldhearticon" />
             <xs:enumeration value="@drawable/gradientbackground" />
+            <xs:enumeration value="@drawable/guesticon" />
+            <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
             <xs:enumeration value="@drawable/homepagelogo" />
@@ -41203,7 +41322,6 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
-            <xs:enumeration value="@drawable/mail_icon" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
@@ -41254,6 +41372,8 @@
             <xs:enumeration value="@drawable/reviewicon" />
             <xs:enumeration value="@drawable/roundedcornertops" />
             <xs:enumeration value="@drawable/searchimager" />
+            <xs:enumeration value="@drawable/signin" />
+            <xs:enumeration value="@drawable/signinxml" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -41623,6 +41743,8 @@
             <xs:enumeration value="@drawable/goldheart" />
             <xs:enumeration value="@drawable/goldhearticon" />
             <xs:enumeration value="@drawable/gradientbackground" />
+            <xs:enumeration value="@drawable/guesticon" />
+            <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
             <xs:enumeration value="@drawable/homepagelogo" />
@@ -41804,7 +41926,6 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
-            <xs:enumeration value="@drawable/mail_icon" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
@@ -41855,6 +41976,8 @@
             <xs:enumeration value="@drawable/reviewicon" />
             <xs:enumeration value="@drawable/roundedcornertops" />
             <xs:enumeration value="@drawable/searchimager" />
+            <xs:enumeration value="@drawable/signin" />
+            <xs:enumeration value="@drawable/signinxml" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -42640,6 +42763,8 @@
             <xs:enumeration value="@drawable/goldheart" />
             <xs:enumeration value="@drawable/goldhearticon" />
             <xs:enumeration value="@drawable/gradientbackground" />
+            <xs:enumeration value="@drawable/guesticon" />
+            <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
             <xs:enumeration value="@drawable/homepagelogo" />
@@ -42821,7 +42946,6 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
-            <xs:enumeration value="@drawable/mail_icon" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
@@ -42872,6 +42996,8 @@
             <xs:enumeration value="@drawable/reviewicon" />
             <xs:enumeration value="@drawable/roundedcornertops" />
             <xs:enumeration value="@drawable/searchimager" />
+            <xs:enumeration value="@drawable/signin" />
+            <xs:enumeration value="@drawable/signinxml" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />

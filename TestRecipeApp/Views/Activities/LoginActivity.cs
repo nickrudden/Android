@@ -37,16 +37,18 @@ namespace TestRecipeApp.Views.Activities
         private TextView textError;
         private ICallbackManager callBackManager;
         private MyProfileTracker mProfileTracker;
+        
 
         //private UserPresenter presenter;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
-           
-          
+         
             SetContentView(Resource.Layout.ActivityLayoutLogin);
             mProfileTracker = new MyProfileTracker();
+            mProfileTracker.mOnProfileChanged += MProfileTracker_mOnProfileChanged;
+            mProfileTracker.StartTracking();
+
             LoginButton lb = FindViewById<LoginButton>(Resource.Id.login_button);
             lb.SetReadPermissions("user_friends");
             callBackManager = CallbackManagerFactory.Create();
@@ -58,11 +60,15 @@ namespace TestRecipeApp.Views.Activities
             btnGuest = FindViewById<Button>(Resource.Id.btnGuest);
             progBar = FindViewById<ProgressBar>(Resource.Id.progressBar1);
            
-
             btnSignUp.Click += BtnSignUp_Click;
             btnLoginIn.Click += BtnLoginIn_Click;
             btnGuest.Click += BtnGuest_Click;
             // Create your application here
+        }
+
+        private void MProfileTracker_mOnProfileChanged(object sender, OnProfileChangedEventArgs e)
+        {
+            
         }
 
         private void BtnGuest_Click(object sender, EventArgs e)
@@ -135,13 +141,23 @@ namespace TestRecipeApp.Views.Activities
             Toast.MakeText(this, "Error creating account", ToastLength.Long).Show();
         }
 
-        public void goToHome()
+        public void goToHome(bool facebook, int? id)
         {
             prefs = PreferenceManager.GetDefaultSharedPreferences(this);
             prefs.Edit().PutBoolean("loggedIn", true).Commit();
+            Console.WriteLine("ZE VALUE EZ : " + id);
+            if (id != null)
+            {
+                Console.WriteLine("IN ID DOES NOT EQUAL NULL");
+                int uId = (int)id;
+                prefs.Edit().PutInt("uId", uId).Commit();
+            }
 
+            else
+                prefs.Edit().PutInt("uId", 0);
+            prefs.Edit().PutBoolean("facebook", facebook).Commit();
             var intent = new Intent(this, typeof(HomeTabbedActivity));
-              // intent.PutStringArrayListExtra("phone_numbers", phoneNumbers);
+              
                StartActivity(intent);
                
         }
@@ -164,13 +180,28 @@ namespace TestRecipeApp.Views.Activities
         {
             LoginResult loginResult = (LoginResult)result;
             string userFacebookId = loginResult.AccessToken.UserId;
-            Toast.MakeText(this, userFacebookId, ToastLength.Long).Show();
+
+            using (var h = new Handler(Looper.MainLooper))
+            {
+                h.Post(() => {
+                    presenter.createFacebookUser(userFacebookId, " ", " ");
+                    prefs = PreferenceManager.GetDefaultSharedPreferences(this);
+                    prefs.Edit().PutString("fbId", userFacebookId).Commit();
+                });
+            }
+           
         }
 
         protected override void OnActivityResult(int requestCode, [GeneratedEnum] Result resultCode, Intent data)
         {
             base.OnActivityResult(requestCode, resultCode, data);
             callBackManager.OnActivityResult(requestCode, (int)resultCode, data);
+        }
+
+        protected override void OnDestroy()
+        {
+            mProfileTracker.StopTracking();
+            base.OnDestroy();
         }
     }
 }

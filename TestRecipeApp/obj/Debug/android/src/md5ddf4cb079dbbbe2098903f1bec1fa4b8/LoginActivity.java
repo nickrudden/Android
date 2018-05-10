@@ -13,6 +13,7 @@ public class LoginActivity
 		__md_methods = 
 			"n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler\n" +
 			"n_onActivityResult:(IILandroid/content/Intent;)V:GetOnActivityResult_IILandroid_content_Intent_Handler\n" +
+			"n_onDestroy:()V:GetOnDestroyHandler\n" +
 			"n_onCancel:()V:GetOnCancelHandler:Xamarin.Facebook.IFacebookCallbackInvoker, Xamarin.Facebook\n" +
 			"n_onError:(Lcom/facebook/FacebookException;)V:GetOnError_Lcom_facebook_FacebookException_Handler:Xamarin.Facebook.IFacebookCallbackInvoker, Xamarin.Facebook\n" +
 			"n_onSuccess:(Ljava/lang/Object;)V:GetOnSuccess_Ljava_lang_Object_Handler:Xamarin.Facebook.IFacebookCallbackInvoker, Xamarin.Facebook\n" +
@@ -43,6 +44,14 @@ public class LoginActivity
 	}
 
 	private native void n_onActivityResult (int p0, int p1, android.content.Intent p2);
+
+
+	public void onDestroy ()
+	{
+		n_onDestroy ();
+	}
+
+	private native void n_onDestroy ();
 
 
 	public void onCancel ()

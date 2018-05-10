@@ -14,10 +14,11 @@ namespace TestRecipeApp.Presenter.UserPresenter
 {
      public interface ILoginView
     {
-         void goToHome();
+         void goToHome(bool facebook, int? id);
         void confirmCreation();
         void creationError();
         void signInError();
+        
 
     }
 }

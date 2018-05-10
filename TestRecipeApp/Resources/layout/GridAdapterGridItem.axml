@@ -7,11 +7,12 @@
         android:id="@+id/textViewItem"
         android:layout_margin="3dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:textSize="14dp"
+        android:textColor="#ffffff"
         android:padding="18dp"
         android:gravity="center"
-        android:background="@color/BackgroundArea"
+        android:background="@color/DarkOliveGreen"
         android:drawableRight="@drawable/CrossIcon"
-        android:textColor="#ffffff" />
+        />
 </LinearLayout>

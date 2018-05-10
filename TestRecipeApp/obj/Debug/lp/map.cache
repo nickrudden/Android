@@ -4,7 +4,6 @@ Google.ZXing.Core
 Microsoft.Threading.Tasks
 Microsoft.Threading.Tasks.Extensions
 Newtonsoft.Json
-RecipeClassLibrary
 Square.OkHttp
 Square.OkIO
 Square.Picasso
@@ -33,3 +32,10 @@ Xamarin.Android.Support.v7.Palette
 Xamarin.Android.Support.v7.RecyclerView
 Xamarin.Android.Support.Vector.Drawable
 Xamarin.Facebook
+RecipeClassLibrary
+SQLite-net
+SQLitePCLRaw.batteries_green
+SQLitePCLRaw.batteries_v2
+SQLitePCLRaw.core
+SQLitePCLRaw.lib.e_sqlite3
+SQLitePCLRaw.provider.e_sqlite3

@@ -43,13 +43,22 @@ namespace TestRecipeApp.Presenter.UserPresenter
 
         public void loginUser(string email, string password)
         {
-            bool success = db.login(email, password);
-
-            if (success)
-                loginView.goToHome();
+            int? success = db.login(email, password);
+            
+            if (success != null)
+                loginView.goToHome(false, success);
             else
                 loginView.signInError();
 
+        }
+
+        public void createFacebookUser(string facebookId, string firstName, string surname)
+        {
+             bool success = db.createFacebookUser(facebookId, firstName, surname);
+            if (success)
+                loginView.goToHome(true, null);
+            else
+                loginView.signInError();
         }
     }
 }

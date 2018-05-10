@@ -77,6 +77,24 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\OneDrive\Documents\University\Final Project\Code\RecipeClassLibrary\RecipeClassLibrary\bin\Debug\netstandard2.0\RecipeClassLibrary.dll</HintPath>
     </Reference>
+    <Reference Include="SQLite-net, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\sqlite-net-pcl.1.4.118\lib\netstandard1.1\SQLite-net.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_green, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a84b7dcfb1391f7f, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.5\lib\MonoAndroid\SQLitePCLRaw.batteries_green.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_v2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8226ea5df37bcae9, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.5\lib\MonoAndroid\SQLitePCLRaw.batteries_v2.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1488e028ca7ab535, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLitePCLRaw.core.1.1.5\lib\MonoAndroid\SQLitePCLRaw.core.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.lib.e_sqlite3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e4ad490600e2234c, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLitePCLRaw.lib.e_sqlite3.android.1.1.5\lib\MonoAndroid\SQLitePCLRaw.lib.e_sqlite3.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.provider.e_sqlite3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9c301db686d0bd12, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLitePCLRaw.provider.e_sqlite3.android.1.1.5\lib\MonoAndroid\SQLitePCLRaw.provider.e_sqlite3.dll</HintPath>
+    </Reference>
     <Reference Include="Square.OkHttp, Version=2.7.5.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Square.OkHttp.2.7.5.0\lib\MonoAndroid\Square.OkHttp.dll</HintPath>
     </Reference>
@@ -171,6 +189,10 @@
     <Compile Include="Adapters\LeftoverResultsAdapter.cs" />
     <Compile Include="Adapters\RecipePagerAdapter.cs" />
     <Compile Include="Adapters\RecipeSearchResultsAdapter.cs" />
+    <Compile Include="Presenter\HomePresenter\HomeTabbedPresenter.cs" />
+    <Compile Include="Presenter\HomePresenter\IHomeTabbed.cs" />
+    <Compile Include="Presenter\RecipeInteractionPresenter\IViewRecipeEvents.cs" />
+    <Compile Include="Presenter\RecipeInteractionPresenter\RecipeInteractionPresenter.cs" />
     <Compile Include="Presenter\RecipeSearchPresenter\ISearchResult.cs" />
     <Compile Include="Presenter\RecipeSearchPresenter\RecipeSearchPresenter.cs" />
     <Compile Include="Presenter\SearchPresenter\ISearchView.cs" />
@@ -182,7 +204,10 @@
     <Compile Include="Utilites\CheckBoxGroup.cs" />
     <Compile Include="Utilites\IClickListener.cs" />
     <Compile Include="Utilites\IDataListener.cs" />
+    <Compile Include="Utilites\LocalDb.cs" />
+    <Compile Include="Utilites\MyProfileTracker.cs" />
     <Compile Include="Utilites\MySearchView.cs" />
+    <Compile Include="Utilites\SQLLiteModels\SavedRecipes.cs" />
     <Compile Include="Views\Activities\HomeTabbedActivity.cs" />
     <Compile Include="Views\Activities\LeftoverSearchResultsActivity.cs" />
     <Compile Include="Views\Activities\LeftoverSearchViewActivity.cs" />
@@ -339,15 +364,21 @@
     <AndroidResource Include="Resources\drawable\Review.xml" />
     <AndroidResource Include="Resources\drawable\Tick.xml" />
     <AndroidResource Include="Resources\drawable\CrossIconLarge.xml" />
-    <AndroidResource Include="Resources\drawable\recimeIcon.png" />
     <AndroidResource Include="Resources\drawable\HomePageLogo.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\TickIcon.png" />
     <AndroidResource Include="Resources\drawable\goldheart.jpg" />
     <AndroidResource Include="Resources\drawable\GoldHeartIcon.xml" />
-    <AndroidResource Include="Resources\drawable\Mail.xml" />
+    <AndroidResource Include="Resources\drawable\Mail.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
     <AndroidResource Include="Resources\drawable\Mailicon.png" />
+    <AndroidResource Include="Resources\drawable\recimeIcon.png" />
+    <AndroidResource Include="Resources\drawable\signIn.png" />
+    <AndroidResource Include="Resources\drawable\guestIconXml.xml" />
+    <AndroidResource Include="Resources\drawable\signInXml.xml" />
+    <AndroidResource Include="Resources\drawable\guestIcon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />

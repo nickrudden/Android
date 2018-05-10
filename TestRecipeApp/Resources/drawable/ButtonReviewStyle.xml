@@ -27,7 +27,7 @@
 
 
   <!--    BUTTON PRESSED TRUE-->
-  <item android:state_selected="true">
+  <item android:state_activated="true">
     <layer-list>
 
       <item android:right="5dp" android:top="5dp">
@@ -49,5 +49,6 @@
 
     </layer-list>
   </item>
+
 
 </selector>
