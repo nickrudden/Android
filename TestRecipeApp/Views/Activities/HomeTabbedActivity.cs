@@ -18,12 +18,14 @@ using Java.Lang;
 using RecipeClassLibrary.RecipeFunctions;
 using TestRecipeApp.Adapters;
 using TestRecipeApp.Presenter.HomePresenter;
+using TestRecipeApp.Utilites;
 using TestRecipeApp.Views.Fragments;
 namespace TestRecipeApp.Views.Activities
 {
-    [Activity(Label = "ReciMe", ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
+    [Activity(ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait, MainLauncher = true)]
     public class HomeTabbedActivity : AppCompatActivity, IHomeTabbed
     {
+        ApplicationState state;
         FragmentPagerAdapter adapterPager;
         ISharedPreferences preferences;
         bool loggedIn;
@@ -35,19 +37,29 @@ namespace TestRecipeApp.Views.Activities
         
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            state = new ApplicationState(this);
+            if (!state.isLoggedIn())
+            {
+                var intent = new Intent(this, typeof(LoginActivity));
+                StartActivity(intent);
+            }
             checkedIds = new List<string>();
+            state = new ApplicationState(this); 
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.ActivityLayoutHomeTabbed);
+           
+         
+            SupportActionBar.Title = "ReciMe";
+
+
             presenter = new HomeTabbedPresenter(this);
             preferences = PreferenceManager.GetDefaultSharedPreferences(this);
             loggedIn = preferences.GetBoolean("loggedIn", false);
             facebookUser = preferences.GetBoolean("facebook", false);
             uId = preferences.GetInt("uId", 999);
-            Toast.MakeText(this, loggedIn.ToString(), ToastLength.Short).Show();
-            Toast.MakeText(this, facebookUser.ToString(), ToastLength.Short).Show();
-            Toast.MakeText(this, uId.ToString(), ToastLength.Short).Show();
-            //Set view to layout containing a frame layout filling page.
 
+            //Set view to layout containing a frame layout filling page.
+            
             ViewPager pager = (ViewPager)FindViewById(Resource.Id.vpPager);
             adapterPager = new HomePagerAdapter(SupportFragmentManager);
             pager.Adapter = adapterPager;
@@ -55,9 +67,9 @@ namespace TestRecipeApp.Views.Activities
             TabLayout tabLayout = (TabLayout)FindViewById(Resource.Id.sliding_tabs);
             tabLayout.SetupWithViewPager(pager);
 
-            if (loggedIn)
+            if (state.isLoggedIn())
             {
-                if (facebookUser)
+                if (state.isFacebookLoggedIn())
                 {
                     preferences = PreferenceManager.GetDefaultSharedPreferences(this);
                     string id = preferences.GetString("facebookId", "0");
@@ -68,6 +80,25 @@ namespace TestRecipeApp.Views.Activities
             }
                 
             // Create your application here
+        }
+
+        public override bool OnCreateOptionsMenu(IMenu menu)
+        {
+            MenuInflater.Inflate(Resource.Menu.top_menus, menu);
+            return base.OnCreateOptionsMenu(menu);
+        }
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            switch (item.ItemId)
+            {
+                case Resource.Id.logoutoption:
+                    state.logOut();
+                    var intent = new Intent(this, typeof(LoginActivity));
+                    StartActivity(intent);
+                    break;
+            }
+
+            return base.OnOptionsItemSelected(item);
         }
 
         public void checkboxClick(View view)
@@ -82,7 +113,7 @@ namespace TestRecipeApp.Views.Activities
                 preferences.Edit().PutStringSet("savedIds", savedRecipes).Commit();
                 foreach (var item in savedRecipes)
                 {
-                    Toast.MakeText(this, item, ToastLength.Long).Show();
+                    
                 }
             }
             else

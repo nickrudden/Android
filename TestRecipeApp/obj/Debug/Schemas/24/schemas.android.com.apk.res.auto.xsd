@@ -2,7 +2,7 @@
 <xs:schema xmlns:app="http://schemas.android.com/apk/res-auto" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res-auto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v24</xs:documentation>
-    <xs:documentation>09/05/2018 16:53:50</xs:documentation>
+    <xs:documentation>19/05/2018 19:35:09</xs:documentation>
   </xs:annotation>
   <xs:attribute name="allowStacking">
     <xs:annotation>
@@ -1544,6 +1544,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
+            <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
@@ -1774,6 +1775,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
+            <xs:enumeration value="@drawable/menuicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
             <xs:enumeration value="@drawable/messenger_bubble_small_blue" />
@@ -2301,6 +2303,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
+            <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
@@ -2531,6 +2534,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
+            <xs:enumeration value="@drawable/menuicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
             <xs:enumeration value="@drawable/messenger_bubble_small_blue" />
@@ -2905,6 +2909,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
+            <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
@@ -3135,6 +3140,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
+            <xs:enumeration value="@drawable/menuicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
             <xs:enumeration value="@drawable/messenger_bubble_small_blue" />
@@ -3509,6 +3515,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
+            <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
@@ -3739,6 +3746,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
+            <xs:enumeration value="@drawable/menuicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
             <xs:enumeration value="@drawable/messenger_bubble_small_blue" />
@@ -7071,6 +7079,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
+            <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
@@ -7301,6 +7310,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
+            <xs:enumeration value="@drawable/menuicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
             <xs:enumeration value="@drawable/messenger_bubble_small_blue" />
@@ -7675,6 +7685,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
+            <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
@@ -7905,6 +7916,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
+            <xs:enumeration value="@drawable/menuicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
             <xs:enumeration value="@drawable/messenger_bubble_small_blue" />
@@ -8409,6 +8421,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
+            <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
@@ -8639,6 +8652,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
+            <xs:enumeration value="@drawable/menuicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
             <xs:enumeration value="@drawable/messenger_bubble_small_blue" />
@@ -9300,6 +9314,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
+            <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
@@ -9530,6 +9545,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
+            <xs:enumeration value="@drawable/menuicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
             <xs:enumeration value="@drawable/messenger_bubble_small_blue" />
@@ -9904,6 +9920,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
+            <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
@@ -10134,6 +10151,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
+            <xs:enumeration value="@drawable/menuicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
             <xs:enumeration value="@drawable/messenger_bubble_small_blue" />
@@ -11726,6 +11744,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
+            <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
@@ -11956,6 +11975,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
+            <xs:enumeration value="@drawable/menuicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
             <xs:enumeration value="@drawable/messenger_bubble_small_blue" />
@@ -12330,6 +12350,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
+            <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
@@ -12560,6 +12581,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
+            <xs:enumeration value="@drawable/menuicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
             <xs:enumeration value="@drawable/messenger_bubble_small_blue" />
@@ -12995,6 +13017,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
+            <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
@@ -13225,6 +13248,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
+            <xs:enumeration value="@drawable/menuicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
             <xs:enumeration value="@drawable/messenger_bubble_small_blue" />
@@ -13599,6 +13623,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
+            <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
@@ -13829,6 +13854,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
+            <xs:enumeration value="@drawable/menuicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
             <xs:enumeration value="@drawable/messenger_bubble_small_blue" />
@@ -14203,6 +14229,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
+            <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
@@ -14433,6 +14460,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
+            <xs:enumeration value="@drawable/menuicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
             <xs:enumeration value="@drawable/messenger_bubble_small_blue" />
@@ -14807,6 +14835,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
+            <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
@@ -15037,6 +15066,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
+            <xs:enumeration value="@drawable/menuicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
             <xs:enumeration value="@drawable/messenger_bubble_small_blue" />
@@ -15456,6 +15486,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
+            <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
@@ -15686,6 +15717,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
+            <xs:enumeration value="@drawable/menuicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
             <xs:enumeration value="@drawable/messenger_bubble_small_blue" />
@@ -16060,6 +16092,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
+            <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
@@ -16290,6 +16323,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
+            <xs:enumeration value="@drawable/menuicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
             <xs:enumeration value="@drawable/messenger_bubble_small_blue" />
@@ -16754,6 +16788,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
+            <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
@@ -16984,6 +17019,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
+            <xs:enumeration value="@drawable/menuicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
             <xs:enumeration value="@drawable/messenger_bubble_small_blue" />
@@ -17794,6 +17830,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
+            <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
@@ -18024,6 +18061,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
+            <xs:enumeration value="@drawable/menuicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
             <xs:enumeration value="@drawable/messenger_bubble_small_blue" />
@@ -18476,6 +18514,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
+            <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
@@ -18706,6 +18745,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
+            <xs:enumeration value="@drawable/menuicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
             <xs:enumeration value="@drawable/messenger_bubble_small_blue" />
@@ -19432,6 +19472,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
+            <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
@@ -19662,6 +19703,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
+            <xs:enumeration value="@drawable/menuicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
             <xs:enumeration value="@drawable/messenger_bubble_small_blue" />
@@ -20388,6 +20430,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
+            <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
@@ -20618,6 +20661,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
+            <xs:enumeration value="@drawable/menuicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
             <xs:enumeration value="@drawable/messenger_bubble_small_blue" />
@@ -20992,6 +21036,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
+            <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
@@ -21222,6 +21267,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
+            <xs:enumeration value="@drawable/menuicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
             <xs:enumeration value="@drawable/messenger_bubble_small_blue" />
@@ -21726,6 +21772,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
+            <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
@@ -21956,6 +22003,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
+            <xs:enumeration value="@drawable/menuicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
             <xs:enumeration value="@drawable/messenger_bubble_small_blue" />
@@ -23317,6 +23365,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
+            <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
@@ -23547,6 +23596,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
+            <xs:enumeration value="@drawable/menuicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
             <xs:enumeration value="@drawable/messenger_bubble_small_blue" />
@@ -24051,6 +24101,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
+            <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
@@ -24281,6 +24332,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
+            <xs:enumeration value="@drawable/menuicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
             <xs:enumeration value="@drawable/messenger_bubble_small_blue" />
@@ -24785,6 +24837,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
+            <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
@@ -25015,6 +25068,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
+            <xs:enumeration value="@drawable/menuicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
             <xs:enumeration value="@drawable/messenger_bubble_small_blue" />
@@ -25804,6 +25858,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
+            <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
@@ -26034,6 +26089,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
+            <xs:enumeration value="@drawable/menuicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
             <xs:enumeration value="@drawable/messenger_bubble_small_blue" />
@@ -26638,6 +26694,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
+            <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
@@ -26868,6 +26925,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
+            <xs:enumeration value="@drawable/menuicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
             <xs:enumeration value="@drawable/messenger_bubble_small_blue" />
@@ -28030,6 +28088,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
+            <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
@@ -28260,6 +28319,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
+            <xs:enumeration value="@drawable/menuicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
             <xs:enumeration value="@drawable/messenger_bubble_small_blue" />
@@ -28634,6 +28694,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
+            <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
@@ -28864,6 +28925,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
+            <xs:enumeration value="@drawable/menuicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
             <xs:enumeration value="@drawable/messenger_bubble_small_blue" />
@@ -29421,6 +29483,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
+            <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
@@ -29651,6 +29714,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
+            <xs:enumeration value="@drawable/menuicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
             <xs:enumeration value="@drawable/messenger_bubble_small_blue" />
@@ -30377,6 +30441,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
+            <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
@@ -30607,6 +30672,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
+            <xs:enumeration value="@drawable/menuicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
             <xs:enumeration value="@drawable/messenger_bubble_small_blue" />
@@ -31111,6 +31177,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
+            <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
@@ -31341,6 +31408,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
+            <xs:enumeration value="@drawable/menuicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
             <xs:enumeration value="@drawable/messenger_bubble_small_blue" />
@@ -32067,6 +32135,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
+            <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
@@ -32297,6 +32366,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
+            <xs:enumeration value="@drawable/menuicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
             <xs:enumeration value="@drawable/messenger_bubble_small_blue" />
@@ -33131,6 +33201,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
+            <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
@@ -33361,6 +33432,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
+            <xs:enumeration value="@drawable/menuicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
             <xs:enumeration value="@drawable/messenger_bubble_small_blue" />
@@ -33735,6 +33807,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
+            <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
@@ -33965,6 +34038,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
+            <xs:enumeration value="@drawable/menuicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
             <xs:enumeration value="@drawable/messenger_bubble_small_blue" />
@@ -37143,6 +37217,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
+            <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
@@ -37373,6 +37448,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
+            <xs:enumeration value="@drawable/menuicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
             <xs:enumeration value="@drawable/messenger_bubble_small_blue" />
@@ -40137,6 +40213,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
+            <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
@@ -40367,6 +40444,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
+            <xs:enumeration value="@drawable/menuicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
             <xs:enumeration value="@drawable/messenger_bubble_small_blue" />
@@ -41093,6 +41171,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
+            <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
@@ -41323,6 +41402,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
+            <xs:enumeration value="@drawable/menuicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
             <xs:enumeration value="@drawable/messenger_bubble_small_blue" />
@@ -41697,6 +41777,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
+            <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
@@ -41927,6 +42008,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
+            <xs:enumeration value="@drawable/menuicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
             <xs:enumeration value="@drawable/messenger_bubble_small_blue" />
@@ -42717,6 +42799,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
+            <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
@@ -42947,6 +43030,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
+            <xs:enumeration value="@drawable/menuicon" />
             <xs:enumeration value="@drawable/messenger_bubble_large_blue" />
             <xs:enumeration value="@drawable/messenger_bubble_large_white" />
             <xs:enumeration value="@drawable/messenger_bubble_small_blue" />

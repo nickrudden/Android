@@ -27,34 +27,30 @@ namespace TestRecipeApp.Presenter.HomePresenter
 
         public void setUserSavedRecipes(int userId)
         {
-            List<SaveRecipeModel> model = new List<SaveRecipeModel>();
-            model = db.userSavedRecipes(userId);
-            if (model.Count > 0)
+            List<string> model = new List<string>();
+            try
             {
-                List<string> ids = new List<string>();
-                foreach (var item in model)
-                {
-                    ids.Add(item.RecipeId);
-                }
-                view.setSavedRecipes(ids);
+                model = db.userSavedRecipes(userId);
+                view.setSavedRecipes(model);
+                Console.WriteLine("THE COUNT IS  in the prezenta" + model.Count);
+               
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Exception occurred in set user saved recipes + "  + ex.Message);
+                view.setSavedRecipes(new List<string>());
+                
             }
         }
         public void setUserSavedRecipes(string facebookId)
         {
-            List<FacebookSaveRecipeModel> model = new List<FacebookSaveRecipeModel>();
+            List<string> model = new List<string>();
             model = db.facebookUserSavedRecipe(facebookId);
             if (model.Count > 0)
-            {
-                List<string> ids = new List<string>();
-                foreach (var item in model)
-                {
-                    ids.Add(item.RecipeId);
-                }
+                view.setSavedRecipes(model);
+            else
+                view.setSavedRecipes(new List<string>());
 
-                view.setSavedRecipes(ids);
-            }
         }
-
-
     }
 }

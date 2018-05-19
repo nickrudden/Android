@@ -2,7 +2,7 @@
 <xs:schema xmlns:tools="http://schemas.android.com/tools" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/tools" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v24</xs:documentation>
-    <xs:documentation>09/05/2018 16:53:50</xs:documentation>
+    <xs:documentation>19/05/2018 19:35:09</xs:documentation>
   </xs:annotation>
   <xs:attribute name="layout">
     <xs:annotation>
@@ -64,6 +64,7 @@
             <xs:enumeration value="@layout/design_navigation_menu" />
             <xs:enumeration value="@layout/design_navigation_menu_item" />
             <xs:enumeration value="@layout/design_text_input_password_icon" />
+            <xs:enumeration value="@layout/favouritecardview" />
             <xs:enumeration value="@layout/fragmentlayoutdialogsignin" />
             <xs:enumeration value="@layout/fragmentlayoutdialogsignup" />
             <xs:enumeration value="@layout/gridadaptergriditem" />
@@ -105,8 +106,11 @@
             <xs:enumeration value="@layout/select_dialog_singlechoice_material" />
             <xs:enumeration value="@layout/stepslistitem" />
             <xs:enumeration value="@layout/support_simple_spinner_dropdown_item" />
+            <xs:enumeration value="@layout/supportfragmentfavouriterecipes" />
             <xs:enumeration value="@layout/supportfragmentlayoutleftoversearchpage" />
             <xs:enumeration value="@layout/supportfragmentlayoutrecipesearchpage" />
+            <xs:enumeration value="@layout/testfavouriteview" />
+            <xs:enumeration value="@layout/toolbar" />
             <xs:enumeration value="@layout/tooltip" />
             <xs:enumeration value="@layout/viewrecipepageritemlist" />
             <xs:enumeration value="@android:layout/activity_list_item" />
@@ -209,6 +213,7 @@
             <xs:enumeration value="@layout/design_navigation_menu" />
             <xs:enumeration value="@layout/design_navigation_menu_item" />
             <xs:enumeration value="@layout/design_text_input_password_icon" />
+            <xs:enumeration value="@layout/favouritecardview" />
             <xs:enumeration value="@layout/fragmentlayoutdialogsignin" />
             <xs:enumeration value="@layout/fragmentlayoutdialogsignup" />
             <xs:enumeration value="@layout/gridadaptergriditem" />
@@ -250,8 +255,11 @@
             <xs:enumeration value="@layout/select_dialog_singlechoice_material" />
             <xs:enumeration value="@layout/stepslistitem" />
             <xs:enumeration value="@layout/support_simple_spinner_dropdown_item" />
+            <xs:enumeration value="@layout/supportfragmentfavouriterecipes" />
             <xs:enumeration value="@layout/supportfragmentlayoutleftoversearchpage" />
             <xs:enumeration value="@layout/supportfragmentlayoutrecipesearchpage" />
+            <xs:enumeration value="@layout/testfavouriteview" />
+            <xs:enumeration value="@layout/toolbar" />
             <xs:enumeration value="@layout/tooltip" />
             <xs:enumeration value="@layout/viewrecipepageritemlist" />
             <xs:enumeration value="@android:layout/activity_list_item" />
@@ -354,6 +362,7 @@
             <xs:enumeration value="@layout/design_navigation_menu" />
             <xs:enumeration value="@layout/design_navigation_menu_item" />
             <xs:enumeration value="@layout/design_text_input_password_icon" />
+            <xs:enumeration value="@layout/favouritecardview" />
             <xs:enumeration value="@layout/fragmentlayoutdialogsignin" />
             <xs:enumeration value="@layout/fragmentlayoutdialogsignup" />
             <xs:enumeration value="@layout/gridadaptergriditem" />
@@ -395,8 +404,11 @@
             <xs:enumeration value="@layout/select_dialog_singlechoice_material" />
             <xs:enumeration value="@layout/stepslistitem" />
             <xs:enumeration value="@layout/support_simple_spinner_dropdown_item" />
+            <xs:enumeration value="@layout/supportfragmentfavouriterecipes" />
             <xs:enumeration value="@layout/supportfragmentlayoutleftoversearchpage" />
             <xs:enumeration value="@layout/supportfragmentlayoutrecipesearchpage" />
+            <xs:enumeration value="@layout/testfavouriteview" />
+            <xs:enumeration value="@layout/toolbar" />
             <xs:enumeration value="@layout/tooltip" />
             <xs:enumeration value="@layout/viewrecipepageritemlist" />
             <xs:enumeration value="@android:layout/activity_list_item" />
@@ -499,6 +511,7 @@
             <xs:enumeration value="@layout/design_navigation_menu" />
             <xs:enumeration value="@layout/design_navigation_menu_item" />
             <xs:enumeration value="@layout/design_text_input_password_icon" />
+            <xs:enumeration value="@layout/favouritecardview" />
             <xs:enumeration value="@layout/fragmentlayoutdialogsignin" />
             <xs:enumeration value="@layout/fragmentlayoutdialogsignup" />
             <xs:enumeration value="@layout/gridadaptergriditem" />
@@ -540,8 +553,11 @@
             <xs:enumeration value="@layout/select_dialog_singlechoice_material" />
             <xs:enumeration value="@layout/stepslistitem" />
             <xs:enumeration value="@layout/support_simple_spinner_dropdown_item" />
+            <xs:enumeration value="@layout/supportfragmentfavouriterecipes" />
             <xs:enumeration value="@layout/supportfragmentlayoutleftoversearchpage" />
             <xs:enumeration value="@layout/supportfragmentlayoutrecipesearchpage" />
+            <xs:enumeration value="@layout/testfavouriteview" />
+            <xs:enumeration value="@layout/toolbar" />
             <xs:enumeration value="@layout/tooltip" />
             <xs:enumeration value="@layout/viewrecipepageritemlist" />
             <xs:enumeration value="@android:layout/activity_list_item" />

@@ -184,11 +184,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adapters\CustomSearchAdapter.cs" />
+    <Compile Include="Adapters\FavouritesRecyclerAdapter.cs" />
     <Compile Include="Adapters\GridAdapter.cs" />
     <Compile Include="Adapters\HomePagerAdapter.cs" />
     <Compile Include="Adapters\LeftoverResultsAdapter.cs" />
     <Compile Include="Adapters\RecipePagerAdapter.cs" />
     <Compile Include="Adapters\RecipeSearchResultsAdapter.cs" />
+    <Compile Include="Presenter\FavouritesPresenter\FavouritesPresenter.cs" />
     <Compile Include="Presenter\HomePresenter\HomeTabbedPresenter.cs" />
     <Compile Include="Presenter\HomePresenter\IHomeTabbed.cs" />
     <Compile Include="Presenter\RecipeInteractionPresenter\IViewRecipeEvents.cs" />
@@ -201,6 +203,7 @@
     <Compile Include="Presenter\UserPresenter\UserPresenter.cs" />
     <Compile Include="Presenter\ViewRecipePresenter\IRecipeView.cs" />
     <Compile Include="Presenter\ViewRecipePresenter\ViewRecipePresenter.cs" />
+    <Compile Include="Utilites\ApplicationStateValues.cs" />
     <Compile Include="Utilites\CheckBoxGroup.cs" />
     <Compile Include="Utilites\IClickListener.cs" />
     <Compile Include="Utilites\IDataListener.cs" />
@@ -221,6 +224,7 @@
     <Compile Include="Views\Activities\ViewRecipeActivity.cs" />
     <Compile Include="Views\Fragments\DialogSignIn.cs" />
     <Compile Include="Views\Fragments\DialogSignUp.cs" />
+    <Compile Include="Views\Fragments\FavouriteRecipesFragment.cs" />
     <Compile Include="Views\Fragments\LeftoverSearchFragment.cs" />
     <Compile Include="Views\Fragments\RecipeDetailsFragment.cs" />
     <Compile Include="Views\Fragments\RecipeIngredientsFragment.cs" />
@@ -290,6 +294,15 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\ActivityLayoutRecipeSearchView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\SupportFragmentFavouriteRecipes.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\TestFavouriteView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\FavouriteCardView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -379,6 +392,11 @@
     <AndroidResource Include="Resources\drawable\guestIconXml.xml" />
     <AndroidResource Include="Resources\drawable\signInXml.xml" />
     <AndroidResource Include="Resources\drawable\guestIcon.png" />
+    <AndroidResource Include="Resources\layout\toolbar.xml" />
+    <AndroidResource Include="Resources\mipmap-hdpi\baseline_menu_black_18dp.png" />
+    <AndroidResource Include="Resources\drawable\baseline_menu_black_18dp.png" />
+    <AndroidResource Include="Resources\drawable\MenuIcon.xml" />
+    <AndroidResource Include="Resources\menu\top_menus.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />

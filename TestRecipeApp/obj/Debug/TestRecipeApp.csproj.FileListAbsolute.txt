@@ -1,5 +1,3 @@
-C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\TestRecipeApp.csprojResolveAssemblyReference.cache
-C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\TestRecipeApp.csproj.CoreCompileInputs.cache
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\bin\Debug\TestRecipeApp.dll.config
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\bin\Debug\TestRecipeApp.dll
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\bin\Debug\TestRecipeApp.pdb
@@ -54,6 +52,8 @@ C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\bin\Debug\SQLite-net.pdb
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\bin\Debug\SQLite-net.xml
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\bin\Debug\System.Net.Http.Extensions.xml
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\TestRecipeApp.csprojResolveAssemblyReference.cache
+C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\TestRecipeApp.csproj.CoreCompileInputs.cache
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\TestRecipeApp.dll
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\TestRecipeApp.pdb
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\android\bin\com.ReciMe.apk
@@ -75,6 +75,8 @@ C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\layout\ing
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\layout\stepslistitem.xml
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\layout\recipedetailsfragment.xml
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\layout\activitylayoutrecipesearchview.xml
+C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\layout\supportfragmentfavouriterecipes.xml
+C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\layout\testfavouriteview.xml
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\layout\leftoverresults.xml
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\values\strings.xml
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\drawable\buttonorangestyle.xml
@@ -120,10 +122,16 @@ C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\drawable\s
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\drawable\guesticonxml.xml
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\drawable\signinxml.xml
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\drawable\guesticon.png
+C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\layout\toolbar.xml
+C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\mipmap-hdpi\baseline_menu_black_18dp.png
+C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\drawable\baseline_menu_black_18dp.png
+C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\drawable\menuicon.xml
+C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\menu\top_menus.xml
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\R.cs.flag
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\uploadflags.txt
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\bin\Debug\TestRecipeApp.dll.mdb
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\android\assets\TestRecipeApp.dll.mdb
+C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\layout\favouritecardview.xml
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\bin\Debug\TestRecipeApp.dll
 bin\Debug\Microsoft.CSharp.pdb
 bin\Debug\Mono.Android.pdb

@@ -35,7 +35,7 @@ namespace TestRecipeApp.Adapters
                 case 1:
                     return RecipeSearchFragment.newInstance();
                 case 2:
-                    return RecipeSearchFragment.newInstance();
+                    return FavouriteRecipesFragment.newInstance();
                 default:
                     return null;
             }

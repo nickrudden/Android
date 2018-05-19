@@ -13,7 +13,7 @@
         android:background="@drawable/roundedcornertops">
         <TextView
             android:id="@+id/SearchLeftoversButton"
-            android:layout_width="match_parent" 
+            android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"

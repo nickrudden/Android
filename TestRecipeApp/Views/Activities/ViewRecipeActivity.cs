@@ -19,6 +19,7 @@ using TestRecipeApp.Presenter;
 using TestRecipeApp.Presenter.RecipeInteractionPresenter;
 using TestRecipeApp.Presenter.RecipeSearchPresenter;
 using TestRecipeApp.Presenter.ViewRecipePresenter;
+using TestRecipeApp.Utilites;
 using static Android.Widget.ImageView;
 
 namespace TestRecipeApp.Views.Activities
@@ -26,6 +27,7 @@ namespace TestRecipeApp.Views.Activities
     [Activity(ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
     public class ViewRecipeActivity : AppCompatActivity , IViewRecipeEvents
     {
+        ApplicationState state;
         ViewPager vp;
         TabLayout tabs;
         ImageView RecipeImageView;
@@ -50,7 +52,7 @@ namespace TestRecipeApp.Views.Activities
                 Finish();
 
              prefs  = PreferenceManager.GetDefaultSharedPreferences(this);
-
+            state = new ApplicationState(this);
             currentRecipe = recipeId;
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.ActivityLayoutViewRecipe);
@@ -80,14 +82,14 @@ namespace TestRecipeApp.Views.Activities
         private void FavouriteButton_Click(object sender, EventArgs e)
         {
             Toast.MakeText(this, "Hello...", ToastLength.Short).Show();
-            if (!loggedIn)
+            if (!state.isLoggedIn())
             {
                 Toast.MakeText(this, "Not logged in...", ToastLength.Short).Show();
                 return;
             }
 
             facebook = prefs.GetBoolean("facebook", false);
-            if (facebook)
+            if (state.isFacebookLoggedIn())
             {
                 string fbId = prefs.GetString("fbId", "0");
                 ThreadPool.QueueUserWorkItem(o => presenter.saveRecipeClick(this, currentRecipe, fbId));

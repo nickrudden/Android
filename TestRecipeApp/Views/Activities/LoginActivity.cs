@@ -23,11 +23,12 @@ using Xamarin.Facebook.Login.Widget;
 
 namespace TestRecipeApp.Views.Activities
 {
-    [Activity(Label = "ReciMe", MainLauncher =true, ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
+    [Activity(Label = "ReciMe", ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
     public class LoginActivity : Activity, ILoginView, IFacebookCallback
     {
 
-        ISharedPreferences prefs; 
+        //ISharedPreferences prefs; 
+        ApplicationState prefs;
         private Button btnSignUp;
         private Button btnLoginIn;
         private Button btnGuest;
@@ -42,8 +43,10 @@ namespace TestRecipeApp.Views.Activities
         //private UserPresenter presenter;
         protected override void OnCreate(Bundle savedInstanceState)
         {
+
+            prefs = new ApplicationState(this);
             base.OnCreate(savedInstanceState);
-         
+            
             SetContentView(Resource.Layout.ActivityLayoutLogin);
             mProfileTracker = new MyProfileTracker();
             mProfileTracker.mOnProfileChanged += MProfileTracker_mOnProfileChanged;
@@ -63,6 +66,10 @@ namespace TestRecipeApp.Views.Activities
             btnSignUp.Click += BtnSignUp_Click;
             btnLoginIn.Click += BtnLoginIn_Click;
             btnGuest.Click += BtnGuest_Click;
+
+            Toast.MakeText(this, prefs.FacebookId, ToastLength.Long).Show();
+            Toast.MakeText(this, prefs.UserId.ToString(), ToastLength.Long).Show();
+            Toast.MakeText(this, prefs.Guest.ToString(), ToastLength.Long).Show();
             // Create your application here
         }
 
@@ -73,8 +80,11 @@ namespace TestRecipeApp.Views.Activities
 
         private void BtnGuest_Click(object sender, EventArgs e)
         {
-            ISharedPreferences prefs = PreferenceManager.GetDefaultSharedPreferences(this);
-            prefs.Edit().PutBoolean("loggedIn", false);
+            //ISharedPreferences prefs = PreferenceManager.GetDefaultSharedPreferences(this);
+            //prefs.Edit().PutBoolean("loggedIn", false);
+            prefs.logOut();
+            prefs.Guest = true;
+
             var intent = new Intent(this, typeof(HomeTabbedActivity));
             StartActivity(intent);
         }
@@ -82,15 +92,20 @@ namespace TestRecipeApp.Views.Activities
         //LOGIN
         private void BtnLoginIn_Click(object sender, EventArgs e)
         {
-            FragmentTransaction transaction = FragmentManager.BeginTransaction();
-            DialogSignIn signInDialog = new DialogSignIn();
-            signInDialog.Show(transaction, "Sign in");
+              
+            
 
-            signInDialog.onSignInComplete += SignInDialog_onSignInComplete;
+                FragmentTransaction transaction = FragmentManager.BeginTransaction();
+                DialogSignIn signInDialog = new DialogSignIn();
+                signInDialog.Show(transaction, "Sign in");
+
+                signInDialog.onSignInComplete += SignInDialog_onSignInComplete;
+         
         }
 
         private void SignInDialog_onSignInComplete(object sender, OnSignUpEventArgs e)
         {
+            
             progBar.Visibility = ViewStates.Visible;
             presenter.loginUser(e.Email, e.Password);
             progBar.Visibility = ViewStates.Invisible;
@@ -143,19 +158,26 @@ namespace TestRecipeApp.Views.Activities
 
         public void goToHome(bool facebook, int? id)
         {
-            prefs = PreferenceManager.GetDefaultSharedPreferences(this);
-            prefs.Edit().PutBoolean("loggedIn", true).Commit();
+           // prefs = PreferenceManager.GetDefaultSharedPreferences(this);
+            //prefs.Edit().PutBoolean("loggedIn", true).Commit();
             Console.WriteLine("ZE VALUE EZ : " + id);
             if (id != null)
             {
-                Console.WriteLine("IN ID DOES NOT EQUAL NULL");
+                
                 int uId = (int)id;
-                prefs.Edit().PutInt("uId", uId).Commit();
+                LoginManager.Instance.LogOut();
+                prefs.logOut();
+                prefs.UserId = uId;
+                //prefs.Edit().PutInt("uId", uId).Commit();
             }
 
+
             else
-                prefs.Edit().PutInt("uId", 0);
-            prefs.Edit().PutBoolean("facebook", facebook).Commit();
+            {
+                prefs.UserId = 0;
+            }
+                // prefs.Edit().PutInt("uId", 0);
+            //prefs.Edit().PutBoolean("facebook", facebook).Commit();
             var intent = new Intent(this, typeof(HomeTabbedActivity));
               
                StartActivity(intent);
@@ -185,8 +207,10 @@ namespace TestRecipeApp.Views.Activities
             {
                 h.Post(() => {
                     presenter.createFacebookUser(userFacebookId, " ", " ");
-                    prefs = PreferenceManager.GetDefaultSharedPreferences(this);
-                    prefs.Edit().PutString("fbId", userFacebookId).Commit();
+                    prefs.logOut();
+                    prefs.FacebookId = userFacebookId;
+                    //prefs = PreferenceManager.GetDefaultSharedPreferences(this);
+                    //prefs.Edit().PutString("fbId", userFacebookId).Commit();
                 });
             }
            
@@ -203,5 +227,7 @@ namespace TestRecipeApp.Views.Activities
             mProfileTracker.StopTracking();
             base.OnDestroy();
         }
+
+       
     }
 }
