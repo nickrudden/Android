@@ -77,6 +77,8 @@ C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\layout\rec
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\layout\activitylayoutrecipesearchview.xml
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\layout\supportfragmentfavouriterecipes.xml
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\layout\testfavouriteview.xml
+C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\layout\favouritecardview.xml
+C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\layout\dialogreview.xml
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\layout\leftoverresults.xml
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\values\strings.xml
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\drawable\buttonorangestyle.xml
@@ -117,7 +119,6 @@ C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\drawable\g
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\drawable\goldhearticon.xml
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\drawable\mail.xml
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\drawable\mailicon.png
-C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\drawable\recimeicon.png
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\drawable\signin.png
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\drawable\guesticonxml.xml
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\drawable\signinxml.xml
@@ -127,11 +128,17 @@ C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\mipmap-hdp
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\drawable\baseline_menu_black_18dp.png
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\drawable\menuicon.xml
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\menu\top_menus.xml
+C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\drawable\home.xml
+C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\drawable\layoutborder.xml
+C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\drawable\homehome.png
+C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\drawable\bottomborder.xml
+C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\drawable\splashbackground.xml
+C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\drawable\recimeicon.png
+C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\drawable\buttonreviewstateselected.xml
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\R.cs.flag
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\uploadflags.txt
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\bin\Debug\TestRecipeApp.dll.mdb
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\android\assets\TestRecipeApp.dll.mdb
-C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\obj\Debug\res\layout\favouritecardview.xml
 C:\Users\nickr\source\repos\TestRecipeApp\TestRecipeApp\bin\Debug\TestRecipeApp.dll
 bin\Debug\Microsoft.CSharp.pdb
 bin\Debug\Mono.Android.pdb

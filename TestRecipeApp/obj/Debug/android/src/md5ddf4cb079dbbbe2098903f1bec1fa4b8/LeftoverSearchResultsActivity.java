@@ -2,7 +2,7 @@ package md5ddf4cb079dbbbe2098903f1bec1fa4b8;
 
 
 public class LeftoverSearchResultsActivity
-	extends android.support.v7.app.AppCompatActivity
+	extends md50f0aeb936ae9eba09430d28c4347cc0f.BaseActivity
 	implements
 		mono.android.IGCUserPeer
 {

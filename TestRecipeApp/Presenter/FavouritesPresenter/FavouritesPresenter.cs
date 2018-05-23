@@ -17,6 +17,7 @@ namespace TestRecipeApp.Presenter.FavouritesPresenter
     public interface IFavouriteView
     {
         void populate(List<RecipeItemModel> list);
+        void favouriteLoadingError(string message);
     }
     class FavouritesPresenter
     {
@@ -31,11 +32,20 @@ namespace TestRecipeApp.Presenter.FavouritesPresenter
         public void updateFavourites(List<string> ids)
         {
             List<RecipeItemModel> model = new List<RecipeItemModel>();
-           
-            model = api.getListOfRecipes(ids);
-            Console.WriteLine(ids.Count + "IDEXXXX");
-            Console.WriteLine("LIST OF RECIPES COUNT  " + model.Count);
-            view.populate(model);
+
+
+            try
+            {
+                model = api.getListOfRecipes(ids);
+                if (model != null)
+                    view.populate(model);
+                else
+                    view.favouriteLoadingError("There was an error loading your favourite recipes");
+            }
+            catch (Exception)
+            {
+
+            }
         }
 
     }

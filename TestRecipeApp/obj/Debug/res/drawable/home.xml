@@ -1,0 +1,1 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"><item android:drawable="@drawable/homehome" android:width="@dimen/extra_icon" android:height="@dimen/extra_icon"></item></layer-list>

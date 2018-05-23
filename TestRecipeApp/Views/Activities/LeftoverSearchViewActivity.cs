@@ -16,20 +16,19 @@ using TestRecipeApp.Adapters;
 using System.Threading;
 using Android.Views.InputMethods;
 using Android.Util;
-using static Android.Widget.SearchView;
 using TestRecipeApp.Utilites;
-//using Android.Support.V7.Widget;
+using Android.Support.V7.Widget;
 
 namespace TestRecipeApp.Views.Activities
 {
     [Activity( ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
-    public class LeftoverSearchViewActivity : AppCompatActivity, ISearchView, IDataListener
+    public class LeftoverSearchViewActivity : BaseActivity, ISearchView, IDataListener
     {
 
-        
+        ApplicationState state;
         SearchPresenter presenter;
         List<string> selectedIngredients;
-        private SearchView searchView;
+        private MySearchView searchView;
         CustomSearchAdapter adapter;
         GridView gridView;
         GridAdapter gridAdapter;
@@ -38,6 +37,7 @@ namespace TestRecipeApp.Views.Activities
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            state = new ApplicationState(this);
             SetContentView(Resource.Layout.ActivityLayoutLeftoversSearchView);
             // Create your application here
             presenter = new SearchPresenter(this);
@@ -46,27 +46,51 @@ namespace TestRecipeApp.Views.Activities
             gridView = FindViewById<GridView>(Resource.Id.GridViewChosen);
             gridAdapter = new GridAdapter(this);
             gridView.Adapter = gridAdapter;
+            
+            gridView.ItemLongClick += GridView_ItemLongClick;
 
             listView = FindViewById<ListView>(Resource.Id.listView);
-            searchView = FindViewById<SearchView>(Resource.Id.searchView);
+            searchView = FindViewById<MySearchView>(Resource.Id.searchView);
          
             adapter = new CustomSearchAdapter(this);         
             listView.Adapter = adapter;
+
+            
+
             
             searchView.QueryTextChange += SearchView_QueryTextChange;
             searchView.QueryTextSubmit += SearchView_QueryTextSubmit;
            
             searchView.SetIconifiedByDefault(false);
             makeInitialConnection();
+
+           
          
         }
+
+        private void GridView_ItemLongClick(object sender, AdapterView.ItemLongClickEventArgs e)
+        {
+            try
+            {
+                selectedIngredients.RemoveAt(e.Position);
+                gridAdapter.setList(selectedIngredients);
+                gridAdapter.NotifyDataSetChanged();
+            }
+            catch(Exception)
+            {
+                return;
+            }
+
+        }
+
+        
 
         private void makeInitialConnection()
         {
             ThreadPool.QueueUserWorkItem(o => presenter.connect());
         }
 
-        private void SearchView_QueryTextSubmit(object sender, SearchView.QueryTextSubmitEventArgs e)
+        private void SearchView_QueryTextSubmit(object sender, Android.Support.V7.Widget.SearchView.QueryTextSubmitEventArgs e)
         {
             
             //Toast.MakeText(this, "helllooo", ToastLength.Long).Show();
@@ -78,10 +102,16 @@ namespace TestRecipeApp.Views.Activities
         }
 
         //user inputs something
-        private void SearchView_QueryTextChange(object sender, SearchView.QueryTextChangeEventArgs e)
+        private void SearchView_QueryTextChange(object sender, Android.Support.V7.Widget.SearchView.QueryTextChangeEventArgs e)
         {
-            ThreadPool.QueueUserWorkItem(o => presenter.UpdateLeftoverSearchViewItems(e.NewText));            
-            //e.Handled = true;
+            try
+            {
+                ThreadPool.QueueUserWorkItem(o => presenter.UpdateLeftoverSearchViewItems(e.NewText));
+            }
+            catch (Exception ex)
+            {
+                this.Recreate();
+            }//e.Handled = true;
         }
 
 
@@ -102,7 +132,7 @@ namespace TestRecipeApp.Views.Activities
         public void onSuccess(string data)
         {
             selectedIngredients.Add(data);
-            Toast.MakeText(this, "Added " + data, ToastLength.Long).Show();
+            
             adapter.clearList();
             searchView.SetQuery("", false);
             adapter.NotifyDataSetChanged();
@@ -116,7 +146,9 @@ namespace TestRecipeApp.Views.Activities
             throw new NotImplementedException();
         }
 
-        
+       
+
+
     }
 
     

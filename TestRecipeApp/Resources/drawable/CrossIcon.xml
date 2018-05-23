@@ -3,7 +3,8 @@
   <item
     android:drawable="@drawable/Cross"
     android:width="@dimen/small_icon"
-    android:height="@dimen/small_icon">
+    android:height="@dimen/small_icon"
+    >
   </item>
 </layer-list>
 

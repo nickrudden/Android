@@ -41,12 +41,7 @@ namespace TestRecipeApp.Views.Fragments
             View view = inflater.Inflate(Resource.Layout.SupportFragmentLayoutLeftoverSearchPage, container, false);
             searchClick = view.FindViewById<TextView>(Resource.Id.SearchLeftoversButton);
             searchClick.Click += SearchClick_Click;
-            Toast.MakeText(this.Context, "fb + " + appState.isFacebookLoggedIn().ToString(), ToastLength.Long).Show
-              ();
-            Toast.MakeText(this.Context, "Uid " + appState.UserId.ToString(), ToastLength.Long).Show
-                ();
-            Toast.MakeText(this.Context, appState.Guest.ToString(), ToastLength.Long).Show
-                ();
+           
 
             return view;
             

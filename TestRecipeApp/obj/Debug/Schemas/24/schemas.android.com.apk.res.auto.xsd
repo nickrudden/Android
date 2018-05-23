@@ -2,7 +2,7 @@
 <xs:schema xmlns:app="http://schemas.android.com/apk/res-auto" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res-auto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v24</xs:documentation>
-    <xs:documentation>19/05/2018 19:35:09</xs:documentation>
+    <xs:documentation>23/05/2018 15:20:37</xs:documentation>
   </xs:annotation>
   <xs:attribute name="allowStacking">
     <xs:annotation>
@@ -226,6 +226,7 @@
             <xs:enumeration value="@dimen/design_tab_text_size_2line" />
             <xs:enumeration value="@dimen/disabled_alpha_material_dark" />
             <xs:enumeration value="@dimen/disabled_alpha_material_light" />
+            <xs:enumeration value="@dimen/extra_icon" />
             <xs:enumeration value="@dimen/fastscroll_default_thickness" />
             <xs:enumeration value="@dimen/fastscroll_margin" />
             <xs:enumeration value="@dimen/fastscroll_minimum_range" />
@@ -823,6 +824,7 @@
             <xs:enumeration value="@dimen/design_tab_text_size_2line" />
             <xs:enumeration value="@dimen/disabled_alpha_material_dark" />
             <xs:enumeration value="@dimen/disabled_alpha_material_light" />
+            <xs:enumeration value="@dimen/extra_icon" />
             <xs:enumeration value="@dimen/fastscroll_default_thickness" />
             <xs:enumeration value="@dimen/fastscroll_margin" />
             <xs:enumeration value="@dimen/fastscroll_minimum_range" />
@@ -1053,6 +1055,7 @@
             <xs:enumeration value="@dimen/design_tab_text_size_2line" />
             <xs:enumeration value="@dimen/disabled_alpha_material_dark" />
             <xs:enumeration value="@dimen/disabled_alpha_material_light" />
+            <xs:enumeration value="@dimen/extra_icon" />
             <xs:enumeration value="@dimen/fastscroll_default_thickness" />
             <xs:enumeration value="@dimen/fastscroll_margin" />
             <xs:enumeration value="@dimen/fastscroll_minimum_range" />
@@ -1283,6 +1286,7 @@
             <xs:enumeration value="@dimen/design_tab_text_size_2line" />
             <xs:enumeration value="@dimen/disabled_alpha_material_dark" />
             <xs:enumeration value="@dimen/disabled_alpha_material_light" />
+            <xs:enumeration value="@dimen/extra_icon" />
             <xs:enumeration value="@dimen/fastscroll_default_thickness" />
             <xs:enumeration value="@dimen/fastscroll_margin" />
             <xs:enumeration value="@dimen/fastscroll_minimum_range" />
@@ -1545,9 +1549,11 @@
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
             <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
+            <xs:enumeration value="@drawable/bottomborder" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
+            <xs:enumeration value="@drawable/buttonreviewstateselected" />
             <xs:enumeration value="@drawable/buttonreviewstyle" />
             <xs:enumeration value="@drawable/cardbuttonpressed" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -1595,6 +1601,8 @@
             <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
+            <xs:enumeration value="@drawable/home" />
+            <xs:enumeration value="@drawable/homehome" />
             <xs:enumeration value="@drawable/homepagelogo" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
@@ -1773,6 +1781,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_speaker_light" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
+            <xs:enumeration value="@drawable/layoutborder" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/menuicon" />
@@ -1827,6 +1836,7 @@
             <xs:enumeration value="@drawable/searchimager" />
             <xs:enumeration value="@drawable/signin" />
             <xs:enumeration value="@drawable/signinxml" />
+            <xs:enumeration value="@drawable/splashbackground" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -2304,9 +2314,11 @@
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
             <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
+            <xs:enumeration value="@drawable/bottomborder" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
+            <xs:enumeration value="@drawable/buttonreviewstateselected" />
             <xs:enumeration value="@drawable/buttonreviewstyle" />
             <xs:enumeration value="@drawable/cardbuttonpressed" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -2354,6 +2366,8 @@
             <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
+            <xs:enumeration value="@drawable/home" />
+            <xs:enumeration value="@drawable/homehome" />
             <xs:enumeration value="@drawable/homepagelogo" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
@@ -2532,6 +2546,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_speaker_light" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
+            <xs:enumeration value="@drawable/layoutborder" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/menuicon" />
@@ -2586,6 +2601,7 @@
             <xs:enumeration value="@drawable/searchimager" />
             <xs:enumeration value="@drawable/signin" />
             <xs:enumeration value="@drawable/signinxml" />
+            <xs:enumeration value="@drawable/splashbackground" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -2910,9 +2926,11 @@
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
             <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
+            <xs:enumeration value="@drawable/bottomborder" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
+            <xs:enumeration value="@drawable/buttonreviewstateselected" />
             <xs:enumeration value="@drawable/buttonreviewstyle" />
             <xs:enumeration value="@drawable/cardbuttonpressed" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -2960,6 +2978,8 @@
             <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
+            <xs:enumeration value="@drawable/home" />
+            <xs:enumeration value="@drawable/homehome" />
             <xs:enumeration value="@drawable/homepagelogo" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
@@ -3138,6 +3158,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_speaker_light" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
+            <xs:enumeration value="@drawable/layoutborder" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/menuicon" />
@@ -3192,6 +3213,7 @@
             <xs:enumeration value="@drawable/searchimager" />
             <xs:enumeration value="@drawable/signin" />
             <xs:enumeration value="@drawable/signinxml" />
+            <xs:enumeration value="@drawable/splashbackground" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -3516,9 +3538,11 @@
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
             <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
+            <xs:enumeration value="@drawable/bottomborder" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
+            <xs:enumeration value="@drawable/buttonreviewstateselected" />
             <xs:enumeration value="@drawable/buttonreviewstyle" />
             <xs:enumeration value="@drawable/cardbuttonpressed" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -3566,6 +3590,8 @@
             <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
+            <xs:enumeration value="@drawable/home" />
+            <xs:enumeration value="@drawable/homehome" />
             <xs:enumeration value="@drawable/homepagelogo" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
@@ -3744,6 +3770,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_speaker_light" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
+            <xs:enumeration value="@drawable/layoutborder" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/menuicon" />
@@ -3798,6 +3825,7 @@
             <xs:enumeration value="@drawable/searchimager" />
             <xs:enumeration value="@drawable/signin" />
             <xs:enumeration value="@drawable/signinxml" />
+            <xs:enumeration value="@drawable/splashbackground" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -4180,6 +4208,7 @@
             <xs:enumeration value="@dimen/design_tab_text_size_2line" />
             <xs:enumeration value="@dimen/disabled_alpha_material_dark" />
             <xs:enumeration value="@dimen/disabled_alpha_material_light" />
+            <xs:enumeration value="@dimen/extra_icon" />
             <xs:enumeration value="@dimen/fastscroll_default_thickness" />
             <xs:enumeration value="@dimen/fastscroll_margin" />
             <xs:enumeration value="@dimen/fastscroll_minimum_range" />
@@ -4410,6 +4439,7 @@
             <xs:enumeration value="@dimen/design_tab_text_size_2line" />
             <xs:enumeration value="@dimen/disabled_alpha_material_dark" />
             <xs:enumeration value="@dimen/disabled_alpha_material_light" />
+            <xs:enumeration value="@dimen/extra_icon" />
             <xs:enumeration value="@dimen/fastscroll_default_thickness" />
             <xs:enumeration value="@dimen/fastscroll_margin" />
             <xs:enumeration value="@dimen/fastscroll_minimum_range" />
@@ -4640,6 +4670,7 @@
             <xs:enumeration value="@dimen/design_tab_text_size_2line" />
             <xs:enumeration value="@dimen/disabled_alpha_material_dark" />
             <xs:enumeration value="@dimen/disabled_alpha_material_light" />
+            <xs:enumeration value="@dimen/extra_icon" />
             <xs:enumeration value="@dimen/fastscroll_default_thickness" />
             <xs:enumeration value="@dimen/fastscroll_margin" />
             <xs:enumeration value="@dimen/fastscroll_minimum_range" />
@@ -4870,6 +4901,7 @@
             <xs:enumeration value="@dimen/design_tab_text_size_2line" />
             <xs:enumeration value="@dimen/disabled_alpha_material_dark" />
             <xs:enumeration value="@dimen/disabled_alpha_material_light" />
+            <xs:enumeration value="@dimen/extra_icon" />
             <xs:enumeration value="@dimen/fastscroll_default_thickness" />
             <xs:enumeration value="@dimen/fastscroll_margin" />
             <xs:enumeration value="@dimen/fastscroll_minimum_range" />
@@ -5100,6 +5132,7 @@
             <xs:enumeration value="@dimen/design_tab_text_size_2line" />
             <xs:enumeration value="@dimen/disabled_alpha_material_dark" />
             <xs:enumeration value="@dimen/disabled_alpha_material_light" />
+            <xs:enumeration value="@dimen/extra_icon" />
             <xs:enumeration value="@dimen/fastscroll_default_thickness" />
             <xs:enumeration value="@dimen/fastscroll_margin" />
             <xs:enumeration value="@dimen/fastscroll_minimum_range" />
@@ -5330,6 +5363,7 @@
             <xs:enumeration value="@dimen/design_tab_text_size_2line" />
             <xs:enumeration value="@dimen/disabled_alpha_material_dark" />
             <xs:enumeration value="@dimen/disabled_alpha_material_light" />
+            <xs:enumeration value="@dimen/extra_icon" />
             <xs:enumeration value="@dimen/fastscroll_default_thickness" />
             <xs:enumeration value="@dimen/fastscroll_margin" />
             <xs:enumeration value="@dimen/fastscroll_minimum_range" />
@@ -5560,6 +5594,7 @@
             <xs:enumeration value="@dimen/design_tab_text_size_2line" />
             <xs:enumeration value="@dimen/disabled_alpha_material_dark" />
             <xs:enumeration value="@dimen/disabled_alpha_material_light" />
+            <xs:enumeration value="@dimen/extra_icon" />
             <xs:enumeration value="@dimen/fastscroll_default_thickness" />
             <xs:enumeration value="@dimen/fastscroll_margin" />
             <xs:enumeration value="@dimen/fastscroll_minimum_range" />
@@ -5790,6 +5825,7 @@
             <xs:enumeration value="@dimen/design_tab_text_size_2line" />
             <xs:enumeration value="@dimen/disabled_alpha_material_dark" />
             <xs:enumeration value="@dimen/disabled_alpha_material_light" />
+            <xs:enumeration value="@dimen/extra_icon" />
             <xs:enumeration value="@dimen/fastscroll_default_thickness" />
             <xs:enumeration value="@dimen/fastscroll_margin" />
             <xs:enumeration value="@dimen/fastscroll_minimum_range" />
@@ -6020,6 +6056,7 @@
             <xs:enumeration value="@dimen/design_tab_text_size_2line" />
             <xs:enumeration value="@dimen/disabled_alpha_material_dark" />
             <xs:enumeration value="@dimen/disabled_alpha_material_light" />
+            <xs:enumeration value="@dimen/extra_icon" />
             <xs:enumeration value="@dimen/fastscroll_default_thickness" />
             <xs:enumeration value="@dimen/fastscroll_margin" />
             <xs:enumeration value="@dimen/fastscroll_minimum_range" />
@@ -6250,6 +6287,7 @@
             <xs:enumeration value="@dimen/design_tab_text_size_2line" />
             <xs:enumeration value="@dimen/disabled_alpha_material_dark" />
             <xs:enumeration value="@dimen/disabled_alpha_material_light" />
+            <xs:enumeration value="@dimen/extra_icon" />
             <xs:enumeration value="@dimen/fastscroll_default_thickness" />
             <xs:enumeration value="@dimen/fastscroll_margin" />
             <xs:enumeration value="@dimen/fastscroll_minimum_range" />
@@ -6480,6 +6518,7 @@
             <xs:enumeration value="@dimen/design_tab_text_size_2line" />
             <xs:enumeration value="@dimen/disabled_alpha_material_dark" />
             <xs:enumeration value="@dimen/disabled_alpha_material_light" />
+            <xs:enumeration value="@dimen/extra_icon" />
             <xs:enumeration value="@dimen/fastscroll_default_thickness" />
             <xs:enumeration value="@dimen/fastscroll_margin" />
             <xs:enumeration value="@dimen/fastscroll_minimum_range" />
@@ -7080,9 +7119,11 @@
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
             <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
+            <xs:enumeration value="@drawable/bottomborder" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
+            <xs:enumeration value="@drawable/buttonreviewstateselected" />
             <xs:enumeration value="@drawable/buttonreviewstyle" />
             <xs:enumeration value="@drawable/cardbuttonpressed" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -7130,6 +7171,8 @@
             <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
+            <xs:enumeration value="@drawable/home" />
+            <xs:enumeration value="@drawable/homehome" />
             <xs:enumeration value="@drawable/homepagelogo" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
@@ -7308,6 +7351,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_speaker_light" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
+            <xs:enumeration value="@drawable/layoutborder" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/menuicon" />
@@ -7362,6 +7406,7 @@
             <xs:enumeration value="@drawable/searchimager" />
             <xs:enumeration value="@drawable/signin" />
             <xs:enumeration value="@drawable/signinxml" />
+            <xs:enumeration value="@drawable/splashbackground" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -7686,9 +7731,11 @@
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
             <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
+            <xs:enumeration value="@drawable/bottomborder" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
+            <xs:enumeration value="@drawable/buttonreviewstateselected" />
             <xs:enumeration value="@drawable/buttonreviewstyle" />
             <xs:enumeration value="@drawable/cardbuttonpressed" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -7736,6 +7783,8 @@
             <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
+            <xs:enumeration value="@drawable/home" />
+            <xs:enumeration value="@drawable/homehome" />
             <xs:enumeration value="@drawable/homepagelogo" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
@@ -7914,6 +7963,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_speaker_light" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
+            <xs:enumeration value="@drawable/layoutborder" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/menuicon" />
@@ -7968,6 +8018,7 @@
             <xs:enumeration value="@drawable/searchimager" />
             <xs:enumeration value="@drawable/signin" />
             <xs:enumeration value="@drawable/signinxml" />
+            <xs:enumeration value="@drawable/splashbackground" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -8422,9 +8473,11 @@
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
             <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
+            <xs:enumeration value="@drawable/bottomborder" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
+            <xs:enumeration value="@drawable/buttonreviewstateselected" />
             <xs:enumeration value="@drawable/buttonreviewstyle" />
             <xs:enumeration value="@drawable/cardbuttonpressed" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -8472,6 +8525,8 @@
             <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
+            <xs:enumeration value="@drawable/home" />
+            <xs:enumeration value="@drawable/homehome" />
             <xs:enumeration value="@drawable/homepagelogo" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
@@ -8650,6 +8705,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_speaker_light" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
+            <xs:enumeration value="@drawable/layoutborder" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/menuicon" />
@@ -8704,6 +8760,7 @@
             <xs:enumeration value="@drawable/searchimager" />
             <xs:enumeration value="@drawable/signin" />
             <xs:enumeration value="@drawable/signinxml" />
+            <xs:enumeration value="@drawable/splashbackground" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -9086,6 +9143,7 @@
             <xs:enumeration value="@dimen/design_tab_text_size_2line" />
             <xs:enumeration value="@dimen/disabled_alpha_material_dark" />
             <xs:enumeration value="@dimen/disabled_alpha_material_light" />
+            <xs:enumeration value="@dimen/extra_icon" />
             <xs:enumeration value="@dimen/fastscroll_default_thickness" />
             <xs:enumeration value="@dimen/fastscroll_margin" />
             <xs:enumeration value="@dimen/fastscroll_minimum_range" />
@@ -9315,9 +9373,11 @@
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
             <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
+            <xs:enumeration value="@drawable/bottomborder" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
+            <xs:enumeration value="@drawable/buttonreviewstateselected" />
             <xs:enumeration value="@drawable/buttonreviewstyle" />
             <xs:enumeration value="@drawable/cardbuttonpressed" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -9365,6 +9425,8 @@
             <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
+            <xs:enumeration value="@drawable/home" />
+            <xs:enumeration value="@drawable/homehome" />
             <xs:enumeration value="@drawable/homepagelogo" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
@@ -9543,6 +9605,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_speaker_light" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
+            <xs:enumeration value="@drawable/layoutborder" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/menuicon" />
@@ -9597,6 +9660,7 @@
             <xs:enumeration value="@drawable/searchimager" />
             <xs:enumeration value="@drawable/signin" />
             <xs:enumeration value="@drawable/signinxml" />
+            <xs:enumeration value="@drawable/splashbackground" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -9921,9 +9985,11 @@
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
             <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
+            <xs:enumeration value="@drawable/bottomborder" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
+            <xs:enumeration value="@drawable/buttonreviewstateselected" />
             <xs:enumeration value="@drawable/buttonreviewstyle" />
             <xs:enumeration value="@drawable/cardbuttonpressed" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -9971,6 +10037,8 @@
             <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
+            <xs:enumeration value="@drawable/home" />
+            <xs:enumeration value="@drawable/homehome" />
             <xs:enumeration value="@drawable/homepagelogo" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
@@ -10149,6 +10217,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_speaker_light" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
+            <xs:enumeration value="@drawable/layoutborder" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/menuicon" />
@@ -10203,6 +10272,7 @@
             <xs:enumeration value="@drawable/searchimager" />
             <xs:enumeration value="@drawable/signin" />
             <xs:enumeration value="@drawable/signinxml" />
+            <xs:enumeration value="@drawable/splashbackground" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -10653,6 +10723,7 @@
             <xs:enumeration value="@dimen/design_tab_text_size_2line" />
             <xs:enumeration value="@dimen/disabled_alpha_material_dark" />
             <xs:enumeration value="@dimen/disabled_alpha_material_light" />
+            <xs:enumeration value="@dimen/extra_icon" />
             <xs:enumeration value="@dimen/fastscroll_default_thickness" />
             <xs:enumeration value="@dimen/fastscroll_margin" />
             <xs:enumeration value="@dimen/fastscroll_minimum_range" />
@@ -10883,6 +10954,7 @@
             <xs:enumeration value="@dimen/design_tab_text_size_2line" />
             <xs:enumeration value="@dimen/disabled_alpha_material_dark" />
             <xs:enumeration value="@dimen/disabled_alpha_material_light" />
+            <xs:enumeration value="@dimen/extra_icon" />
             <xs:enumeration value="@dimen/fastscroll_default_thickness" />
             <xs:enumeration value="@dimen/fastscroll_margin" />
             <xs:enumeration value="@dimen/fastscroll_minimum_range" />
@@ -11113,6 +11185,7 @@
             <xs:enumeration value="@dimen/design_tab_text_size_2line" />
             <xs:enumeration value="@dimen/disabled_alpha_material_dark" />
             <xs:enumeration value="@dimen/disabled_alpha_material_light" />
+            <xs:enumeration value="@dimen/extra_icon" />
             <xs:enumeration value="@dimen/fastscroll_default_thickness" />
             <xs:enumeration value="@dimen/fastscroll_margin" />
             <xs:enumeration value="@dimen/fastscroll_minimum_range" />
@@ -11343,6 +11416,7 @@
             <xs:enumeration value="@dimen/design_tab_text_size_2line" />
             <xs:enumeration value="@dimen/disabled_alpha_material_dark" />
             <xs:enumeration value="@dimen/disabled_alpha_material_light" />
+            <xs:enumeration value="@dimen/extra_icon" />
             <xs:enumeration value="@dimen/fastscroll_default_thickness" />
             <xs:enumeration value="@dimen/fastscroll_margin" />
             <xs:enumeration value="@dimen/fastscroll_minimum_range" />
@@ -11573,6 +11647,7 @@
             <xs:enumeration value="@dimen/design_tab_text_size_2line" />
             <xs:enumeration value="@dimen/disabled_alpha_material_dark" />
             <xs:enumeration value="@dimen/disabled_alpha_material_light" />
+            <xs:enumeration value="@dimen/extra_icon" />
             <xs:enumeration value="@dimen/fastscroll_default_thickness" />
             <xs:enumeration value="@dimen/fastscroll_margin" />
             <xs:enumeration value="@dimen/fastscroll_minimum_range" />
@@ -11745,9 +11820,11 @@
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
             <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
+            <xs:enumeration value="@drawable/bottomborder" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
+            <xs:enumeration value="@drawable/buttonreviewstateselected" />
             <xs:enumeration value="@drawable/buttonreviewstyle" />
             <xs:enumeration value="@drawable/cardbuttonpressed" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -11795,6 +11872,8 @@
             <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
+            <xs:enumeration value="@drawable/home" />
+            <xs:enumeration value="@drawable/homehome" />
             <xs:enumeration value="@drawable/homepagelogo" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
@@ -11973,6 +12052,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_speaker_light" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
+            <xs:enumeration value="@drawable/layoutborder" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/menuicon" />
@@ -12027,6 +12107,7 @@
             <xs:enumeration value="@drawable/searchimager" />
             <xs:enumeration value="@drawable/signin" />
             <xs:enumeration value="@drawable/signinxml" />
+            <xs:enumeration value="@drawable/splashbackground" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -12351,9 +12432,11 @@
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
             <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
+            <xs:enumeration value="@drawable/bottomborder" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
+            <xs:enumeration value="@drawable/buttonreviewstateselected" />
             <xs:enumeration value="@drawable/buttonreviewstyle" />
             <xs:enumeration value="@drawable/cardbuttonpressed" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -12401,6 +12484,8 @@
             <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
+            <xs:enumeration value="@drawable/home" />
+            <xs:enumeration value="@drawable/homehome" />
             <xs:enumeration value="@drawable/homepagelogo" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
@@ -12579,6 +12664,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_speaker_light" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
+            <xs:enumeration value="@drawable/layoutborder" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/menuicon" />
@@ -12633,6 +12719,7 @@
             <xs:enumeration value="@drawable/searchimager" />
             <xs:enumeration value="@drawable/signin" />
             <xs:enumeration value="@drawable/signinxml" />
+            <xs:enumeration value="@drawable/splashbackground" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -13018,9 +13105,11 @@
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
             <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
+            <xs:enumeration value="@drawable/bottomborder" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
+            <xs:enumeration value="@drawable/buttonreviewstateselected" />
             <xs:enumeration value="@drawable/buttonreviewstyle" />
             <xs:enumeration value="@drawable/cardbuttonpressed" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -13068,6 +13157,8 @@
             <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
+            <xs:enumeration value="@drawable/home" />
+            <xs:enumeration value="@drawable/homehome" />
             <xs:enumeration value="@drawable/homepagelogo" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
@@ -13246,6 +13337,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_speaker_light" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
+            <xs:enumeration value="@drawable/layoutborder" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/menuicon" />
@@ -13300,6 +13392,7 @@
             <xs:enumeration value="@drawable/searchimager" />
             <xs:enumeration value="@drawable/signin" />
             <xs:enumeration value="@drawable/signinxml" />
+            <xs:enumeration value="@drawable/splashbackground" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -13624,9 +13717,11 @@
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
             <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
+            <xs:enumeration value="@drawable/bottomborder" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
+            <xs:enumeration value="@drawable/buttonreviewstateselected" />
             <xs:enumeration value="@drawable/buttonreviewstyle" />
             <xs:enumeration value="@drawable/cardbuttonpressed" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -13674,6 +13769,8 @@
             <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
+            <xs:enumeration value="@drawable/home" />
+            <xs:enumeration value="@drawable/homehome" />
             <xs:enumeration value="@drawable/homepagelogo" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
@@ -13852,6 +13949,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_speaker_light" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
+            <xs:enumeration value="@drawable/layoutborder" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/menuicon" />
@@ -13906,6 +14004,7 @@
             <xs:enumeration value="@drawable/searchimager" />
             <xs:enumeration value="@drawable/signin" />
             <xs:enumeration value="@drawable/signinxml" />
+            <xs:enumeration value="@drawable/splashbackground" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -14230,9 +14329,11 @@
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
             <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
+            <xs:enumeration value="@drawable/bottomborder" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
+            <xs:enumeration value="@drawable/buttonreviewstateselected" />
             <xs:enumeration value="@drawable/buttonreviewstyle" />
             <xs:enumeration value="@drawable/cardbuttonpressed" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -14280,6 +14381,8 @@
             <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
+            <xs:enumeration value="@drawable/home" />
+            <xs:enumeration value="@drawable/homehome" />
             <xs:enumeration value="@drawable/homepagelogo" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
@@ -14458,6 +14561,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_speaker_light" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
+            <xs:enumeration value="@drawable/layoutborder" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/menuicon" />
@@ -14512,6 +14616,7 @@
             <xs:enumeration value="@drawable/searchimager" />
             <xs:enumeration value="@drawable/signin" />
             <xs:enumeration value="@drawable/signinxml" />
+            <xs:enumeration value="@drawable/splashbackground" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -14836,9 +14941,11 @@
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
             <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
+            <xs:enumeration value="@drawable/bottomborder" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
+            <xs:enumeration value="@drawable/buttonreviewstateselected" />
             <xs:enumeration value="@drawable/buttonreviewstyle" />
             <xs:enumeration value="@drawable/cardbuttonpressed" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -14886,6 +14993,8 @@
             <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
+            <xs:enumeration value="@drawable/home" />
+            <xs:enumeration value="@drawable/homehome" />
             <xs:enumeration value="@drawable/homepagelogo" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
@@ -15064,6 +15173,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_speaker_light" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
+            <xs:enumeration value="@drawable/layoutborder" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/menuicon" />
@@ -15118,6 +15228,7 @@
             <xs:enumeration value="@drawable/searchimager" />
             <xs:enumeration value="@drawable/signin" />
             <xs:enumeration value="@drawable/signinxml" />
+            <xs:enumeration value="@drawable/splashbackground" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -15487,9 +15598,11 @@
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
             <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
+            <xs:enumeration value="@drawable/bottomborder" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
+            <xs:enumeration value="@drawable/buttonreviewstateselected" />
             <xs:enumeration value="@drawable/buttonreviewstyle" />
             <xs:enumeration value="@drawable/cardbuttonpressed" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -15537,6 +15650,8 @@
             <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
+            <xs:enumeration value="@drawable/home" />
+            <xs:enumeration value="@drawable/homehome" />
             <xs:enumeration value="@drawable/homepagelogo" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
@@ -15715,6 +15830,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_speaker_light" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
+            <xs:enumeration value="@drawable/layoutborder" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/menuicon" />
@@ -15769,6 +15885,7 @@
             <xs:enumeration value="@drawable/searchimager" />
             <xs:enumeration value="@drawable/signin" />
             <xs:enumeration value="@drawable/signinxml" />
+            <xs:enumeration value="@drawable/splashbackground" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -16093,9 +16210,11 @@
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
             <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
+            <xs:enumeration value="@drawable/bottomborder" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
+            <xs:enumeration value="@drawable/buttonreviewstateselected" />
             <xs:enumeration value="@drawable/buttonreviewstyle" />
             <xs:enumeration value="@drawable/cardbuttonpressed" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -16143,6 +16262,8 @@
             <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
+            <xs:enumeration value="@drawable/home" />
+            <xs:enumeration value="@drawable/homehome" />
             <xs:enumeration value="@drawable/homepagelogo" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
@@ -16321,6 +16442,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_speaker_light" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
+            <xs:enumeration value="@drawable/layoutborder" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/menuicon" />
@@ -16375,6 +16497,7 @@
             <xs:enumeration value="@drawable/searchimager" />
             <xs:enumeration value="@drawable/signin" />
             <xs:enumeration value="@drawable/signinxml" />
+            <xs:enumeration value="@drawable/splashbackground" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -16789,9 +16912,11 @@
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
             <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
+            <xs:enumeration value="@drawable/bottomborder" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
+            <xs:enumeration value="@drawable/buttonreviewstateselected" />
             <xs:enumeration value="@drawable/buttonreviewstyle" />
             <xs:enumeration value="@drawable/cardbuttonpressed" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -16839,6 +16964,8 @@
             <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
+            <xs:enumeration value="@drawable/home" />
+            <xs:enumeration value="@drawable/homehome" />
             <xs:enumeration value="@drawable/homepagelogo" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
@@ -17017,6 +17144,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_speaker_light" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
+            <xs:enumeration value="@drawable/layoutborder" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/menuicon" />
@@ -17071,6 +17199,7 @@
             <xs:enumeration value="@drawable/searchimager" />
             <xs:enumeration value="@drawable/signin" />
             <xs:enumeration value="@drawable/signinxml" />
+            <xs:enumeration value="@drawable/splashbackground" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -17831,9 +17960,11 @@
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
             <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
+            <xs:enumeration value="@drawable/bottomborder" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
+            <xs:enumeration value="@drawable/buttonreviewstateselected" />
             <xs:enumeration value="@drawable/buttonreviewstyle" />
             <xs:enumeration value="@drawable/cardbuttonpressed" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -17881,6 +18012,8 @@
             <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
+            <xs:enumeration value="@drawable/home" />
+            <xs:enumeration value="@drawable/homehome" />
             <xs:enumeration value="@drawable/homepagelogo" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
@@ -18059,6 +18192,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_speaker_light" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
+            <xs:enumeration value="@drawable/layoutborder" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/menuicon" />
@@ -18113,6 +18247,7 @@
             <xs:enumeration value="@drawable/searchimager" />
             <xs:enumeration value="@drawable/signin" />
             <xs:enumeration value="@drawable/signinxml" />
+            <xs:enumeration value="@drawable/splashbackground" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -18515,9 +18650,11 @@
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
             <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
+            <xs:enumeration value="@drawable/bottomborder" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
+            <xs:enumeration value="@drawable/buttonreviewstateselected" />
             <xs:enumeration value="@drawable/buttonreviewstyle" />
             <xs:enumeration value="@drawable/cardbuttonpressed" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -18565,6 +18702,8 @@
             <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
+            <xs:enumeration value="@drawable/home" />
+            <xs:enumeration value="@drawable/homehome" />
             <xs:enumeration value="@drawable/homepagelogo" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
@@ -18743,6 +18882,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_speaker_light" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
+            <xs:enumeration value="@drawable/layoutborder" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/menuicon" />
@@ -18797,6 +18937,7 @@
             <xs:enumeration value="@drawable/searchimager" />
             <xs:enumeration value="@drawable/signin" />
             <xs:enumeration value="@drawable/signinxml" />
+            <xs:enumeration value="@drawable/splashbackground" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -19473,9 +19614,11 @@
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
             <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
+            <xs:enumeration value="@drawable/bottomborder" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
+            <xs:enumeration value="@drawable/buttonreviewstateselected" />
             <xs:enumeration value="@drawable/buttonreviewstyle" />
             <xs:enumeration value="@drawable/cardbuttonpressed" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -19523,6 +19666,8 @@
             <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
+            <xs:enumeration value="@drawable/home" />
+            <xs:enumeration value="@drawable/homehome" />
             <xs:enumeration value="@drawable/homepagelogo" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
@@ -19701,6 +19846,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_speaker_light" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
+            <xs:enumeration value="@drawable/layoutborder" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/menuicon" />
@@ -19755,6 +19901,7 @@
             <xs:enumeration value="@drawable/searchimager" />
             <xs:enumeration value="@drawable/signin" />
             <xs:enumeration value="@drawable/signinxml" />
+            <xs:enumeration value="@drawable/splashbackground" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -20431,9 +20578,11 @@
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
             <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
+            <xs:enumeration value="@drawable/bottomborder" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
+            <xs:enumeration value="@drawable/buttonreviewstateselected" />
             <xs:enumeration value="@drawable/buttonreviewstyle" />
             <xs:enumeration value="@drawable/cardbuttonpressed" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -20481,6 +20630,8 @@
             <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
+            <xs:enumeration value="@drawable/home" />
+            <xs:enumeration value="@drawable/homehome" />
             <xs:enumeration value="@drawable/homepagelogo" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
@@ -20659,6 +20810,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_speaker_light" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
+            <xs:enumeration value="@drawable/layoutborder" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/menuicon" />
@@ -20713,6 +20865,7 @@
             <xs:enumeration value="@drawable/searchimager" />
             <xs:enumeration value="@drawable/signin" />
             <xs:enumeration value="@drawable/signinxml" />
+            <xs:enumeration value="@drawable/splashbackground" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -21037,9 +21190,11 @@
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
             <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
+            <xs:enumeration value="@drawable/bottomborder" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
+            <xs:enumeration value="@drawable/buttonreviewstateselected" />
             <xs:enumeration value="@drawable/buttonreviewstyle" />
             <xs:enumeration value="@drawable/cardbuttonpressed" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -21087,6 +21242,8 @@
             <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
+            <xs:enumeration value="@drawable/home" />
+            <xs:enumeration value="@drawable/homehome" />
             <xs:enumeration value="@drawable/homepagelogo" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
@@ -21265,6 +21422,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_speaker_light" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
+            <xs:enumeration value="@drawable/layoutborder" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/menuicon" />
@@ -21319,6 +21477,7 @@
             <xs:enumeration value="@drawable/searchimager" />
             <xs:enumeration value="@drawable/signin" />
             <xs:enumeration value="@drawable/signinxml" />
+            <xs:enumeration value="@drawable/splashbackground" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -21773,9 +21932,11 @@
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
             <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
+            <xs:enumeration value="@drawable/bottomborder" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
+            <xs:enumeration value="@drawable/buttonreviewstateselected" />
             <xs:enumeration value="@drawable/buttonreviewstyle" />
             <xs:enumeration value="@drawable/cardbuttonpressed" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -21823,6 +21984,8 @@
             <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
+            <xs:enumeration value="@drawable/home" />
+            <xs:enumeration value="@drawable/homehome" />
             <xs:enumeration value="@drawable/homepagelogo" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
@@ -22001,6 +22164,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_speaker_light" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
+            <xs:enumeration value="@drawable/layoutborder" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/menuicon" />
@@ -22055,6 +22219,7 @@
             <xs:enumeration value="@drawable/searchimager" />
             <xs:enumeration value="@drawable/signin" />
             <xs:enumeration value="@drawable/signinxml" />
+            <xs:enumeration value="@drawable/splashbackground" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -22567,6 +22732,7 @@
             <xs:enumeration value="@dimen/design_tab_text_size_2line" />
             <xs:enumeration value="@dimen/disabled_alpha_material_dark" />
             <xs:enumeration value="@dimen/disabled_alpha_material_light" />
+            <xs:enumeration value="@dimen/extra_icon" />
             <xs:enumeration value="@dimen/fastscroll_default_thickness" />
             <xs:enumeration value="@dimen/fastscroll_margin" />
             <xs:enumeration value="@dimen/fastscroll_minimum_range" />
@@ -22797,6 +22963,7 @@
             <xs:enumeration value="@dimen/design_tab_text_size_2line" />
             <xs:enumeration value="@dimen/disabled_alpha_material_dark" />
             <xs:enumeration value="@dimen/disabled_alpha_material_light" />
+            <xs:enumeration value="@dimen/extra_icon" />
             <xs:enumeration value="@dimen/fastscroll_default_thickness" />
             <xs:enumeration value="@dimen/fastscroll_margin" />
             <xs:enumeration value="@dimen/fastscroll_minimum_range" />
@@ -23366,9 +23533,11 @@
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
             <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
+            <xs:enumeration value="@drawable/bottomborder" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
+            <xs:enumeration value="@drawable/buttonreviewstateselected" />
             <xs:enumeration value="@drawable/buttonreviewstyle" />
             <xs:enumeration value="@drawable/cardbuttonpressed" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -23416,6 +23585,8 @@
             <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
+            <xs:enumeration value="@drawable/home" />
+            <xs:enumeration value="@drawable/homehome" />
             <xs:enumeration value="@drawable/homepagelogo" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
@@ -23594,6 +23765,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_speaker_light" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
+            <xs:enumeration value="@drawable/layoutborder" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/menuicon" />
@@ -23648,6 +23820,7 @@
             <xs:enumeration value="@drawable/searchimager" />
             <xs:enumeration value="@drawable/signin" />
             <xs:enumeration value="@drawable/signinxml" />
+            <xs:enumeration value="@drawable/splashbackground" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -24102,9 +24275,11 @@
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
             <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
+            <xs:enumeration value="@drawable/bottomborder" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
+            <xs:enumeration value="@drawable/buttonreviewstateselected" />
             <xs:enumeration value="@drawable/buttonreviewstyle" />
             <xs:enumeration value="@drawable/cardbuttonpressed" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -24152,6 +24327,8 @@
             <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
+            <xs:enumeration value="@drawable/home" />
+            <xs:enumeration value="@drawable/homehome" />
             <xs:enumeration value="@drawable/homepagelogo" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
@@ -24330,6 +24507,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_speaker_light" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
+            <xs:enumeration value="@drawable/layoutborder" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/menuicon" />
@@ -24384,6 +24562,7 @@
             <xs:enumeration value="@drawable/searchimager" />
             <xs:enumeration value="@drawable/signin" />
             <xs:enumeration value="@drawable/signinxml" />
+            <xs:enumeration value="@drawable/splashbackground" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -24838,9 +25017,11 @@
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
             <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
+            <xs:enumeration value="@drawable/bottomborder" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
+            <xs:enumeration value="@drawable/buttonreviewstateselected" />
             <xs:enumeration value="@drawable/buttonreviewstyle" />
             <xs:enumeration value="@drawable/cardbuttonpressed" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -24888,6 +25069,8 @@
             <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
+            <xs:enumeration value="@drawable/home" />
+            <xs:enumeration value="@drawable/homehome" />
             <xs:enumeration value="@drawable/homepagelogo" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
@@ -25066,6 +25249,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_speaker_light" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
+            <xs:enumeration value="@drawable/layoutborder" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/menuicon" />
@@ -25120,6 +25304,7 @@
             <xs:enumeration value="@drawable/searchimager" />
             <xs:enumeration value="@drawable/signin" />
             <xs:enumeration value="@drawable/signinxml" />
+            <xs:enumeration value="@drawable/splashbackground" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -25859,9 +26044,11 @@
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
             <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
+            <xs:enumeration value="@drawable/bottomborder" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
+            <xs:enumeration value="@drawable/buttonreviewstateselected" />
             <xs:enumeration value="@drawable/buttonreviewstyle" />
             <xs:enumeration value="@drawable/cardbuttonpressed" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -25909,6 +26096,8 @@
             <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
+            <xs:enumeration value="@drawable/home" />
+            <xs:enumeration value="@drawable/homehome" />
             <xs:enumeration value="@drawable/homepagelogo" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
@@ -26087,6 +26276,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_speaker_light" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
+            <xs:enumeration value="@drawable/layoutborder" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/menuicon" />
@@ -26141,6 +26331,7 @@
             <xs:enumeration value="@drawable/searchimager" />
             <xs:enumeration value="@drawable/signin" />
             <xs:enumeration value="@drawable/signinxml" />
+            <xs:enumeration value="@drawable/splashbackground" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -26523,6 +26714,7 @@
             <xs:enumeration value="@dimen/design_tab_text_size_2line" />
             <xs:enumeration value="@dimen/disabled_alpha_material_dark" />
             <xs:enumeration value="@dimen/disabled_alpha_material_light" />
+            <xs:enumeration value="@dimen/extra_icon" />
             <xs:enumeration value="@dimen/fastscroll_default_thickness" />
             <xs:enumeration value="@dimen/fastscroll_margin" />
             <xs:enumeration value="@dimen/fastscroll_minimum_range" />
@@ -26695,9 +26887,11 @@
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
             <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
+            <xs:enumeration value="@drawable/bottomborder" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
+            <xs:enumeration value="@drawable/buttonreviewstateselected" />
             <xs:enumeration value="@drawable/buttonreviewstyle" />
             <xs:enumeration value="@drawable/cardbuttonpressed" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -26745,6 +26939,8 @@
             <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
+            <xs:enumeration value="@drawable/home" />
+            <xs:enumeration value="@drawable/homehome" />
             <xs:enumeration value="@drawable/homepagelogo" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
@@ -26923,6 +27119,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_speaker_light" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
+            <xs:enumeration value="@drawable/layoutborder" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/menuicon" />
@@ -26977,6 +27174,7 @@
             <xs:enumeration value="@drawable/searchimager" />
             <xs:enumeration value="@drawable/signin" />
             <xs:enumeration value="@drawable/signinxml" />
+            <xs:enumeration value="@drawable/splashbackground" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -27917,6 +28115,7 @@
             <xs:enumeration value="@dimen/design_tab_text_size_2line" />
             <xs:enumeration value="@dimen/disabled_alpha_material_dark" />
             <xs:enumeration value="@dimen/disabled_alpha_material_light" />
+            <xs:enumeration value="@dimen/extra_icon" />
             <xs:enumeration value="@dimen/fastscroll_default_thickness" />
             <xs:enumeration value="@dimen/fastscroll_margin" />
             <xs:enumeration value="@dimen/fastscroll_minimum_range" />
@@ -28089,9 +28288,11 @@
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
             <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
+            <xs:enumeration value="@drawable/bottomborder" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
+            <xs:enumeration value="@drawable/buttonreviewstateselected" />
             <xs:enumeration value="@drawable/buttonreviewstyle" />
             <xs:enumeration value="@drawable/cardbuttonpressed" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -28139,6 +28340,8 @@
             <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
+            <xs:enumeration value="@drawable/home" />
+            <xs:enumeration value="@drawable/homehome" />
             <xs:enumeration value="@drawable/homepagelogo" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
@@ -28317,6 +28520,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_speaker_light" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
+            <xs:enumeration value="@drawable/layoutborder" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/menuicon" />
@@ -28371,6 +28575,7 @@
             <xs:enumeration value="@drawable/searchimager" />
             <xs:enumeration value="@drawable/signin" />
             <xs:enumeration value="@drawable/signinxml" />
+            <xs:enumeration value="@drawable/splashbackground" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -28695,9 +28900,11 @@
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
             <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
+            <xs:enumeration value="@drawable/bottomborder" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
+            <xs:enumeration value="@drawable/buttonreviewstateselected" />
             <xs:enumeration value="@drawable/buttonreviewstyle" />
             <xs:enumeration value="@drawable/cardbuttonpressed" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -28745,6 +28952,8 @@
             <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
+            <xs:enumeration value="@drawable/home" />
+            <xs:enumeration value="@drawable/homehome" />
             <xs:enumeration value="@drawable/homepagelogo" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
@@ -28923,6 +29132,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_speaker_light" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
+            <xs:enumeration value="@drawable/layoutborder" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/menuicon" />
@@ -28977,6 +29187,7 @@
             <xs:enumeration value="@drawable/searchimager" />
             <xs:enumeration value="@drawable/signin" />
             <xs:enumeration value="@drawable/signinxml" />
+            <xs:enumeration value="@drawable/splashbackground" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -29484,9 +29695,11 @@
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
             <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
+            <xs:enumeration value="@drawable/bottomborder" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
+            <xs:enumeration value="@drawable/buttonreviewstateselected" />
             <xs:enumeration value="@drawable/buttonreviewstyle" />
             <xs:enumeration value="@drawable/cardbuttonpressed" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -29534,6 +29747,8 @@
             <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
+            <xs:enumeration value="@drawable/home" />
+            <xs:enumeration value="@drawable/homehome" />
             <xs:enumeration value="@drawable/homepagelogo" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
@@ -29712,6 +29927,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_speaker_light" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
+            <xs:enumeration value="@drawable/layoutborder" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/menuicon" />
@@ -29766,6 +29982,7 @@
             <xs:enumeration value="@drawable/searchimager" />
             <xs:enumeration value="@drawable/signin" />
             <xs:enumeration value="@drawable/signinxml" />
+            <xs:enumeration value="@drawable/splashbackground" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -30442,9 +30659,11 @@
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
             <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
+            <xs:enumeration value="@drawable/bottomborder" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
+            <xs:enumeration value="@drawable/buttonreviewstateselected" />
             <xs:enumeration value="@drawable/buttonreviewstyle" />
             <xs:enumeration value="@drawable/cardbuttonpressed" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -30492,6 +30711,8 @@
             <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
+            <xs:enumeration value="@drawable/home" />
+            <xs:enumeration value="@drawable/homehome" />
             <xs:enumeration value="@drawable/homepagelogo" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
@@ -30670,6 +30891,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_speaker_light" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
+            <xs:enumeration value="@drawable/layoutborder" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/menuicon" />
@@ -30724,6 +30946,7 @@
             <xs:enumeration value="@drawable/searchimager" />
             <xs:enumeration value="@drawable/signin" />
             <xs:enumeration value="@drawable/signinxml" />
+            <xs:enumeration value="@drawable/splashbackground" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -31178,9 +31401,11 @@
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
             <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
+            <xs:enumeration value="@drawable/bottomborder" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
+            <xs:enumeration value="@drawable/buttonreviewstateselected" />
             <xs:enumeration value="@drawable/buttonreviewstyle" />
             <xs:enumeration value="@drawable/cardbuttonpressed" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -31228,6 +31453,8 @@
             <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
+            <xs:enumeration value="@drawable/home" />
+            <xs:enumeration value="@drawable/homehome" />
             <xs:enumeration value="@drawable/homepagelogo" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
@@ -31406,6 +31633,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_speaker_light" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
+            <xs:enumeration value="@drawable/layoutborder" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/menuicon" />
@@ -31460,6 +31688,7 @@
             <xs:enumeration value="@drawable/searchimager" />
             <xs:enumeration value="@drawable/signin" />
             <xs:enumeration value="@drawable/signinxml" />
+            <xs:enumeration value="@drawable/splashbackground" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -32136,9 +32365,11 @@
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
             <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
+            <xs:enumeration value="@drawable/bottomborder" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
+            <xs:enumeration value="@drawable/buttonreviewstateselected" />
             <xs:enumeration value="@drawable/buttonreviewstyle" />
             <xs:enumeration value="@drawable/cardbuttonpressed" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -32186,6 +32417,8 @@
             <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
+            <xs:enumeration value="@drawable/home" />
+            <xs:enumeration value="@drawable/homehome" />
             <xs:enumeration value="@drawable/homepagelogo" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
@@ -32364,6 +32597,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_speaker_light" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
+            <xs:enumeration value="@drawable/layoutborder" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/menuicon" />
@@ -32418,6 +32652,7 @@
             <xs:enumeration value="@drawable/searchimager" />
             <xs:enumeration value="@drawable/signin" />
             <xs:enumeration value="@drawable/signinxml" />
+            <xs:enumeration value="@drawable/splashbackground" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -32800,6 +33035,7 @@
             <xs:enumeration value="@dimen/design_tab_text_size_2line" />
             <xs:enumeration value="@dimen/disabled_alpha_material_dark" />
             <xs:enumeration value="@dimen/disabled_alpha_material_light" />
+            <xs:enumeration value="@dimen/extra_icon" />
             <xs:enumeration value="@dimen/fastscroll_default_thickness" />
             <xs:enumeration value="@dimen/fastscroll_margin" />
             <xs:enumeration value="@dimen/fastscroll_minimum_range" />
@@ -33030,6 +33266,7 @@
             <xs:enumeration value="@dimen/design_tab_text_size_2line" />
             <xs:enumeration value="@dimen/disabled_alpha_material_dark" />
             <xs:enumeration value="@dimen/disabled_alpha_material_light" />
+            <xs:enumeration value="@dimen/extra_icon" />
             <xs:enumeration value="@dimen/fastscroll_default_thickness" />
             <xs:enumeration value="@dimen/fastscroll_margin" />
             <xs:enumeration value="@dimen/fastscroll_minimum_range" />
@@ -33202,9 +33439,11 @@
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
             <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
+            <xs:enumeration value="@drawable/bottomborder" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
+            <xs:enumeration value="@drawable/buttonreviewstateselected" />
             <xs:enumeration value="@drawable/buttonreviewstyle" />
             <xs:enumeration value="@drawable/cardbuttonpressed" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -33252,6 +33491,8 @@
             <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
+            <xs:enumeration value="@drawable/home" />
+            <xs:enumeration value="@drawable/homehome" />
             <xs:enumeration value="@drawable/homepagelogo" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
@@ -33430,6 +33671,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_speaker_light" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
+            <xs:enumeration value="@drawable/layoutborder" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/menuicon" />
@@ -33484,6 +33726,7 @@
             <xs:enumeration value="@drawable/searchimager" />
             <xs:enumeration value="@drawable/signin" />
             <xs:enumeration value="@drawable/signinxml" />
+            <xs:enumeration value="@drawable/splashbackground" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -33808,9 +34051,11 @@
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
             <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
+            <xs:enumeration value="@drawable/bottomborder" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
+            <xs:enumeration value="@drawable/buttonreviewstateselected" />
             <xs:enumeration value="@drawable/buttonreviewstyle" />
             <xs:enumeration value="@drawable/cardbuttonpressed" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -33858,6 +34103,8 @@
             <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
+            <xs:enumeration value="@drawable/home" />
+            <xs:enumeration value="@drawable/homehome" />
             <xs:enumeration value="@drawable/homepagelogo" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
@@ -34036,6 +34283,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_speaker_light" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
+            <xs:enumeration value="@drawable/layoutborder" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/menuicon" />
@@ -34090,6 +34338,7 @@
             <xs:enumeration value="@drawable/searchimager" />
             <xs:enumeration value="@drawable/signin" />
             <xs:enumeration value="@drawable/signinxml" />
+            <xs:enumeration value="@drawable/splashbackground" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -34472,6 +34721,7 @@
             <xs:enumeration value="@dimen/design_tab_text_size_2line" />
             <xs:enumeration value="@dimen/disabled_alpha_material_dark" />
             <xs:enumeration value="@dimen/disabled_alpha_material_light" />
+            <xs:enumeration value="@dimen/extra_icon" />
             <xs:enumeration value="@dimen/fastscroll_default_thickness" />
             <xs:enumeration value="@dimen/fastscroll_margin" />
             <xs:enumeration value="@dimen/fastscroll_minimum_range" />
@@ -35069,6 +35319,7 @@
             <xs:enumeration value="@dimen/design_tab_text_size_2line" />
             <xs:enumeration value="@dimen/disabled_alpha_material_dark" />
             <xs:enumeration value="@dimen/disabled_alpha_material_light" />
+            <xs:enumeration value="@dimen/extra_icon" />
             <xs:enumeration value="@dimen/fastscroll_default_thickness" />
             <xs:enumeration value="@dimen/fastscroll_margin" />
             <xs:enumeration value="@dimen/fastscroll_minimum_range" />
@@ -35299,6 +35550,7 @@
             <xs:enumeration value="@dimen/design_tab_text_size_2line" />
             <xs:enumeration value="@dimen/disabled_alpha_material_dark" />
             <xs:enumeration value="@dimen/disabled_alpha_material_light" />
+            <xs:enumeration value="@dimen/extra_icon" />
             <xs:enumeration value="@dimen/fastscroll_default_thickness" />
             <xs:enumeration value="@dimen/fastscroll_margin" />
             <xs:enumeration value="@dimen/fastscroll_minimum_range" />
@@ -35529,6 +35781,7 @@
             <xs:enumeration value="@dimen/design_tab_text_size_2line" />
             <xs:enumeration value="@dimen/disabled_alpha_material_dark" />
             <xs:enumeration value="@dimen/disabled_alpha_material_light" />
+            <xs:enumeration value="@dimen/extra_icon" />
             <xs:enumeration value="@dimen/fastscroll_default_thickness" />
             <xs:enumeration value="@dimen/fastscroll_margin" />
             <xs:enumeration value="@dimen/fastscroll_minimum_range" />
@@ -35774,6 +36027,7 @@
             <xs:enumeration value="@dimen/design_tab_text_size_2line" />
             <xs:enumeration value="@dimen/disabled_alpha_material_dark" />
             <xs:enumeration value="@dimen/disabled_alpha_material_light" />
+            <xs:enumeration value="@dimen/extra_icon" />
             <xs:enumeration value="@dimen/fastscroll_default_thickness" />
             <xs:enumeration value="@dimen/fastscroll_margin" />
             <xs:enumeration value="@dimen/fastscroll_minimum_range" />
@@ -36004,6 +36258,7 @@
             <xs:enumeration value="@dimen/design_tab_text_size_2line" />
             <xs:enumeration value="@dimen/disabled_alpha_material_dark" />
             <xs:enumeration value="@dimen/disabled_alpha_material_light" />
+            <xs:enumeration value="@dimen/extra_icon" />
             <xs:enumeration value="@dimen/fastscroll_default_thickness" />
             <xs:enumeration value="@dimen/fastscroll_margin" />
             <xs:enumeration value="@dimen/fastscroll_minimum_range" />
@@ -36234,6 +36489,7 @@
             <xs:enumeration value="@dimen/design_tab_text_size_2line" />
             <xs:enumeration value="@dimen/disabled_alpha_material_dark" />
             <xs:enumeration value="@dimen/disabled_alpha_material_light" />
+            <xs:enumeration value="@dimen/extra_icon" />
             <xs:enumeration value="@dimen/fastscroll_default_thickness" />
             <xs:enumeration value="@dimen/fastscroll_margin" />
             <xs:enumeration value="@dimen/fastscroll_minimum_range" />
@@ -36464,6 +36720,7 @@
             <xs:enumeration value="@dimen/design_tab_text_size_2line" />
             <xs:enumeration value="@dimen/disabled_alpha_material_dark" />
             <xs:enumeration value="@dimen/disabled_alpha_material_light" />
+            <xs:enumeration value="@dimen/extra_icon" />
             <xs:enumeration value="@dimen/fastscroll_default_thickness" />
             <xs:enumeration value="@dimen/fastscroll_margin" />
             <xs:enumeration value="@dimen/fastscroll_minimum_range" />
@@ -36694,6 +36951,7 @@
             <xs:enumeration value="@dimen/design_tab_text_size_2line" />
             <xs:enumeration value="@dimen/disabled_alpha_material_dark" />
             <xs:enumeration value="@dimen/disabled_alpha_material_light" />
+            <xs:enumeration value="@dimen/extra_icon" />
             <xs:enumeration value="@dimen/fastscroll_default_thickness" />
             <xs:enumeration value="@dimen/fastscroll_margin" />
             <xs:enumeration value="@dimen/fastscroll_minimum_range" />
@@ -37218,9 +37476,11 @@
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
             <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
+            <xs:enumeration value="@drawable/bottomborder" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
+            <xs:enumeration value="@drawable/buttonreviewstateselected" />
             <xs:enumeration value="@drawable/buttonreviewstyle" />
             <xs:enumeration value="@drawable/cardbuttonpressed" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -37268,6 +37528,8 @@
             <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
+            <xs:enumeration value="@drawable/home" />
+            <xs:enumeration value="@drawable/homehome" />
             <xs:enumeration value="@drawable/homepagelogo" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
@@ -37446,6 +37708,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_speaker_light" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
+            <xs:enumeration value="@drawable/layoutborder" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/menuicon" />
@@ -37500,6 +37763,7 @@
             <xs:enumeration value="@drawable/searchimager" />
             <xs:enumeration value="@drawable/signin" />
             <xs:enumeration value="@drawable/signinxml" />
+            <xs:enumeration value="@drawable/splashbackground" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -38234,6 +38498,7 @@
             <xs:enumeration value="@dimen/design_tab_text_size_2line" />
             <xs:enumeration value="@dimen/disabled_alpha_material_dark" />
             <xs:enumeration value="@dimen/disabled_alpha_material_light" />
+            <xs:enumeration value="@dimen/extra_icon" />
             <xs:enumeration value="@dimen/fastscroll_default_thickness" />
             <xs:enumeration value="@dimen/fastscroll_margin" />
             <xs:enumeration value="@dimen/fastscroll_minimum_range" />
@@ -38892,6 +39157,7 @@
             <xs:enumeration value="@dimen/design_tab_text_size_2line" />
             <xs:enumeration value="@dimen/disabled_alpha_material_dark" />
             <xs:enumeration value="@dimen/disabled_alpha_material_light" />
+            <xs:enumeration value="@dimen/extra_icon" />
             <xs:enumeration value="@dimen/fastscroll_default_thickness" />
             <xs:enumeration value="@dimen/fastscroll_margin" />
             <xs:enumeration value="@dimen/fastscroll_minimum_range" />
@@ -39122,6 +39388,7 @@
             <xs:enumeration value="@dimen/design_tab_text_size_2line" />
             <xs:enumeration value="@dimen/disabled_alpha_material_dark" />
             <xs:enumeration value="@dimen/disabled_alpha_material_light" />
+            <xs:enumeration value="@dimen/extra_icon" />
             <xs:enumeration value="@dimen/fastscroll_default_thickness" />
             <xs:enumeration value="@dimen/fastscroll_margin" />
             <xs:enumeration value="@dimen/fastscroll_minimum_range" />
@@ -39352,6 +39619,7 @@
             <xs:enumeration value="@dimen/design_tab_text_size_2line" />
             <xs:enumeration value="@dimen/disabled_alpha_material_dark" />
             <xs:enumeration value="@dimen/disabled_alpha_material_light" />
+            <xs:enumeration value="@dimen/extra_icon" />
             <xs:enumeration value="@dimen/fastscroll_default_thickness" />
             <xs:enumeration value="@dimen/fastscroll_margin" />
             <xs:enumeration value="@dimen/fastscroll_minimum_range" />
@@ -39582,6 +39850,7 @@
             <xs:enumeration value="@dimen/design_tab_text_size_2line" />
             <xs:enumeration value="@dimen/disabled_alpha_material_dark" />
             <xs:enumeration value="@dimen/disabled_alpha_material_light" />
+            <xs:enumeration value="@dimen/extra_icon" />
             <xs:enumeration value="@dimen/fastscroll_default_thickness" />
             <xs:enumeration value="@dimen/fastscroll_margin" />
             <xs:enumeration value="@dimen/fastscroll_minimum_range" />
@@ -39812,6 +40081,7 @@
             <xs:enumeration value="@dimen/design_tab_text_size_2line" />
             <xs:enumeration value="@dimen/disabled_alpha_material_dark" />
             <xs:enumeration value="@dimen/disabled_alpha_material_light" />
+            <xs:enumeration value="@dimen/extra_icon" />
             <xs:enumeration value="@dimen/fastscroll_default_thickness" />
             <xs:enumeration value="@dimen/fastscroll_margin" />
             <xs:enumeration value="@dimen/fastscroll_minimum_range" />
@@ -40042,6 +40312,7 @@
             <xs:enumeration value="@dimen/design_tab_text_size_2line" />
             <xs:enumeration value="@dimen/disabled_alpha_material_dark" />
             <xs:enumeration value="@dimen/disabled_alpha_material_light" />
+            <xs:enumeration value="@dimen/extra_icon" />
             <xs:enumeration value="@dimen/fastscroll_default_thickness" />
             <xs:enumeration value="@dimen/fastscroll_margin" />
             <xs:enumeration value="@dimen/fastscroll_minimum_range" />
@@ -40214,9 +40485,11 @@
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
             <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
+            <xs:enumeration value="@drawable/bottomborder" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
+            <xs:enumeration value="@drawable/buttonreviewstateselected" />
             <xs:enumeration value="@drawable/buttonreviewstyle" />
             <xs:enumeration value="@drawable/cardbuttonpressed" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -40264,6 +40537,8 @@
             <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
+            <xs:enumeration value="@drawable/home" />
+            <xs:enumeration value="@drawable/homehome" />
             <xs:enumeration value="@drawable/homepagelogo" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
@@ -40442,6 +40717,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_speaker_light" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
+            <xs:enumeration value="@drawable/layoutborder" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/menuicon" />
@@ -40496,6 +40772,7 @@
             <xs:enumeration value="@drawable/searchimager" />
             <xs:enumeration value="@drawable/signin" />
             <xs:enumeration value="@drawable/signinxml" />
+            <xs:enumeration value="@drawable/splashbackground" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -41172,9 +41449,11 @@
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
             <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
+            <xs:enumeration value="@drawable/bottomborder" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
+            <xs:enumeration value="@drawable/buttonreviewstateselected" />
             <xs:enumeration value="@drawable/buttonreviewstyle" />
             <xs:enumeration value="@drawable/cardbuttonpressed" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -41222,6 +41501,8 @@
             <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
+            <xs:enumeration value="@drawable/home" />
+            <xs:enumeration value="@drawable/homehome" />
             <xs:enumeration value="@drawable/homepagelogo" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
@@ -41400,6 +41681,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_speaker_light" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
+            <xs:enumeration value="@drawable/layoutborder" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/menuicon" />
@@ -41454,6 +41736,7 @@
             <xs:enumeration value="@drawable/searchimager" />
             <xs:enumeration value="@drawable/signin" />
             <xs:enumeration value="@drawable/signinxml" />
+            <xs:enumeration value="@drawable/splashbackground" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -41778,9 +42061,11 @@
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
             <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
+            <xs:enumeration value="@drawable/bottomborder" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
+            <xs:enumeration value="@drawable/buttonreviewstateselected" />
             <xs:enumeration value="@drawable/buttonreviewstyle" />
             <xs:enumeration value="@drawable/cardbuttonpressed" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -41828,6 +42113,8 @@
             <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
+            <xs:enumeration value="@drawable/home" />
+            <xs:enumeration value="@drawable/homehome" />
             <xs:enumeration value="@drawable/homepagelogo" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
@@ -42006,6 +42293,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_speaker_light" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
+            <xs:enumeration value="@drawable/layoutborder" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/menuicon" />
@@ -42060,6 +42348,7 @@
             <xs:enumeration value="@drawable/searchimager" />
             <xs:enumeration value="@drawable/signin" />
             <xs:enumeration value="@drawable/signinxml" />
+            <xs:enumeration value="@drawable/splashbackground" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
@@ -42800,9 +43089,11 @@
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/back" />
             <xs:enumeration value="@drawable/baseline_menu_black_18dp" />
+            <xs:enumeration value="@drawable/bottomborder" />
             <xs:enumeration value="@drawable/buttonbluestyle" />
             <xs:enumeration value="@drawable/buttongreystyle" />
             <xs:enumeration value="@drawable/buttonorangestyle" />
+            <xs:enumeration value="@drawable/buttonreviewstateselected" />
             <xs:enumeration value="@drawable/buttonreviewstyle" />
             <xs:enumeration value="@drawable/cardbuttonpressed" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -42850,6 +43141,8 @@
             <xs:enumeration value="@drawable/guesticonxml" />
             <xs:enumeration value="@drawable/heart" />
             <xs:enumeration value="@drawable/hearticon" />
+            <xs:enumeration value="@drawable/home" />
+            <xs:enumeration value="@drawable/homehome" />
             <xs:enumeration value="@drawable/homepagelogo" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
@@ -43028,6 +43321,7 @@
             <xs:enumeration value="@drawable/ic_vol_type_speaker_light" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_dark" />
             <xs:enumeration value="@drawable/ic_vol_type_tv_light" />
+            <xs:enumeration value="@drawable/layoutborder" />
             <xs:enumeration value="@drawable/mail" />
             <xs:enumeration value="@drawable/mailicon" />
             <xs:enumeration value="@drawable/menuicon" />
@@ -43082,6 +43376,7 @@
             <xs:enumeration value="@drawable/searchimager" />
             <xs:enumeration value="@drawable/signin" />
             <xs:enumeration value="@drawable/signinxml" />
+            <xs:enumeration value="@drawable/splashbackground" />
             <xs:enumeration value="@drawable/tick" />
             <xs:enumeration value="@drawable/tickicon" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />

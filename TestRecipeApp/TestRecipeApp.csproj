@@ -204,6 +204,7 @@
     <Compile Include="Presenter\ViewRecipePresenter\IRecipeView.cs" />
     <Compile Include="Presenter\ViewRecipePresenter\ViewRecipePresenter.cs" />
     <Compile Include="Utilites\ApplicationStateValues.cs" />
+    <Compile Include="Utilites\BaseActivity.cs" />
     <Compile Include="Utilites\CheckBoxGroup.cs" />
     <Compile Include="Utilites\IClickListener.cs" />
     <Compile Include="Utilites\IDataListener.cs" />
@@ -221,7 +222,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Views\Activities\RecipeSearchResultsActivity.cs" />
     <Compile Include="Views\Activities\RecipeSearchViewActivity.cs" />
+    <Compile Include="Views\Activities\SplashActivity.cs" />
     <Compile Include="Views\Activities\ViewRecipeActivity.cs" />
+    <Compile Include="Views\Fragments\DialogReview.cs" />
     <Compile Include="Views\Fragments\DialogSignIn.cs" />
     <Compile Include="Views\Fragments\DialogSignUp.cs" />
     <Compile Include="Views\Fragments\FavouriteRecipesFragment.cs" />
@@ -303,6 +306,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\FavouriteCardView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\DialogReview.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -387,7 +393,6 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\Mailicon.png" />
-    <AndroidResource Include="Resources\drawable\recimeIcon.png" />
     <AndroidResource Include="Resources\drawable\signIn.png" />
     <AndroidResource Include="Resources\drawable\guestIconXml.xml" />
     <AndroidResource Include="Resources\drawable\signInXml.xml" />
@@ -397,6 +402,15 @@
     <AndroidResource Include="Resources\drawable\baseline_menu_black_18dp.png" />
     <AndroidResource Include="Resources\drawable\MenuIcon.xml" />
     <AndroidResource Include="Resources\menu\top_menus.xml" />
+    <AndroidResource Include="Resources\drawable\Home.xml" />
+    <AndroidResource Include="Resources\drawable\LayoutBorder.xml" />
+    <AndroidResource Include="Resources\drawable\HOMEHOME.png" />
+    <AndroidResource Include="Resources\drawable\BottomBorder.xml" />
+    <AndroidResource Include="Resources\drawable\splashBackground.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\recimeIcon.png" />
+    <AndroidResource Include="Resources\drawable\ButtonReviewStateSelected.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />

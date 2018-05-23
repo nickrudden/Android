@@ -27,7 +27,7 @@
         android:layout_gravity="center"
         android:weightSum="4">
         <ImageView
-            android:src="@drawable/Heart"           
+            android:src="@drawable/Heart"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:layout_width="0dp"
             android:layout_height="35dp"
@@ -65,6 +65,6 @@
             android:id="@+id/vpPager"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-             android:background="@drawable/roundedcornertops" />
+            android:background="@drawable/roundedcornertops" />
     </LinearLayout>
 </LinearLayout>

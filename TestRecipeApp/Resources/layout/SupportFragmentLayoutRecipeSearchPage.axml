@@ -5,140 +5,147 @@
     android:layout_height="match_parent"
     android:minWidth="25px"
     android:minHeight="25px">
-  <LinearLayout
-      android:orientation="vertical"
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:layout_margin="20dp"
-      android:background="@drawable/roundedcornertops">
-    <TextView
-        android:id="@+id/searchButton"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="40dp"
-        android:paddingBottom="5dp"
-        android:paddingRight="40dp"
-        android:paddingTop="10dp"
-        android:gravity="center"
-        android:drawableLeft="@drawable/ResizedIcon"
-        android:background="?attr/editTextBackground"
-        android:textColor="?attr/editTextColor"
-        android:textSize="19dp"
-        android:textStyle="bold"
-        android:hint="Search" />
-
-       
-      
-   
-      
-   
-    <GridLayout
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:columnCount="4"
-      android:layout_marginTop="20dp">
-
-      <TextView
-          android:layout_height="wrap_content"
-          android:layout_width="match_parent"
-          android:layout_columnSpan="4"
-          android:text="Intolerances"
-          android:layout_gravity="right"
-          android:textSize="19sp"/>
-      
-      <CheckBox android:id="@+id/checkDairy"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="Dairy"
-       />
-      <CheckBox android:id="@+id/checkEgg"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="Egg"
-       />
-      <CheckBox android:id="@+id/checkGluten"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="Gluten"
-     />
-      <CheckBox android:id="@+id/checkPeanut"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Peanut" />
-      <CheckBox android:id="@+id/checkSesame"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Sesame" />
-    
-      <CheckBox android:id="@+id/checkShellfish"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Shellfish" />
-      <CheckBox android:id="@+id/checkSoy"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Soy" />
-      <CheckBox android:id="@+id/checkSulfite"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Sulfite" />
-      <CheckBox android:id="@+id/checkTree"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Tree Nut" />
-      <CheckBox android:id="@+id/checkWheat"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Wheat" />      
-    </GridLayout>
-
-    <View
-    android:layout_width="match_parent"
-    android:layout_height="1dp"
-    android:background="@android:color/darker_gray"/>
-
-
-
-    <GridLayout
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:columnCount="4"
-      android:layout_marginTop="10dp">
-
-      <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
-        <RadioButton android:id="@+id/radio_pescetarian"
-            android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:background="@drawable/roundedcornertops">
+        <TextView
+            android:id="@+id/searchButton"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="40dp"
+            android:paddingTop="10dp"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ResizedIcon"
+            android:background="?attr/editTextBackground"
+            android:textColor="?attr/editTextColor"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            android:hint="Search" />
+        <GridLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Pescetarian"
-            android:onClick="onRadioButtonClicked"/>
-        <RadioButton android:id="@+id/radio_lacto_vegetarian"
-            android:layout_width="wrap_content"
+            android:columnCount="4"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_columnSpan="4"
+                android:text="Intolerances"
+                android:layout_gravity="right"
+                android:textSize="19sp"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="10dp" />
+            <CheckBox
+                android:id="@+id/checkDairy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dairy" />
+            <CheckBox
+                android:id="@+id/checkEgg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Egg" />
+            <CheckBox
+                android:id="@+id/checkGluten"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gluten" />
+            <CheckBox
+                android:id="@+id/checkPeanut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Peanut" />
+            <CheckBox
+                android:id="@+id/checkSesame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sesame" />
+            <CheckBox
+                android:id="@+id/checkShellfish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shellfish" />
+            <CheckBox
+                android:id="@+id/checkSoy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Soy" />
+            <CheckBox
+                android:id="@+id/checkSulfite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sulfite" />
+            <CheckBox
+                android:id="@+id/checkTree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tree Nut" />
+            <CheckBox
+                android:id="@+id/checkWheat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wheat" />
+        </GridLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+        <TextView
+            android:text="Diet "
+            android:textSize="19sp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="lacto vegetarian"
-            android:onClick="onRadioButtonClicked"/>    
-        <RadioButton android:id="@+id/radio_ovo_vegetarian"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:text="ovo vegetarian"
-           android:onClick="onRadioButtonClicked"/>
-        <RadioButton android:id="@+id/radio_vegan"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="vegan"
-          android:onClick="onRadioButtonClicked"/>
-        <RadioButton android:id="@+id/radio__vegetarian"
-            android:layout_width="wrap_content"
+            android:id="@+id/textView1"
+            android:layout_marginTop="10dp" />
+        <GridLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Vegetarian"
-            android:onClick="onRadioButtonClicked"/>
-        
-      </RadioGroup>
-    </GridLayout>
-     
-  </LinearLayout>
+            android:columnCount="4"
+            android:layout_marginTop="10dp">
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton
+                    android:id="@+id/radio_pescetarian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pescetarian"
+                    android:onClick="onRadioButtonClicked" />
+                <RadioButton
+                    android:id="@+id/radio_lacto_vegetarian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="lacto vegetarian"
+                    android:onClick="onRadioButtonClicked" />
+                <RadioButton
+                    android:id="@+id/radio_ovo_vegetarian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ovo vegetarian"
+                    android:onClick="onRadioButtonClicked" />
+                <RadioButton
+                    android:id="@+id/radio_vegan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="vegan"
+                    android:onClick="onRadioButtonClicked" />
+                <RadioButton
+                    android:id="@+id/radio__vegetarian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vegetarian"
+                    android:onClick="onRadioButtonClicked" />
+            </RadioGroup>
+        </GridLayout>
+    </LinearLayout>
 </LinearLayout>

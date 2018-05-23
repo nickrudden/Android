@@ -9,12 +9,12 @@
     <!-- Customize your theme here. -->
 
     <item name="android:windowNoTitle">true</item>
-    <item name="android:windowActionBar">false</item>
+    <item name="android:windowActionBar">true</item>
     
     <item name="colorPrimary">@color/ForestGreen</item>
-    <item name="colorPrimaryDark">@color/DarkSlateGray</item>
-    <item name="colorAccent">@color/LightSeaGreen</item>
-    <item name="android:windowBackground">@color/PaleGreen</item>
+     <item name="colorPrimaryDark">@color/DarkSlateGray</item> 
+    <item name="colorAccent">@color/ForestGreen</item>
+    <item name="android:windowBackground">@color/BackgroundArea</item> 
   </style>
 
   <style name="PrimaryFlatButton" parent="Theme.AppCompat.Light">
@@ -22,5 +22,11 @@
     <item name="android:buttonStyle">@style/Widget.AppCompat.Button.Borderless.Colored</item>
     <item name="colorControlHighlight">@color/LightSeaGreen</item>
     <item name="colorAccent">@color/ForestGreen</item>
+  </style>
+
+  <style name="SplashTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+    <item name="android:windowBackground">@drawable/splashBackground</item>
+    
   </style>
 </resources>

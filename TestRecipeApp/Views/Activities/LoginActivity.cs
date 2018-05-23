@@ -46,7 +46,7 @@ namespace TestRecipeApp.Views.Activities
 
             prefs = new ApplicationState(this);
             base.OnCreate(savedInstanceState);
-            
+            prefs.logOut();
             SetContentView(Resource.Layout.ActivityLayoutLogin);
             mProfileTracker = new MyProfileTracker();
             mProfileTracker.mOnProfileChanged += MProfileTracker_mOnProfileChanged;
@@ -67,9 +67,7 @@ namespace TestRecipeApp.Views.Activities
             btnLoginIn.Click += BtnLoginIn_Click;
             btnGuest.Click += BtnGuest_Click;
 
-            Toast.MakeText(this, prefs.FacebookId, ToastLength.Long).Show();
-            Toast.MakeText(this, prefs.UserId.ToString(), ToastLength.Long).Show();
-            Toast.MakeText(this, prefs.Guest.ToString(), ToastLength.Long).Show();
+            
             // Create your application here
         }
 

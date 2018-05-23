@@ -52,6 +52,7 @@ namespace TestRecipeApp.Utilites
         public bool isLoggedIn()
         {
            
+
             int uId = prefs.GetInt("uId", 0);
 
             if (isFacebookLoggedIn() || uId != 0)

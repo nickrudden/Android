@@ -25,8 +25,8 @@
             android:drawableLeft="@drawable/ResizedIcon"
             android:background="?attr/editTextBackground"
             android:textColor="?attr/editTextColor"
-            android:textSize="19dp"
+            android:textSize="24dp"
             android:textStyle="bold"
-            android:hint="Enter leftovers" />
+            android:hint="Enter Leftovers" />
     </LinearLayout>
 </LinearLayout>

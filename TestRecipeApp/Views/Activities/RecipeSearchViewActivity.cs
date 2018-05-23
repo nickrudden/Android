@@ -17,9 +17,9 @@ using TestRecipeApp.Utilites;
 namespace TestRecipeApp.Views.Activities
 {
     [Activity(Label = "RecipeSearchViewActivity")]
-    public class RecipeSearchViewActivity : AppCompatActivity, ISearchView, IDataListener
+    public class RecipeSearchViewActivity : BaseActivity, ISearchView, IDataListener
     {
-
+        ApplicationState state;
         private SearchView searchView;
         private CustomSearchAdapter searchAdapter;
         private ListView listView;
@@ -35,18 +35,16 @@ namespace TestRecipeApp.Views.Activities
             diet = Intent.GetStringExtra("diet");
             IList<string> intolerances = Intent.GetStringArrayListExtra("intolerances");
             intoleranceString = string.Join(" ", intolerances.ToArray());
-            Toast.MakeText(this, diet, ToastLength.Short).Show();
-            Toast.MakeText(this, intoleranceString, ToastLength.Short).Show();
+            
 
 
             SetContentView(Resource.Layout.ActivityLayoutRecipeSearchView);
-
+            state = new ApplicationState(this);
             presenter = new SearchPresenter(this);
             listView = FindViewById<ListView>(Resource.Id.listView);
             searchView = FindViewById<SearchView>(Resource.Id.searchView);
             searchAdapter = new CustomSearchAdapter(this);
             listView.Adapter = searchAdapter;
-
             searchView.QueryTextChange += SearchView_QueryTextChange;
             searchView.QueryTextSubmit += SearchView_QueryTextSubmit;
             searchView.SetIconifiedByDefault(false);
@@ -68,8 +66,13 @@ namespace TestRecipeApp.Views.Activities
 
         private void SearchView_QueryTextChange(object sender, SearchView.QueryTextChangeEventArgs e)
         {
-            
-            ThreadPool.QueueUserWorkItem(o => presenter.UpdateRecipeSearchItems(e.NewText));
+            try
+            {
+                ThreadPool.QueueUserWorkItem(o => presenter.UpdateRecipeSearchItems(e.NewText));
+            }
+            catch (Exception ex) { 
+            this.Recreate();
+        }
             
         }
 
@@ -91,5 +94,7 @@ namespace TestRecipeApp.Views.Activities
                 });
             }
         }
+
+       
     }
 }

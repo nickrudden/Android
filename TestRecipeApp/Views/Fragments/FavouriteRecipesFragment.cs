@@ -16,16 +16,19 @@ using Android.Widget;
 using RecipeClassLibrary.Models;
 using TestRecipeApp.Adapters;
 using TestRecipeApp.Presenter.FavouritesPresenter;
+using TestRecipeApp.Utilites;
 using TestRecipeApp.Views.Activities;
 
 namespace TestRecipeApp.Views.Fragments
 {
     public class FavouriteRecipesFragment : Android.Support.V4.App.Fragment, IFavouriteView
-    {
+    { 
+        ApplicationState state;
         RecyclerView recycler;
         RecyclerView.LayoutManager layoutManager;
         FavouritesRecyclerAdapter adapter;
 
+        TextView tv;
         ProgressBar progressBar;
         FavouritesPresenter presenter;
         List<string> favouriteIds;
@@ -38,6 +41,9 @@ namespace TestRecipeApp.Views.Fragments
            
             return frag;
         }
+
+       
+
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -46,7 +52,7 @@ namespace TestRecipeApp.Views.Fragments
             ICollection<string> savedIds = pref.GetStringSet("savedIds", null);
             Console.WriteLine("collection count is " + savedIds.Count);
 
-
+            state = new ApplicationState(this.Context);
             favouriteIds = savedIds.Cast<string>().ToList();
              layoutManager = new GridLayoutManager(this.Context, 3, GridLayoutManager.Vertical, false);
             //layoutManager = new LinearLayoutManager(this.Context);
@@ -59,12 +65,29 @@ namespace TestRecipeApp.Views.Fragments
             // Use this to return your custom view for this Fragment
             // return inflater.Inflate(Resource.Layout.YourFragment, container, false);
             View view = inflater.Inflate(Resource.Layout.SupportFragmentFavouriteRecipes, container, false);
-
-
             recycler = view.FindViewById<RecyclerView>(Resource.Id.RecyclerView);
-            recycler.SetLayoutManager(layoutManager);
             progressBar = view.FindViewById<ProgressBar>(Resource.Id.ProgressBar);
-            ThreadPool.QueueUserWorkItem(o => presenter.updateFavourites(favouriteIds));
+
+            tv = view.FindViewById<TextView>(Resource.Id.textGuest);
+            if (state.Guest)
+            {
+                tv.Visibility = ViewStates.Visible;
+                progressBar.Visibility = ViewStates.Gone;
+            }
+            else
+            {
+                try
+                {
+                    recycler.SetLayoutManager(layoutManager);
+                    ThreadPool.QueueUserWorkItem(o => presenter.updateFavourites(favouriteIds));
+                }
+                catch(Exception ex)
+                {
+                    Toast.MakeText(this.Context, "Unable to load favourites", ToastLength.Long).Show();
+                }
+            }
+            
+           
 
             return view;
         }
@@ -74,8 +97,8 @@ namespace TestRecipeApp.Views.Fragments
             using (var handler = new Handler(Looper.MainLooper))
             {
                 handler.Post(() => {
+
                    
-                
                     adapter = new FavouritesRecyclerAdapter(list, this.Context);
                     adapter.ItemClick += OnItemClick;
                     recycler.SetAdapter(adapter);
@@ -83,6 +106,11 @@ namespace TestRecipeApp.Views.Fragments
                     progressBar.Visibility = ViewStates.Gone;
                 });
             }
+        }
+
+        public void favouriteLoadingError(string message)
+        {
+            Toast.MakeText(this.Context, message, ToastLength.Long).Show();
         }
 
 

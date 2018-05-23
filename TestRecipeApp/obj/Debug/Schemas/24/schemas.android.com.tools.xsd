@@ -2,7 +2,7 @@
 <xs:schema xmlns:tools="http://schemas.android.com/tools" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/tools" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v24</xs:documentation>
-    <xs:documentation>19/05/2018 19:35:09</xs:documentation>
+    <xs:documentation>23/05/2018 15:20:37</xs:documentation>
   </xs:annotation>
   <xs:attribute name="layout">
     <xs:annotation>
@@ -64,6 +64,7 @@
             <xs:enumeration value="@layout/design_navigation_menu" />
             <xs:enumeration value="@layout/design_navigation_menu_item" />
             <xs:enumeration value="@layout/design_text_input_password_icon" />
+            <xs:enumeration value="@layout/dialogreview" />
             <xs:enumeration value="@layout/favouritecardview" />
             <xs:enumeration value="@layout/fragmentlayoutdialogsignin" />
             <xs:enumeration value="@layout/fragmentlayoutdialogsignup" />
@@ -213,6 +214,7 @@
             <xs:enumeration value="@layout/design_navigation_menu" />
             <xs:enumeration value="@layout/design_navigation_menu_item" />
             <xs:enumeration value="@layout/design_text_input_password_icon" />
+            <xs:enumeration value="@layout/dialogreview" />
             <xs:enumeration value="@layout/favouritecardview" />
             <xs:enumeration value="@layout/fragmentlayoutdialogsignin" />
             <xs:enumeration value="@layout/fragmentlayoutdialogsignup" />
@@ -362,6 +364,7 @@
             <xs:enumeration value="@layout/design_navigation_menu" />
             <xs:enumeration value="@layout/design_navigation_menu_item" />
             <xs:enumeration value="@layout/design_text_input_password_icon" />
+            <xs:enumeration value="@layout/dialogreview" />
             <xs:enumeration value="@layout/favouritecardview" />
             <xs:enumeration value="@layout/fragmentlayoutdialogsignin" />
             <xs:enumeration value="@layout/fragmentlayoutdialogsignup" />
@@ -511,6 +514,7 @@
             <xs:enumeration value="@layout/design_navigation_menu" />
             <xs:enumeration value="@layout/design_navigation_menu_item" />
             <xs:enumeration value="@layout/design_text_input_password_icon" />
+            <xs:enumeration value="@layout/dialogreview" />
             <xs:enumeration value="@layout/favouritecardview" />
             <xs:enumeration value="@layout/fragmentlayoutdialogsignin" />
             <xs:enumeration value="@layout/fragmentlayoutdialogsignup" />

@@ -14,13 +14,15 @@ using Android.Widget;
 using RecipeClassLibrary.Models;
 using TestRecipeApp.Adapters;
 using TestRecipeApp.Presenter.RecipeSearchPresenter;
+using TestRecipeApp.Utilites;
 
 namespace TestRecipeApp.Views.Activities
 {
     [Activity(Label = "RecipeSearchResultsActivity")]
-    public class RecipeSearchResultsActivity : AppCompatActivity, ISearchResult
+    public class RecipeSearchResultsActivity : BaseActivity, ISearchResult
     {
 
+        ApplicationState state;
         RecipeSearchPresenter presenter;
         RecyclerView resultView;
         RecyclerView.LayoutManager mLayoutManager;
@@ -30,7 +32,7 @@ namespace TestRecipeApp.Views.Activities
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
+            state = new ApplicationState(this); 
             SetContentView(Resource.Layout.ActivityLayoutLeftoverSearchResultsGrid);
             pb = FindViewById<ProgressBar>(Resource.Id.ProgressBar);
             resultView = FindViewById<RecyclerView>(Resource.Id.RecyclerResults);
@@ -41,7 +43,6 @@ namespace TestRecipeApp.Views.Activities
 
 
             presenter = new RecipeSearchPresenter(this);
-
             
             string diet = Intent.GetStringExtra("diet");
             string intolerance = Intent.GetStringExtra("intolerance");
@@ -82,6 +83,9 @@ namespace TestRecipeApp.Views.Activities
         {
             throw new NotImplementedException();
         }
+
+       
+       
 
     }
 }

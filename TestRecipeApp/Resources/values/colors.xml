@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <resources>
-  <color name="PaleGreen">#eafeea</color>
+  <color name="LightGreen">#e5ffcc</color>
+  <color name="PaleGreen">#f4fef4</color>
   <color name="White">#FFFFFF</color>
   <color name="BackgroundArea">#FFFFF0</color>
   <color name="LightYellow">#FFFFE0</color>
-  <color name="Yellow">#FFFF00</color>
+  <color name="Yellow">#e7eb89</color>
   <color name="Snow">#FFFAFA</color>
   <color name="FloralWhite">#FFFAF0</color>
   <color name="LemonChiffon">#FFFACD</color>

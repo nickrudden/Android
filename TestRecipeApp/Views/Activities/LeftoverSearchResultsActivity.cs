@@ -14,14 +14,16 @@ using Android.Widget;
 using RecipeClassLibrary.Models;
 using TestRecipeApp.Adapters;
 using TestRecipeApp.Presenter.RecipeSearchPresenter;
+using TestRecipeApp.Utilites;
 
 namespace TestRecipeApp.Views.Activities
 {
 
     
     [Activity(ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
-    public class LeftoverSearchResultsActivity : AppCompatActivity, ISearchResult
+    public class LeftoverSearchResultsActivity : BaseActivity, ISearchResult
     {
+        ApplicationState state;
         RecipeSearchPresenter presenter;
         RecyclerView resultView;
         RecyclerView.LayoutManager mLayoutManager;
@@ -55,8 +57,8 @@ namespace TestRecipeApp.Views.Activities
         {
             base.OnCreate(savedInstanceState);
 
+            state = new Utilites.ApplicationState(this);
            
-
             SetContentView(Resource.Layout.ActivityLayoutLeftoverSearchResultsGrid);
             pb = FindViewById<ProgressBar>(Resource.Id.ProgressBar);
             resultView = FindViewById<RecyclerView>(Resource.Id.RecyclerResults);
@@ -86,5 +88,7 @@ namespace TestRecipeApp.Views.Activities
              
 
         }
+
+        
     }
 }

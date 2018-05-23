@@ -22,8 +22,8 @@ using TestRecipeApp.Utilites;
 using TestRecipeApp.Views.Fragments;
 namespace TestRecipeApp.Views.Activities
 {
-    [Activity(ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait, MainLauncher = true)]
-    public class HomeTabbedActivity : AppCompatActivity, IHomeTabbed
+    [Activity(ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
+    public class HomeTabbedActivity : BaseActivity, IHomeTabbed
     {
         ApplicationState state;
         FragmentPagerAdapter adapterPager;
@@ -40,8 +40,11 @@ namespace TestRecipeApp.Views.Activities
             state = new ApplicationState(this);
             if (!state.isLoggedIn())
             {
-                var intent = new Intent(this, typeof(LoginActivity));
-                StartActivity(intent);
+                if (!state.Guest)
+                {
+                    var intent = new Intent(this, typeof(LoginActivity));
+                    StartActivity(intent);
+                }
             }
             checkedIds = new List<string>();
             state = new ApplicationState(this); 
@@ -49,7 +52,6 @@ namespace TestRecipeApp.Views.Activities
             SetContentView(Resource.Layout.ActivityLayoutHomeTabbed);
            
          
-            SupportActionBar.Title = "ReciMe";
 
 
             presenter = new HomeTabbedPresenter(this);
@@ -82,24 +84,7 @@ namespace TestRecipeApp.Views.Activities
             // Create your application here
         }
 
-        public override bool OnCreateOptionsMenu(IMenu menu)
-        {
-            MenuInflater.Inflate(Resource.Menu.top_menus, menu);
-            return base.OnCreateOptionsMenu(menu);
-        }
-        public override bool OnOptionsItemSelected(IMenuItem item)
-        {
-            switch (item.ItemId)
-            {
-                case Resource.Id.logoutoption:
-                    state.logOut();
-                    var intent = new Intent(this, typeof(LoginActivity));
-                    StartActivity(intent);
-                    break;
-            }
-
-            return base.OnOptionsItemSelected(item);
-        }
+       
 
         public void checkboxClick(View view)
         {

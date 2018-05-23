@@ -5,7 +5,7 @@
   <xs:import schemaLocation="schemas.android.com.tools.xsd" namespace="http://schemas.android.com/tools" />
   <xs:annotation>
     <xs:documentation>v24</xs:documentation>
-    <xs:documentation>19/05/2018 19:35:09</xs:documentation>
+    <xs:documentation>23/05/2018 15:20:37</xs:documentation>
   </xs:annotation>
   <xs:group name="any-view">
     <xs:choice>
@@ -154,6 +154,7 @@
       <xs:element ref="android.support.v4.view.PagerTabStrip" />
       <xs:element ref="android.support.v4.app.FragmentTabHost" />
       <xs:element ref="TestRecipeApp.Utilites.CheckBoxGroup" />
+      <xs:element ref="TestRecipeApp.Utilites.MySearchView" />
       <xs:element ref="include" />
     </xs:choice>
   </xs:group>
@@ -2366,6 +2367,16 @@
   <xs:complexType name="TestRecipeApp.Utilites.CheckBoxGroup">
     <xs:complexContent mixed="false">
       <xs:extension base="GridLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TestRecipeApp.Utilites.MySearchView" type="TestRecipeApp.Utilites.MySearchView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: TestRecipeApp.Utilites.MySearchView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="TestRecipeApp.Utilites.MySearchView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewGroup" />
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="include" type="include">

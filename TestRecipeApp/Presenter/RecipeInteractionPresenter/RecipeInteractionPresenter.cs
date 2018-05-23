@@ -42,14 +42,15 @@ namespace TestRecipeApp.Presenter.RecipeInteractionPresenter
 
             if (!saved)
             {
-                Console.WriteLine("IN SAVE RECIPE CLICK");
-                Console.WriteLine("id is   " + userId);
-                Console.WriteLine("Recipe is  " + recipeId);
+               
+                
                 db.saveUserRecipe(recipeId, userId);
+                context.recipeSaveSuccess(true);
             }
             else
             {
-                //Remove for saved
+                // REMOVE RECIPE
+                context.recipeSaveSuccess(false);
             }
         }
 
@@ -68,11 +69,13 @@ namespace TestRecipeApp.Presenter.RecipeInteractionPresenter
 
             if (!saved)
             {
+               
                 db.saveFacebookRecipe(recipeId, facebookId);
             }
             else
             {
-                //Remove for saved
+                // REMOVE RECIPE
+                context.recipeSaveSuccess(false);
             }
         }
     }
